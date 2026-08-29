@@ -1,4 +1,7 @@
 {
   "extends": "@plasmo/config/ts/utils",
+  "compilerOptions": {
+    "types": ["chrome"]
+  },
   "include": ["src/**/*.ts"]
 }

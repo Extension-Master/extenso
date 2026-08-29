@@ -35,6 +35,13 @@ declare module "*.module.sass"
 declare module "*.module.styl"
 declare module "*.module.pcss"
 
+declare module "*.css"
+declare module "*.less"
+declare module "*.scss"
+declare module "*.sass"
+declare module "*.styl"
+declare module "*.pcss"
+
 declare module "react:*.svg" {
   import type { FunctionComponent, SVGProps } from "react"
 

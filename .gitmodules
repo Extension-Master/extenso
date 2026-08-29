@@ -1,35 +1,35 @@
 [submodule "packages/rps"]
 	path = packages/rps
-	url = https://github.com/PlasmoHQ/rps.git
+	url = https://github.com/Extension-Master/rps.git
 	branch = main
 [submodule "packages/puro"]
 	path = packages/puro
-	url = https://github.com/PlasmoHQ/puro.git
+	url = https://github.com/Extension-Master/puro.git
 	branch = main
 [submodule "packages/gcp-refresh-token"]
 	path = packages/gcp-refresh-token
-	url = https://github.com/PlasmoHQ/gcp-refresh-token.git
+	url = https://github.com/Extension-Master/gcp-refresh-token.git
 	branch = main
 [submodule "packages/use-hashed-state"]
 	path = packages/use-hashed-state
-	url = https://github.com/PlasmoHQ/use-hashed-state.git
+	url = https://github.com/Extension-Master/use-hashed-state.git
 	branch = main
 [submodule "examples"]
 	path = examples
-	url = https://github.com/PlasmoHQ/examples.git
+	url = https://github.com/Extension-Master/examples.git
 [submodule "packages/permission-ui"]
 	path = packages/permission-ui
-	url = https://github.com/PlasmoHQ/permission-ui.git
+	url = https://github.com/Extension-Master/permission-ui.git
 [submodule "packages/utils"]
 	path = packages/utils
-	url = https://github.com/PlasmoHQ/plasmo-utils.git
+	url = https://github.com/Extension-Master/extenso-utils.git
 [submodule "packages/constants"]
 	path = packages/constants
-	url = https://github.com/PlasmoHQ/plasmo-constants.git
+	url = https://github.com/Extension-Master/extenso-constants.git
 [submodule "packages/config"]
 	path = packages/config
-	url = https://github.com/PlasmoHQ/plasmo-config.git
+	url = https://github.com/Extension-Master/extenso-config.git
 [submodule "api/storage"]
 	path = api/storage
-	url = https://github.com/PlasmoHQ/storage.git
+	url = https://github.com/Extension-Master/storage.git
 	branch = main

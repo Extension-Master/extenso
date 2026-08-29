@@ -9,7 +9,7 @@ import { getBundleConfig } from "~features/extension-devtools/get-bundle-config"
 import { createProjectWatcher } from "~features/extension-devtools/project-watcher"
 import { checkNewVersion } from "~features/framework-update/version-tracker"
 import { createParcelBuilder } from "~features/helpers/create-parcel-bundler"
-import { startLoading, stopLoading } from "~features/helpers/loading-animation"
+import { stopLoading } from "~features/helpers/loading-animation"
 import { printHeader } from "~features/helpers/print"
 import { createManifest } from "~features/manifest-factory/create-manifest"
 
@@ -68,11 +68,6 @@ async function dev() {
     }
 
     if (event === undefined) {
-      return
-    }
-
-    if (event.type === "buildStart") {
-      startLoading()
       return
     }
 

@@ -50,7 +50,7 @@ export type PlasmoCSUIMountState = {
   document: Document
   observer: MutationObserver | null
 
-  mountInterval: NodeJS.Timer | null
+  mountInterval: NodeJS.Timeout | null
 
   isMounting: boolean
   isMutated: boolean

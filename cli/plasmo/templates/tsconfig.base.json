@@ -3,6 +3,8 @@
   "display": "Plasmo Extension",
   "files": ["./plasmo.d.ts"],
   "compilerOptions": {
+    "ignoreDeprecations": "6.0",
+    "types": ["chrome", "node"],
     "strict": false,
     "skipLibCheck": true,
 
@@ -18,7 +20,7 @@
     "declaration": false,
     "declarationMap": false,
     "inlineSources": false,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "preserveWatchOutput": true,

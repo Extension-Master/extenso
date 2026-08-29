@@ -51,7 +51,7 @@ function cascadeEnv(loadedEnvFiles: LoadedEnvFiles) {
     try {
       envFileSet.add(name)
       const result = dotenvExpand({
-        ignoreProcessEnv: true,
+        processEnv: {},
         parsed: dotenv.parse(contents)
       })
 
