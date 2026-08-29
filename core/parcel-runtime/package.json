@@ -1,5 +1,5 @@
 {
-  "name": "@plasmohq/parcel-runtime",
+  "name": "@extenso/parcel-runtime",
   "version": "0.25.3",
   "description": "Plasmo Parcel Runtime",
   "files": [
@@ -22,10 +22,10 @@
     "url": "https://github.com/Extension-Master/extenso.git"
   },
   "devDependencies": {
-    "@plasmo/config": "workspace:^0.2.5",
-    "@plasmo/framework-shared": "workspace:^0.0.2",
-    "@plasmo/utils": "workspace:^0.2.3",
-    "@plasmohq/persistent": "workspace:^0.0.6",
+    "@extenso/config": "workspace:^0.2.5",
+    "@extenso/framework-shared": "workspace:^0.0.2",
+    "@extenso/utils": "workspace:^0.2.3",
+    "@extenso/persistent": "workspace:^0.0.6",
     "@types/chrome": "0.2.7",
     "tsup": "8.5.1"
   },

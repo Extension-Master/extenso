@@ -1,5 +1,5 @@
 {
-  "name": "@plasmohq/init",
+  "name": "@extenso/init",
   "version": "0.7.0",
   "description": "Plasmo init template files",
   "files": [

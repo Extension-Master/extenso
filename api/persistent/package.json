@@ -1,5 +1,5 @@
 {
-  "name": "@plasmohq/persistent",
+  "name": "@extenso/persistent",
   "version": "0.0.6",
   "description": "A couple of hacks to keep the BGSW alive in a library",
   "type": "module",
@@ -63,7 +63,7 @@
   "devDependencies": {
     "@jest/globals": "30.5.0",
     "@jest/types": "30.5.0",
-    "@plasmo/config": "workspace:^0.2.5",
+    "@extenso/config": "workspace:^0.2.5",
     "@types/chrome": "0.2.7",
     "@types/node": "26.4.0",
     "cross-env": "10.1.0",

@@ -4,7 +4,7 @@
  */
 import { Transformer } from "@parcel/plugin"
 
-import { iLog, vLog } from "@plasmo/utils/logging"
+import { iLog, vLog } from "@extenso/utils/logging"
 
 import { initState } from "./state"
 
@@ -12,7 +12,7 @@ async function collectDependencies() {}
 
 export default new Transformer({
   async transform({ asset, options }) {
-    vLog("@plasmohq/parcel-transformer-lab")
+    vLog("@extenso/parcel-transformer-lab")
     const code = await asset.getCode()
 
     const { state, getAssets } = initState(asset, code, options.hmrOptions)

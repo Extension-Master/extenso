@@ -3,7 +3,7 @@ import { resolve } from "path"
 import glob from "fast-glob"
 import { AsyncZipDeflate, Zip } from "fflate"
 
-import { iLog } from "@plasmo/utils/logging"
+import { iLog } from "@extenso/utils/logging"
 
 import type { CommonPath } from "~features/extension-devtools/common-path"
 

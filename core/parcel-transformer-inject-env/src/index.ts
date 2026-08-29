@@ -1,6 +1,6 @@
 import { Transformer } from "@parcel/plugin"
 
-import { injectEnv } from "@plasmo/utils/env"
+import { injectEnv } from "@extenso/utils/env"
 
 export default new Transformer({
   async transform({ asset, options }) {

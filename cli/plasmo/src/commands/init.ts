@@ -2,9 +2,9 @@ import { resolve } from "path"
 import { cwd } from "process"
 import { kebabCase } from "change-case"
 
-import { hasFlag } from "@plasmo/utils/flags"
-import { ensureWritableAndEmpty } from "@plasmo/utils/fs"
-import { vLog } from "@plasmo/utils/logging"
+import { hasFlag } from "@extenso/utils/flags"
+import { ensureWritableAndEmpty } from "@extenso/utils/fs"
+import { vLog } from "@extenso/utils/logging"
 
 import { getCommonPath } from "~features/extension-devtools/common-path"
 import { getPackageManager } from "~features/helpers/package-manager"

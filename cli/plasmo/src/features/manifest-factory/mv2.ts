@@ -1,8 +1,8 @@
 import type {
   ExtensionManifestV2,
   ExtensionManifestV3
-} from "@plasmo/constants"
-import { iLog } from "@plasmo/utils/logging"
+} from "@extenso/constants"
+import { iLog } from "@extenso/utils/logging"
 
 import type { PlasmoBundleConfig } from "~features/extension-devtools/get-bundle-config"
 

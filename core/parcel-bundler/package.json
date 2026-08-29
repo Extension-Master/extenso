@@ -1,5 +1,5 @@
 {
-  "name": "@plasmohq/parcel-bundler",
+  "name": "@extenso/parcel-bundler",
   "version": "0.5.6",
   "license": "MIT",
   "repository": {
@@ -28,8 +28,8 @@
   },
   "devDependencies": {
     "@parcel/types": "2.16.4",
-    "@plasmo/config": "workspace:^0.2.5",
-    "@plasmo/utils": "workspace:^0.2.3",
+    "@extenso/config": "workspace:^0.2.5",
+    "@extenso/utils": "workspace:^0.2.3",
     "tsup": "8.5.1"
   }
 }

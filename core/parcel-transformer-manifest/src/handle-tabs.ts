@@ -1,6 +1,6 @@
 import { resolve } from "path"
 
-import { vLog } from "@plasmo/utils/logging"
+import { vLog } from "@extenso/utils/logging"
 
 import { getState } from "./state"
 

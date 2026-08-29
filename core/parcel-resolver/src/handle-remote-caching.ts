@@ -1,8 +1,8 @@
 import { resolve } from "path"
 import { hashString } from "@parcel/hash"
 
-import { injectEnv } from "@plasmo/utils/env"
-import { vLog } from "@plasmo/utils/logging"
+import { injectEnv } from "@extenso/utils/env"
+import { vLog } from "@extenso/utils/logging"
 
 import {
   relevantExtensionList,

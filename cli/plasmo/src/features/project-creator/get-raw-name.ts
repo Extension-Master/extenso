@@ -1,7 +1,7 @@
 import { createQuestId } from "mnemonic-id"
 
-import { getNonFlagArgvs } from "@plasmo/utils/argv"
-import { vLog } from "@plasmo/utils/logging"
+import { getNonFlagArgvs } from "@extenso/utils/argv"
+import { vLog } from "@extenso/utils/logging"
 
 import { quickPrompt } from "~features/helpers/prompt"
 

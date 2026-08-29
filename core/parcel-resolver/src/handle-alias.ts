@@ -1,6 +1,6 @@
 import { resolve } from "path"
 
-import { isReadable } from "@plasmo/utils/fs"
+import { isReadable } from "@extenso/utils/fs"
 
 import { state, type ResolverProps, type ResolverResult } from "./shared"
 

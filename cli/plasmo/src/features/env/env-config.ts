@@ -5,8 +5,8 @@ import { constantCase } from "change-case"
 import dotenv from "dotenv"
 import { expand as dotenvExpand } from "dotenv-expand"
 
-import { isFile, isReadable } from "@plasmo/utils/fs"
-import { eLog, iLog, vLog } from "@plasmo/utils/logging"
+import { isFile, isReadable } from "@extenso/utils/fs"
+import { eLog, iLog, vLog } from "@extenso/utils/logging"
 
 import { getFlagMap } from "~features/helpers/flag"
 

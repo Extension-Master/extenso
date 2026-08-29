@@ -1,5 +1,5 @@
 {
-  "name": "@extensionmaster/create-plasmo",
+  "name": "create-extenso",
   "version": "0.90.5",
   "description": "Create Plasmo Framework Browser Extension",
   "main": "dist/index.js",
@@ -39,13 +39,13 @@
     "framework"
   ],
   "dependencies": {
-    "@plasmohq/init": "workspace:^0.7.0"
+    "@extenso/init": "workspace:^0.7.0"
   },
   "devDependencies": {
-    "@plasmo/config": "workspace:^0.2.5",
-    "@plasmo/constants": "workspace:^0.3.0",
-    "@plasmo/utils": "workspace:^0.2.3",
-    "plasmo": "workspace:^0.90.5",
+    "@extenso/config": "workspace:^0.2.5",
+    "@extenso/constants": "workspace:^0.3.0",
+    "@extenso/utils": "workspace:^0.2.3",
+    "@extenso/cli": "workspace:^0.90.5",
     "typescript": "6.0.3"
   }
 }

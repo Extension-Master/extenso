@@ -2,9 +2,9 @@
 import { argv, exit, versions } from "process"
 import semver from "semver"
 
-import { ErrorMessage } from "@plasmo/constants/error"
-import { verbose } from "@plasmo/utils/flags"
-import { eLog, vLog } from "@plasmo/utils/logging"
+import { ErrorMessage } from "@extenso/constants/error"
+import { verbose } from "@extenso/utils/flags"
+import { eLog, vLog } from "@extenso/utils/logging"
 
 import { runMap, validCommandSet, type ValidCommand } from "~commands"
 import { printHeader, printHelp } from "~features/helpers/print"

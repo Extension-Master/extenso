@@ -1,5 +1,5 @@
-import { hasFlag } from "@plasmo/utils/flags"
-import { iLog } from "@plasmo/utils/logging"
+import { hasFlag } from "@extenso/utils/flags"
+import { iLog } from "@extenso/utils/logging"
 
 import { getBundleConfig } from "~features/extension-devtools/get-bundle-config"
 import { checkNewVersion } from "~features/framework-update/version-tracker"

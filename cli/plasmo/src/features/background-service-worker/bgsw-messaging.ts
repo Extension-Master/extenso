@@ -3,9 +3,9 @@ import glob from "fast-glob"
 import { outputFile } from "fs-extra"
 import { join, resolve } from "path"
 
-import { isWriteable } from "@plasmo/utils/fs"
-import { vLog, wLog } from "@plasmo/utils/logging"
-import { toPosix } from "@plasmo/utils/path"
+import { isWriteable } from "@extenso/utils/fs"
+import { vLog, wLog } from "@extenso/utils/logging"
+import { toPosix } from "@extenso/utils/path"
 
 import {
   createDeclarationCode,
@@ -132,8 +132,8 @@ export const createBgswMessaging = async (plasmoManifest: PlasmoManifest) => {
     }
 
     // check if package.json has messaging API
-    if (!("@plasmohq/messaging" in plasmoManifest.dependencies)) {
-      wLog("@plasmohq/messaging is not installed, skipping messaging API")
+    if (!("@extenso/messaging" in plasmoManifest.dependencies)) {
+      wLog("@extenso/messaging is not installed, skipping messaging API")
       return false
     }
 

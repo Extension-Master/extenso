@@ -12,12 +12,12 @@ importers:
 
   .:
     devDependencies:
+      '@extenso/rps':
+        specifier: workspace:^1.8.7
+        version: link:packages/rps
       '@ianvs/prettier-plugin-sort-imports':
         specifier: 4.7.1
         version: 4.7.1(@vue/compiler-sfc@3.5.42)(prettier@3.9.6)
-      '@plasmohq/rps':
-        specifier: workspace:^1.8.7
-        version: link:packages/rps
       '@types/fs-extra':
         specifier: 11.0.4
         version: 11.0.4
@@ -142,15 +142,15 @@ importers:
 
   api/persistent:
     devDependencies:
+      '@extenso/config':
+        specifier: workspace:^0.2.5
+        version: link:../../packages/config
       '@jest/globals':
         specifier: 30.5.0
         version: 30.5.0
       '@jest/types':
         specifier: 30.5.0
         version: 30.5.0
-      '@plasmo/config':
-        specifier: workspace:^0.2.5
-        version: link:../../packages/config
       '@types/chrome':
         specifier: 0.2.7
         version: 0.2.7
@@ -230,15 +230,15 @@ importers:
         specifier: 6.1.0
         version: 6.1.0
     devDependencies:
+      '@extenso/rps':
+        specifier: workspace:^1.8.7
+        version: link:../../packages/rps
       '@jest/globals':
         specifier: 30.5.0
         version: 30.5.0
       '@jest/types':
         specifier: 30.5.0
         version: 30.5.0
-      '@plasmohq/rps':
-        specifier: workspace:^1.8.7
-        version: link:../../packages/rps
       '@testing-library/react':
         specifier: 16.3.3
         version: 16.3.3(@testing-library/dom@10.4.1)(@types/react-dom@19.2.5(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
@@ -287,22 +287,22 @@ importers:
 
   cli/create-plasmo:
     dependencies:
-      '@plasmohq/init':
+      '@extenso/init':
         specifier: workspace:^0.7.0
         version: link:../../packages/init
     devDependencies:
-      '@plasmo/config':
-        specifier: workspace:^0.2.5
-        version: link:../../packages/config
-      '@plasmo/constants':
-        specifier: workspace:^0.3.0
-        version: link:../../packages/constants
-      '@plasmo/utils':
-        specifier: workspace:^0.2.3
-        version: link:../../packages/utils
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../plasmo
+      '@extenso/config':
+        specifier: workspace:^0.2.5
+        version: link:../../packages/config
+      '@extenso/constants':
+        specifier: workspace:^0.3.0
+        version: link:../../packages/constants
+      '@extenso/utils':
+        specifier: workspace:^0.2.3
+        version: link:../../packages/utils
       typescript:
         specifier: 6.0.3
         version: 6.0.3
@@ -312,6 +312,15 @@ importers:
       '@expo/spawn-async':
         specifier: 1.8.0
         version: 1.8.0
+      '@extenso/init':
+        specifier: workspace:^0.7.0
+        version: link:../../packages/init
+      '@extenso/parcel-config':
+        specifier: workspace:^0.42.0
+        version: link:../../core/parcel-config
+      '@extenso/parcel-core':
+        specifier: workspace:^0.1.11
+        version: link:../../core/parcel-core
       '@parcel/core':
         specifier: 2.16.4
         version: 2.16.4(@swc/helpers@0.5.23)
@@ -324,15 +333,6 @@ importers:
       '@parcel/watcher':
         specifier: 2.6.0
         version: 2.6.0
-      '@plasmohq/init':
-        specifier: workspace:^0.7.0
-        version: link:../../packages/init
-      '@plasmohq/parcel-config':
-        specifier: workspace:^0.42.0
-        version: link:../../core/parcel-config
-      '@plasmohq/parcel-core':
-        specifier: workspace:^0.1.11
-        version: link:../../core/parcel-core
       buffer:
         specifier: 6.0.3
         version: 6.0.3
@@ -400,16 +400,16 @@ importers:
         specifier: 6.0.3
         version: 6.0.3
     devDependencies:
-      '@plasmo/config':
+      '@extenso/config':
         specifier: workspace:^0.2.5
         version: link:../../packages/config
-      '@plasmo/constants':
+      '@extenso/constants':
         specifier: workspace:^0.3.0
         version: link:../../packages/constants
-      '@plasmo/framework-shared':
+      '@extenso/framework-shared':
         specifier: workspace:^0.0.2
         version: link:../../packages/framework-shared
-      '@plasmo/utils':
+      '@extenso/utils':
         specifier: workspace:^0.2.3
         version: link:../../packages/utils
       svelte:
@@ -443,15 +443,15 @@ importers:
         specifier: 1.1.1
         version: 1.1.1
     devDependencies:
+      '@extenso/config':
+        specifier: workspace:^0.2.5
+        version: link:../../packages/config
+      '@extenso/utils':
+        specifier: workspace:^0.2.3
+        version: link:../../packages/utils
       '@parcel/types':
         specifier: 2.16.4
         version: 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
-      '@plasmo/config':
-        specifier: workspace:^0.2.5
-        version: link:../../packages/config
-      '@plasmo/utils':
-        specifier: workspace:^0.2.3
-        version: link:../../packages/utils
       tsup:
         specifier: 8.5.1
         version: 8.5.1(@swc/core@1.16.1(@swc/helpers@0.5.23))(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.12)(typescript@7.0.2)(yaml@2.9.0)
@@ -462,10 +462,10 @@ importers:
         specifier: 2.16.4
         version: 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
     devDependencies:
-      '@plasmo/config':
+      '@extenso/config':
         specifier: workspace:^0.2.5
         version: link:../../packages/config
-      '@plasmo/utils':
+      '@extenso/utils':
         specifier: workspace:^0.2.3
         version: link:../../packages/utils
       tsup:
@@ -474,6 +474,48 @@ importers:
 
   core/parcel-config:
     dependencies:
+      '@extenso/parcel-bundler':
+        specifier: workspace:^0.5.6
+        version: link:../parcel-bundler
+      '@extenso/parcel-compressor-utf8':
+        specifier: workspace:^0.1.1
+        version: link:../parcel-compressor-utf8
+      '@extenso/parcel-namer-manifest':
+        specifier: workspace:^0.3.12
+        version: link:../parcel-namer-manifest
+      '@extenso/parcel-optimizer-encapsulate':
+        specifier: workspace:^0.0.8
+        version: link:../parcel-optimizer-encapsulate
+      '@extenso/parcel-optimizer-es':
+        specifier: workspace:^0.4.2
+        version: link:../parcel-optimizer-es
+      '@extenso/parcel-packager':
+        specifier: workspace:^0.6.15
+        version: link:../parcel-packager
+      '@extenso/parcel-resolver':
+        specifier: workspace:^0.14.2
+        version: link:../parcel-resolver
+      '@extenso/parcel-resolver-post':
+        specifier: workspace:^0.4.6
+        version: link:../parcel-resolver-post
+      '@extenso/parcel-runtime':
+        specifier: workspace:^0.25.3
+        version: link:../parcel-runtime
+      '@extenso/parcel-transformer-inject-env':
+        specifier: workspace:^0.2.12
+        version: link:../parcel-transformer-inject-env
+      '@extenso/parcel-transformer-inline-css':
+        specifier: workspace:^0.3.12
+        version: link:../parcel-transformer-inline-css
+      '@extenso/parcel-transformer-manifest':
+        specifier: workspace:^0.21.1
+        version: link:../parcel-transformer-manifest
+      '@extenso/parcel-transformer-svelte':
+        specifier: workspace:^0.6.1
+        version: link:../parcel-transformer-svelte
+      '@extenso/parcel-transformer-vue':
+        specifier: workspace:^0.5.1
+        version: link:../parcel-transformer-vue
       '@parcel/compressor-raw':
         specifier: 2.16.4
         version: 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
@@ -533,52 +575,44 @@ importers:
         version: 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/transformer-svg-react':
         specifier: 2.16.4
-        version: 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))(typescript@7.0.2)
+        version: 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))(typescript@5.8.2)
       '@parcel/transformer-worklet':
         specifier: 2.16.4
         version: 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+    devDependencies:
       '@plasmohq/parcel-bundler':
-        specifier: workspace:^0.5.6
-        version: link:../parcel-bundler
+        specifier: 0.5.6
+        version: 0.5.6
       '@plasmohq/parcel-compressor-utf8':
-        specifier: workspace:^0.1.1
-        version: link:../parcel-compressor-utf8
+        specifier: 0.1.1
+        version: 0.1.1(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@plasmohq/parcel-namer-manifest':
-        specifier: workspace:^0.3.12
-        version: link:../parcel-namer-manifest
+        specifier: 0.3.12
+        version: 0.3.12
       '@plasmohq/parcel-optimizer-encapsulate':
-        specifier: workspace:^0.0.8
-        version: link:../parcel-optimizer-encapsulate
+        specifier: 0.0.8
+        version: 0.0.8
       '@plasmohq/parcel-optimizer-es':
-        specifier: workspace:^0.4.2
-        version: link:../parcel-optimizer-es
+        specifier: 0.4.2
+        version: 0.4.2(@swc/helpers@0.5.23)
       '@plasmohq/parcel-packager':
-        specifier: workspace:^0.6.15
-        version: link:../parcel-packager
+        specifier: 0.6.15
+        version: 0.6.15
       '@plasmohq/parcel-resolver':
-        specifier: workspace:^0.14.2
-        version: link:../parcel-resolver
+        specifier: 0.14.2
+        version: 0.14.2
       '@plasmohq/parcel-resolver-post':
-        specifier: workspace:^0.4.6
-        version: link:../parcel-resolver-post
+        specifier: 0.4.6
+        version: 0.4.6(@swc/core@1.16.1(@swc/helpers@0.5.23))(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.12)(yaml@2.9.0)
       '@plasmohq/parcel-runtime':
-        specifier: workspace:^0.25.3
-        version: link:../parcel-runtime
+        specifier: 0.25.3
+        version: 0.25.3
       '@plasmohq/parcel-transformer-inject-env':
-        specifier: workspace:^0.2.12
-        version: link:../parcel-transformer-inject-env
-      '@plasmohq/parcel-transformer-inline-css':
-        specifier: workspace:^0.3.12
-        version: link:../parcel-transformer-inline-css
+        specifier: 0.2.12
+        version: 0.2.12
       '@plasmohq/parcel-transformer-manifest':
-        specifier: workspace:^0.21.1
-        version: link:../parcel-transformer-manifest
-      '@plasmohq/parcel-transformer-svelte':
-        specifier: workspace:^0.6.1
-        version: link:../parcel-transformer-svelte
-      '@plasmohq/parcel-transformer-vue':
-        specifier: workspace:^0.5.1
-        version: link:../parcel-transformer-vue
+        specifier: 0.21.1
+        version: 0.21.1
 
   core/parcel-core:
     dependencies:
@@ -634,10 +668,10 @@ importers:
         specifier: 1.1.1
         version: 1.1.1
     devDependencies:
-      '@plasmo/config':
+      '@extenso/config':
         specifier: workspace:^0.2.5
         version: link:../../packages/config
-      '@plasmo/utils':
+      '@extenso/utils':
         specifier: workspace:^0.2.3
         version: link:../../packages/utils
       tsup:
@@ -659,7 +693,7 @@ importers:
         specifier: 2.16.4
         version: 2.16.4
     devDependencies:
-      '@plasmo/config':
+      '@extenso/config':
         specifier: workspace:^0.2.5
         version: link:../../packages/config
       tsup:
@@ -681,10 +715,10 @@ importers:
         specifier: 2.16.4
         version: 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
     devDependencies:
-      '@plasmo/config':
+      '@extenso/config':
         specifier: workspace:^0.2.5
         version: link:../../packages/config
-      '@plasmo/utils':
+      '@extenso/utils':
         specifier: workspace:^0.2.3
         version: link:../../packages/utils
       tsup:
@@ -712,10 +746,10 @@ importers:
         specifier: 1.1.1
         version: 1.1.1
     devDependencies:
-      '@plasmo/config':
+      '@extenso/config':
         specifier: workspace:^0.2.5
         version: link:../../packages/config
-      '@plasmo/utils':
+      '@extenso/utils':
         specifier: workspace:^0.2.3
         version: link:../../packages/utils
       tsup:
@@ -740,13 +774,13 @@ importers:
         specifier: 1.1.1
         version: 1.1.1
     devDependencies:
-      '@plasmo/config':
+      '@extenso/config':
         specifier: workspace:^0.2.5
         version: link:../../packages/config
-      '@plasmo/constants':
+      '@extenso/constants':
         specifier: workspace:^0.3.0
         version: link:../../packages/constants
-      '@plasmo/utils':
+      '@extenso/utils':
         specifier: workspace:^0.2.3
         version: link:../../packages/utils
       tsup:
@@ -777,15 +811,15 @@ importers:
         specifier: 15.1.0
         version: 15.1.0
     devDependencies:
-      '@plasmo/config':
+      '@extenso/config':
         specifier: workspace:^0.2.5
         version: link:../../packages/config
-      '@plasmo/utils':
-        specifier: workspace:^0.2.3
-        version: link:../../packages/utils
-      '@plasmohq/rps':
+      '@extenso/rps':
         specifier: workspace:^1.8.7
         version: link:../../packages/rps
+      '@extenso/utils':
+        specifier: workspace:^0.2.3
+        version: link:../../packages/utils
       assert:
         specifier: 2.1.0
         version: 2.1.0
@@ -889,10 +923,10 @@ importers:
         specifier: 6.0.3
         version: 6.0.3
     devDependencies:
-      '@plasmo/config':
+      '@extenso/config':
         specifier: workspace:^0.2.5
         version: link:../../packages/config
-      '@plasmo/utils':
+      '@extenso/utils':
         specifier: workspace:^0.2.3
         version: link:../../packages/utils
 
@@ -911,18 +945,18 @@ importers:
         specifier: 0.16.0
         version: 0.16.0
     devDependencies:
-      '@plasmo/config':
+      '@extenso/config':
         specifier: workspace:^0.2.5
         version: link:../../packages/config
-      '@plasmo/framework-shared':
+      '@extenso/framework-shared':
         specifier: workspace:^0.0.2
         version: link:../../packages/framework-shared
-      '@plasmo/utils':
-        specifier: workspace:^0.2.3
-        version: link:../../packages/utils
-      '@plasmohq/persistent':
+      '@extenso/persistent':
         specifier: workspace:^0.0.6
         version: link:../../api/persistent
+      '@extenso/utils':
+        specifier: workspace:^0.2.3
+        version: link:../../packages/utils
       '@types/chrome':
         specifier: 0.2.7
         version: 0.2.7
@@ -942,10 +976,10 @@ importers:
         specifier: 2.16.4
         version: 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
     devDependencies:
-      '@plasmo/config':
+      '@extenso/config':
         specifier: workspace:^0.2.5
         version: link:../../packages/config
-      '@plasmo/utils':
+      '@extenso/utils':
         specifier: workspace:^0.2.3
         version: link:../../packages/utils
       tsup:
@@ -970,7 +1004,7 @@ importers:
         specifier: 1.33.0
         version: 1.33.0
     devDependencies:
-      '@plasmo/config':
+      '@extenso/config':
         specifier: workspace:^0.2.5
         version: link:../../packages/config
       tsup:
@@ -998,10 +1032,10 @@ importers:
         specifier: 2.16.4
         version: 2.16.4
     devDependencies:
-      '@plasmo/config':
+      '@extenso/config':
         specifier: workspace:^0.2.5
         version: link:../../packages/config
-      '@plasmo/utils':
+      '@extenso/utils':
         specifier: workspace:^0.2.3
         version: link:../../packages/utils
       tsup:
@@ -1041,10 +1075,10 @@ importers:
         specifier: 1.1.1
         version: 1.1.1
     devDependencies:
-      '@plasmo/config':
+      '@extenso/config':
         specifier: workspace:^0.2.5
         version: link:../../packages/config
-      '@plasmo/utils':
+      '@extenso/utils':
         specifier: workspace:^0.2.3
         version: link:../../packages/utils
       tsup:
@@ -1072,7 +1106,7 @@ importers:
         specifier: 4.2.20
         version: 4.2.20
     devDependencies:
-      '@plasmo/config':
+      '@extenso/config':
         specifier: workspace:^0.2.5
         version: link:../../packages/config
       tsup:
@@ -1115,7 +1149,7 @@ importers:
         specifier: 3.5.42
         version: 3.5.42(typescript@7.0.2)
     devDependencies:
-      '@plasmo/config':
+      '@extenso/config':
         specifier: workspace:^0.2.5
         version: link:../../packages/config
       tsup:
@@ -1124,12 +1158,12 @@ importers:
 
   examples/with-ai:
     dependencies:
+      '@extenso/cli':
+        specifier: workspace:^0.90.5
+        version: link:../../cli/plasmo
       compromise:
         specifier: 14.16.0
         version: 14.16.0
-      plasmo:
-        specifier: workspace:^0.90.5
-        version: link:../../cli/plasmo
       react:
         specifier: 19.2.8
         version: 19.2.8
@@ -1164,12 +1198,12 @@ importers:
       '@ant-design/cssinjs':
         specifier: 2.1.2
         version: 2.1.2(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      '@extenso/cli':
+        specifier: workspace:^0.90.5
+        version: link:../../cli/plasmo
       antd:
         specifier: 6.6.2
         version: 6.6.2(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      plasmo:
-        specifier: workspace:^0.90.5
-        version: link:../../cli/plasmo
       react:
         specifier: 19.2.8
         version: 19.2.8
@@ -1201,6 +1235,9 @@ importers:
 
   examples/with-background:
     dependencies:
+      '@extenso/cli':
+        specifier: workspace:^0.90.5
+        version: link:../../cli/plasmo
       bip39:
         specifier: 3.1.0
         version: 3.1.0
@@ -1210,9 +1247,6 @@ importers:
       events:
         specifier: 3.3.0
         version: 3.3.0
-      plasmo:
-        specifier: workspace:^0.90.5
-        version: link:../../cli/plasmo
       process:
         specifier: 0.11.10
         version: 0.11.10
@@ -1244,6 +1278,9 @@ importers:
 
   examples/with-browser-specific-overrides:
     dependencies:
+      '@extenso/cli':
+        specifier: workspace:^0.90.5
+        version: link:../../cli/plasmo
       bip39:
         specifier: 3.1.0
         version: 3.1.0
@@ -1253,9 +1290,6 @@ importers:
       events:
         specifier: 3.3.0
         version: 3.3.0
-      plasmo:
-        specifier: workspace:^0.90.5
-        version: link:../../cli/plasmo
       process:
         specifier: 0.11.10
         version: 0.11.10
@@ -1302,15 +1336,15 @@ importers:
 
   examples/with-client-tests:
     dependencies:
-      '@plasmohq/messaging':
+      '@extenso/cli':
+        specifier: workspace:^0.90.5
+        version: link:../../cli/plasmo
+      '@extenso/messaging':
         specifier: workspace:^0.7.2
         version: link:../../api/messaging
       ajv:
         specifier: 8.20.0
         version: 8.20.0
-      plasmo:
-        specifier: workspace:^0.90.5
-        version: link:../../cli/plasmo
       react:
         specifier: 19.2.8
         version: 19.2.8
@@ -1348,7 +1382,7 @@ importers:
 
   examples/with-content-script:
     dependencies:
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
       react:
@@ -1382,7 +1416,7 @@ importers:
 
   examples/with-content-scripts-ui:
     dependencies:
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
       react:
@@ -1416,7 +1450,7 @@ importers:
 
   examples/with-css-modules:
     dependencies:
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
       react:
@@ -1450,7 +1484,7 @@ importers:
 
   examples/with-declarative-net-request:
     dependencies:
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
     devDependencies:
@@ -1472,7 +1506,7 @@ importers:
 
   examples/with-devtools:
     dependencies:
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
       react:
@@ -1515,7 +1549,7 @@ importers:
       '@emotion/styled':
         specifier: 11.14.1
         version: 11.14.1(@emotion/react@11.14.0(@types/react@19.2.18)(react@19.2.8))(@types/react@19.2.18)(react@19.2.8)
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
       react:
@@ -1564,12 +1598,12 @@ importers:
       '@emotion/styled':
         specifier: 11.14.1
         version: 11.14.1(@emotion/react@11.14.0(@types/react@19.2.18)(react@19.2.8))(@types/react@19.2.18)(react@19.2.8)
+      '@extenso/cli':
+        specifier: workspace:^0.90.5
+        version: link:../../cli/plasmo
       antd:
         specifier: 6.6.2
         version: 6.6.2(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      plasmo:
-        specifier: workspace:^0.90.5
-        version: link:../../cli/plasmo
       react:
         specifier: 19.2.8
         version: 19.2.8
@@ -1613,7 +1647,7 @@ importers:
 
   examples/with-env:
     dependencies:
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
       react:
@@ -1647,12 +1681,12 @@ importers:
 
   examples/with-firebase-auth:
     dependencies:
+      '@extenso/cli':
+        specifier: workspace:^0.90.5
+        version: link:../../cli/plasmo
       firebase:
         specifier: 12.18.0
         version: 12.18.0
-      plasmo:
-        specifier: workspace:^0.90.5
-        version: link:../../cli/plasmo
       react:
         specifier: 19.2.8
         version: 19.2.8
@@ -1684,15 +1718,15 @@ importers:
 
   examples/with-firebase-fcm:
     dependencies:
-      '@plasmohq/storage':
+      '@extenso/cli':
+        specifier: workspace:^0.90.5
+        version: link:../../cli/plasmo
+      '@extenso/storage':
         specifier: workspace:^1.15.0
         version: link:../../api/storage
       firebase:
         specifier: 12.18.0
         version: 12.18.0
-      plasmo:
-        specifier: workspace:^0.90.5
-        version: link:../../cli/plasmo
       react:
         specifier: 19.2.8
         version: 19.2.8
@@ -1724,7 +1758,7 @@ importers:
 
   examples/with-google-analytics:
     dependencies:
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
       react:
@@ -1758,12 +1792,12 @@ importers:
 
   examples/with-google-analytics-measurement:
     dependencies:
-      '@plasmohq/storage':
-        specifier: workspace:^1.15.0
-        version: link:../../api/storage
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
+      '@extenso/storage':
+        specifier: workspace:^1.15.0
+        version: link:../../api/storage
       react:
         specifier: 19.2.8
         version: 19.2.8
@@ -1795,12 +1829,12 @@ importers:
 
   examples/with-inbox-sdk:
     dependencies:
+      '@extenso/cli':
+        specifier: workspace:^0.90.5
+        version: link:../../cli/plasmo
       '@inboxsdk/core':
         specifier: 2.2.21
         version: 2.2.21(kefir@3.8.8)
-      plasmo:
-        specifier: workspace:^0.90.5
-        version: link:../../cli/plasmo
       react:
         specifier: 19.2.8
         version: 19.2.8
@@ -1838,7 +1872,7 @@ importers:
 
   examples/with-jest:
     dependencies:
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
       react:
@@ -1893,12 +1927,12 @@ importers:
 
   examples/with-jotai:
     dependencies:
+      '@extenso/cli':
+        specifier: workspace:^0.90.5
+        version: link:../../cli/plasmo
       jotai:
         specifier: 2.20.3
         version: 2.20.3(@babel/core@8.0.1)(@babel/template@8.0.0)(@types/react@19.2.18)(react@19.2.8)
-      plasmo:
-        specifier: workspace:^0.90.5
-        version: link:../../cli/plasmo
       react:
         specifier: 19.2.8
         version: 19.2.8
@@ -1930,7 +1964,7 @@ importers:
 
   examples/with-locales-i18n:
     dependencies:
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
       react:
@@ -1964,7 +1998,7 @@ importers:
 
   examples/with-main-world:
     dependencies:
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
       react:
@@ -1998,15 +2032,15 @@ importers:
 
   examples/with-mantine:
     dependencies:
+      '@extenso/cli':
+        specifier: workspace:^0.90.5
+        version: link:../../cli/plasmo
       '@mantine/core':
         specifier: 9.5.2
         version: 9.5.2(@mantine/hooks@9.5.2(react@19.2.8))(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@mantine/hooks':
         specifier: 9.5.2
         version: 9.5.2(react@19.2.8)
-      plasmo:
-        specifier: workspace:^0.90.5
-        version: link:../../cli/plasmo
       react:
         specifier: 19.2.8
         version: 19.2.8
@@ -2050,7 +2084,7 @@ importers:
 
   examples/with-many-content-scripts:
     dependencies:
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
       react:
@@ -2084,7 +2118,7 @@ importers:
 
   examples/with-many-targets:
     dependencies:
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
       react:
@@ -2094,12 +2128,12 @@ importers:
         specifier: 19.2.8
         version: 19.2.8(react@19.2.8)
     devDependencies:
+      '@extenso/rps':
+        specifier: workspace:^1.8.7
+        version: link:../../packages/rps
       '@ianvs/prettier-plugin-sort-imports':
         specifier: 4.7.1
         version: 4.7.1(@vue/compiler-sfc@3.5.42)(prettier@3.9.6)
-      '@plasmohq/rps':
-        specifier: workspace:^1.8.7
-        version: link:../../packages/rps
       '@types/chrome':
         specifier: 0.2.7
         version: 0.2.7
@@ -2121,15 +2155,15 @@ importers:
 
   examples/with-messaging:
     dependencies:
-      '@plasmohq/messaging':
+      '@extenso/cli':
+        specifier: workspace:^0.90.5
+        version: link:../../cli/plasmo
+      '@extenso/messaging':
         specifier: workspace:^0.7.2
         version: link:../../api/messaging
       next:
         specifier: 16.3.3
         version: 16.3.3(@types/node@26.4.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.103.1)
-      plasmo:
-        specifier: workspace:^0.90.5
-        version: link:../../cli/plasmo
       react:
         specifier: 19.2.8
         version: 19.2.8
@@ -2137,12 +2171,12 @@ importers:
         specifier: 19.2.8
         version: 19.2.8(react@19.2.8)
     devDependencies:
+      '@extenso/rps':
+        specifier: workspace:^1.8.7
+        version: link:../../packages/rps
       '@ianvs/prettier-plugin-sort-imports':
         specifier: 4.7.1
         version: 4.7.1(@vue/compiler-sfc@3.5.42)(prettier@3.9.6)
-      '@plasmohq/rps':
-        specifier: workspace:^1.8.7
-        version: link:../../packages/rps
       '@types/chrome':
         specifier: 0.2.7
         version: 0.2.7
@@ -2164,7 +2198,10 @@ importers:
 
   examples/with-microsoft-clarity:
     dependencies:
-      '@plasmohq/messaging':
+      '@extenso/cli':
+        specifier: workspace:^0.90.5
+        version: link:../../cli/plasmo
+      '@extenso/messaging':
         specifier: workspace:^0.7.2
         version: link:../../api/messaging
       buffer:
@@ -2173,9 +2210,6 @@ importers:
       events:
         specifier: 3.3.0
         version: 3.3.0
-      plasmo:
-        specifier: workspace:^0.90.5
-        version: link:../../cli/plasmo
       process:
         specifier: 0.11.10
         version: 0.11.10
@@ -2222,12 +2256,12 @@ importers:
       '@emotion/styled':
         specifier: 11.14.1
         version: 11.14.1(@emotion/react@11.14.0(@types/react@19.2.18)(react@19.2.8))(@types/react@19.2.18)(react@19.2.8)
+      '@extenso/cli':
+        specifier: workspace:^0.90.5
+        version: link:../../cli/plasmo
       '@mui/material':
         specifier: 9.4.0
         version: 9.4.0(@emotion/react@11.14.0(@types/react@19.2.18)(react@19.2.8))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.2.18)(react@19.2.8))(@types/react@19.2.18)(react@19.2.8))(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      plasmo:
-        specifier: workspace:^0.90.5
-        version: link:../../cli/plasmo
       react:
         specifier: 19.2.8
         version: 19.2.8
@@ -2262,7 +2296,7 @@ importers:
 
   examples/with-multiple-tailwindcss:
     dependencies:
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
       react:
@@ -2308,7 +2342,7 @@ importers:
 
   examples/with-newtab:
     dependencies:
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
       react:
@@ -2342,12 +2376,12 @@ importers:
 
   examples/with-nextjs:
     dependencies:
+      '@extenso/cli':
+        specifier: workspace:^0.90.5
+        version: link:../../cli/plasmo
       next:
         specifier: 16.3.3
         version: 16.3.3(@types/node@26.4.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.103.1)
-      plasmo:
-        specifier: workspace:^0.90.5
-        version: link:../../cli/plasmo
       react:
         specifier: 19.2.8
         version: 19.2.8
@@ -2355,15 +2389,15 @@ importers:
         specifier: 19.2.8
         version: 19.2.8(react@19.2.8)
     devDependencies:
+      '@extenso/rps':
+        specifier: workspace:^1.8.7
+        version: link:../../packages/rps
+      '@extenso/storage':
+        specifier: workspace:^1.15.0
+        version: link:../../api/storage
       '@ianvs/prettier-plugin-sort-imports':
         specifier: 4.7.1
         version: 4.7.1(@vue/compiler-sfc@3.5.42)(prettier@3.9.6)
-      '@plasmohq/rps':
-        specifier: workspace:^1.8.7
-        version: link:../../packages/rps
-      '@plasmohq/storage':
-        specifier: workspace:^1.15.0
-        version: link:../../api/storage
       '@types/chrome':
         specifier: 0.2.7
         version: 0.2.7
@@ -2385,12 +2419,12 @@ importers:
 
   examples/with-nextjs15:
     dependencies:
+      '@extenso/cli':
+        specifier: workspace:^0.90.5
+        version: link:../../cli/plasmo
       next:
         specifier: 16.3.3
         version: 16.3.3(@types/node@26.4.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.103.1)
-      plasmo:
-        specifier: workspace:^0.90.5
-        version: link:../../cli/plasmo
       react:
         specifier: 19.2.8
         version: 19.2.8
@@ -2398,15 +2432,15 @@ importers:
         specifier: 19.2.8
         version: 19.2.8(react@19.2.8)
     devDependencies:
+      '@extenso/rps':
+        specifier: workspace:^1.8.7
+        version: link:../../packages/rps
+      '@extenso/storage':
+        specifier: workspace:^1.15.0
+        version: link:../../api/storage
       '@ianvs/prettier-plugin-sort-imports':
         specifier: 4.7.1
         version: 4.7.1(@vue/compiler-sfc@3.5.42)(prettier@3.9.6)
-      '@plasmohq/rps':
-        specifier: workspace:^1.8.7
-        version: link:../../packages/rps
-      '@plasmohq/storage':
-        specifier: workspace:^1.15.0
-        version: link:../../api/storage
       '@types/chrome':
         specifier: 0.2.7
         version: 0.2.7
@@ -2428,7 +2462,7 @@ importers:
 
   examples/with-options-ui:
     dependencies:
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
       react:
@@ -2462,12 +2496,12 @@ importers:
 
   examples/with-permission-ui:
     dependencies:
-      '@plasmohq/permission-ui':
-        specifier: workspace:^0.2.5
-        version: link:../../packages/permission-ui
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
+      '@extenso/permission-ui':
+        specifier: workspace:^0.2.5
+        version: link:../../packages/permission-ui
       react:
         specifier: 19.2.8
         version: 19.2.8
@@ -2499,7 +2533,7 @@ importers:
 
   examples/with-popup:
     dependencies:
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
       react:
@@ -2533,7 +2567,10 @@ importers:
 
   examples/with-propelauth:
     dependencies:
-      '@plasmohq/messaging':
+      '@extenso/cli':
+        specifier: workspace:^0.90.5
+        version: link:../../cli/plasmo
+      '@extenso/messaging':
         specifier: workspace:^0.7.2
         version: link:../../api/messaging
       '@propelauth/javascript':
@@ -2542,9 +2579,6 @@ importers:
       '@propelauth/react':
         specifier: 2.1.1
         version: 2.1.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      plasmo:
-        specifier: workspace:^0.90.5
-        version: link:../../cli/plasmo
       react:
         specifier: 19.2.8
         version: 19.2.8
@@ -2576,7 +2610,7 @@ importers:
 
   examples/with-react-native:
     dependencies:
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
       react:
@@ -2622,15 +2656,15 @@ importers:
 
   examples/with-react-query:
     dependencies:
+      '@extenso/cli':
+        specifier: workspace:^0.90.5
+        version: link:../../cli/plasmo
       '@tanstack/react-query':
         specifier: 5.102.8
         version: 5.102.8(react@19.2.8)
       '@tanstack/react-query-devtools':
         specifier: 5.102.8
         version: 5.102.8(@tanstack/react-query@5.102.8(react@19.2.8))(react@19.2.8)
-      plasmo:
-        specifier: workspace:^0.90.5
-        version: link:../../cli/plasmo
       react:
         specifier: 19.2.8
         version: 19.2.8
@@ -2662,7 +2696,7 @@ importers:
 
   examples/with-react-router:
     dependencies:
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
       react:
@@ -2699,18 +2733,18 @@ importers:
 
   examples/with-redux:
     dependencies:
+      '@extenso/cli':
+        specifier: workspace:^0.90.5
+        version: link:../../cli/plasmo
+      '@extenso/storage':
+        specifier: workspace:^1.15.0
+        version: link:../../api/storage
       '@plasmohq/redux-persist':
         specifier: 6.1.0
         version: 6.1.0(redux@5.0.1)
-      '@plasmohq/storage':
-        specifier: workspace:^1.15.0
-        version: link:../../api/storage
       '@reduxjs/toolkit':
         specifier: 2.12.0
         version: 2.12.0(react-redux@9.3.0(@types/react@19.2.18)(react@19.2.8)(redux@5.0.1))(react@19.2.8)
-      plasmo:
-        specifier: workspace:^0.90.5
-        version: link:../../cli/plasmo
       react:
         specifier: 19.2.8
         version: 19.2.8
@@ -2757,12 +2791,12 @@ importers:
 
   examples/with-selector:
     dependencies:
-      '@plasmohq/selector':
-        specifier: workspace:^0.0.7
-        version: link:../../api/selector
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
+      '@extenso/selector':
+        specifier: workspace:^0.0.7
+        version: link:../../api/selector
       react:
         specifier: 19.2.8
         version: 19.2.8
@@ -2794,15 +2828,15 @@ importers:
 
   examples/with-sentry:
     dependencies:
+      '@extenso/cli':
+        specifier: workspace:^0.90.5
+        version: link:../../cli/plasmo
       '@sentry/browser':
         specifier: 10.72.0
         version: 10.72.0
       '@sentry/react':
         specifier: 10.72.0
         version: 10.72.0(react@19.2.8)
-      plasmo:
-        specifier: workspace:^0.90.5
-        version: link:../../cli/plasmo
       react:
         specifier: 19.2.8
         version: 19.2.8
@@ -2834,6 +2868,9 @@ importers:
 
   examples/with-shadcn:
     dependencies:
+      '@extenso/cli':
+        specifier: workspace:^0.90.5
+        version: link:../../cli/plasmo
       '@radix-ui/react-label':
         specifier: 2.1.15
         version: 2.1.15(@types/react-dom@19.2.5(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
@@ -2849,9 +2886,6 @@ importers:
       lucide-react:
         specifier: 1.37.0
         version: 1.37.0(react@19.2.8)
-      plasmo:
-        specifier: workspace:^0.90.5
-        version: link:../../cli/plasmo
       react:
         specifier: 19.2.8
         version: 19.2.8
@@ -2904,7 +2938,7 @@ importers:
 
   examples/with-sidepanel:
     dependencies:
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
       react:
@@ -2938,7 +2972,7 @@ importers:
 
   examples/with-slate:
     dependencies:
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
       react:
@@ -2981,7 +3015,7 @@ importers:
 
   examples/with-src:
     dependencies:
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
       react:
@@ -3015,12 +3049,12 @@ importers:
 
   examples/with-storage:
     dependencies:
-      '@plasmohq/storage':
-        specifier: workspace:^1.15.0
-        version: link:../../api/storage
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
+      '@extenso/storage':
+        specifier: workspace:^1.15.0
+        version: link:../../api/storage
       react:
         specifier: 19.2.8
         version: 19.2.8
@@ -3052,18 +3086,18 @@ importers:
 
   examples/with-stripe:
     dependencies:
+      '@extenso/cli':
+        specifier: workspace:^0.90.5
+        version: link:../../cli/plasmo
+      '@extenso/puro':
+        specifier: workspace:^0.8.4
+        version: link:../../packages/puro
       google-auth-library:
         specifier: 11.0.2
         version: 11.0.2
       next:
         specifier: 16.3.3
         version: 16.3.3(@types/node@26.4.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.103.1)
-      plasmo:
-        specifier: workspace:^0.90.5
-        version: link:../../cli/plasmo
-      puro:
-        specifier: workspace:^0.8.4
-        version: link:../../packages/puro
       react:
         specifier: 19.2.8
         version: 19.2.8
@@ -3077,12 +3111,12 @@ importers:
         specifier: 2.5.1
         version: 2.5.1(react@19.2.8)
     devDependencies:
+      '@extenso/rps':
+        specifier: workspace:^1.8.7
+        version: link:../../packages/rps
       '@ianvs/prettier-plugin-sort-imports':
         specifier: 4.7.1
         version: 4.7.1(@vue/compiler-sfc@3.5.42)(prettier@3.9.6)
-      '@plasmohq/rps':
-        specifier: workspace:^1.8.7
-        version: link:../../packages/rps
       '@types/chrome':
         specifier: 0.2.7
         version: 0.2.7
@@ -3104,7 +3138,7 @@ importers:
 
   examples/with-styled-components:
     dependencies:
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
       react:
@@ -3144,18 +3178,18 @@ importers:
 
   examples/with-supabase:
     dependencies:
-      '@plasmohq/messaging':
+      '@extenso/cli':
+        specifier: workspace:^0.90.5
+        version: link:../../cli/plasmo
+      '@extenso/messaging':
         specifier: workspace:^0.7.2
         version: link:../../api/messaging
-      '@plasmohq/storage':
+      '@extenso/storage':
         specifier: workspace:^1.15.0
         version: link:../../api/storage
       '@supabase/supabase-js':
         specifier: 2.112.4
         version: 2.112.4
-      plasmo:
-        specifier: workspace:^0.90.5
-        version: link:../../cli/plasmo
       react:
         specifier: 19.2.8
         version: 19.2.8
@@ -3187,7 +3221,7 @@ importers:
 
   examples/with-svelte:
     dependencies:
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
       svelte:
@@ -3215,7 +3249,7 @@ importers:
 
   examples/with-tabs:
     dependencies:
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
       react:
@@ -3249,7 +3283,7 @@ importers:
 
   examples/with-tailwindcss:
     dependencies:
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
       react:
@@ -3292,7 +3326,7 @@ importers:
 
   examples/with-tw-radix:
     dependencies:
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
       react:
@@ -3338,7 +3372,7 @@ importers:
 
   examples/with-vue:
     dependencies:
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
       vue:
@@ -3363,7 +3397,7 @@ importers:
 
   examples/with-web-accessible-resources:
     dependencies:
-      plasmo:
+      '@extenso/cli':
         specifier: workspace:^0.90.5
         version: link:../../cli/plasmo
       react:
@@ -3399,15 +3433,15 @@ importers:
 
   packages/constants:
     devDependencies:
+      '@extenso/config':
+        specifier: workspace:^0.2.5
+        version: link:../config
+      '@extenso/utils':
+        specifier: workspace:^0.2.3
+        version: link:../utils
       '@parcel/watcher':
         specifier: 2.6.0
         version: 2.6.0
-      '@plasmo/config':
-        specifier: workspace:^0.2.5
-        version: link:../config
-      '@plasmo/utils':
-        specifier: workspace:^0.2.3
-        version: link:../utils
 
   packages/framework-shared:
     dependencies:
@@ -3415,10 +3449,10 @@ importers:
         specifier: 8.21.3
         version: 8.21.3
     devDependencies:
-      '@plasmo/config':
+      '@extenso/config':
         specifier: workspace:^0.2.5
         version: link:../config
-      '@plasmo/utils':
+      '@extenso/utils':
         specifier: workspace:^0.2.3
         version: link:../utils
 
@@ -3434,18 +3468,18 @@ importers:
         specifier: 11.0.1
         version: 11.0.1
     devDependencies:
+      '@extenso/config':
+        specifier: workspace:^0.2.5
+        version: link:../config
+      '@extenso/rps':
+        specifier: workspace:^1.8.7
+        version: link:../rps
       '@jest/globals':
         specifier: 30.5.0
         version: 30.5.0
       '@jest/types':
         specifier: 30.5.0
         version: 30.5.0
-      '@plasmo/config':
-        specifier: workspace:^0.2.5
-        version: link:../config
-      '@plasmohq/rps':
-        specifier: workspace:^1.8.7
-        version: link:../rps
       '@types/node':
         specifier: 26.4.0
         version: 26.4.0
@@ -3472,15 +3506,15 @@ importers:
 
   packages/permission-ui:
     devDependencies:
+      '@extenso/storage':
+        specifier: workspace:^1.15.0
+        version: link:../../api/storage
       '@jest/globals':
         specifier: 30.5.0
         version: 30.5.0
       '@jest/types':
         specifier: 30.5.0
         version: 30.5.0
-      '@plasmohq/storage':
-        specifier: workspace:^1.15.0
-        version: link:../../api/storage
       '@types/node':
         specifier: 26.4.0
         version: 26.4.0
@@ -3508,15 +3542,15 @@ importers:
 
   packages/puro:
     devDependencies:
+      '@extenso/rps':
+        specifier: workspace:^1.8.7
+        version: link:../rps
       '@jest/globals':
         specifier: 30.5.0
         version: 30.5.0
       '@jest/types':
         specifier: 30.5.0
         version: 30.5.0
-      '@plasmohq/rps':
-        specifier: workspace:^1.8.7
-        version: link:../rps
       '@types/node':
         specifier: 26.4.0
         version: 26.4.0
@@ -3588,15 +3622,15 @@ importers:
         specifier: 3.1.1
         version: 3.1.1
     devDependencies:
+      '@extenso/storage':
+        specifier: workspace:^1.15.0
+        version: link:../../api/storage
       '@jest/globals':
         specifier: 30.5.0
         version: 30.5.0
       '@jest/types':
         specifier: 30.5.0
         version: 30.5.0
-      '@plasmohq/storage':
-        specifier: workspace:^1.15.0
-        version: link:../../api/storage
       '@testing-library/react':
         specifier: 16.3.3
         version: 16.3.3(@testing-library/dom@10.4.1)(@types/react-dom@19.2.5(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
@@ -3643,7 +3677,7 @@ importers:
         specifier: 5.0.0
         version: 5.0.0
     devDependencies:
-      '@plasmo/config':
+      '@extenso/config':
         specifier: workspace:^0.2.5
         version: link:../config
 
@@ -4446,6 +4480,12 @@ packages:
   '@epic-web/invariant@1.0.0':
     resolution: {integrity: sha512-lrTPqgvfFQtR/eY/qkIzp98OGdNJu0m5ji3q/nJI8v3SXkRKEnWiOxMmbvcSoAIzv/cGiuvRy57k4suKQSAdwA==}
 
+  '@esbuild/aix-ppc64@0.25.12':
+    resolution: {integrity: sha512-Hhmwd6CInZ3dwpuGTF8fJG6yoWmsToE+vYgD4nytZVxcu1ulHpUQRAB1UJ8+N1Am3Mz4+xOByoQoSZf4D+CpkA==}
+    engines: {node: '>=18'}
+    cpu: [ppc64]
+    os: [aix]
+
   '@esbuild/aix-ppc64@0.27.7':
     resolution: {integrity: sha512-EKX3Qwmhz1eMdEJokhALr0YiD0lhQNwDqkPYyPhiSwKrh7/4KRjQc04sZ8db+5DVVnZ1LmbNDI1uAMPEUBnQPg==}
     engines: {node: '>=18'}
@@ -4458,6 +4498,12 @@ packages:
     cpu: [ppc64]
     os: [aix]
 
+  '@esbuild/android-arm64@0.25.12':
+    resolution: {integrity: sha512-6AAmLG7zwD1Z159jCKPvAxZd4y/VTO0VkprYy+3N2FtJ8+BQWFXU+OxARIwA46c5tdD9SsKGZ/1ocqBS/gAKHg==}
+    engines: {node: '>=18'}
+    cpu: [arm64]
+    os: [android]
+
   '@esbuild/android-arm64@0.27.7':
     resolution: {integrity: sha512-62dPZHpIXzvChfvfLJow3q5dDtiNMkwiRzPylSCfriLvZeq0a1bWChrGx/BbUbPwOrsWKMn8idSllklzBy+dgQ==}
     engines: {node: '>=18'}
@@ -4468,6 +4514,12 @@ packages:
     resolution: {integrity: sha512-5YfKeeI8qWfBZIX+u2xZC3Zlb3Os/gLS2sbEKM+I4ZOcsWmHS2WLysCcQZDAFRslDUU5Oiq44gf6PYN1vGwG5A==}
     engines: {node: '>=18'}
     cpu: [arm64]
+    os: [android]
+
+  '@esbuild/android-arm@0.25.12':
+    resolution: {integrity: sha512-VJ+sKvNA/GE7Ccacc9Cha7bpS8nyzVv0jdVgwNDaR4gDMC/2TTRc33Ip8qrNYUcpkOHUT5OZ0bUcNNVZQ9RLlg==}
+    engines: {node: '>=18'}
+    cpu: [arm]
     os: [android]
 
   '@esbuild/android-arm@0.27.7':
@@ -4482,6 +4534,12 @@ packages:
     cpu: [arm]
     os: [android]
 
+  '@esbuild/android-x64@0.25.12':
+    resolution: {integrity: sha512-5jbb+2hhDHx5phYR2By8GTWEzn6I9UqR11Kwf22iKbNpYrsmRB18aX/9ivc5cabcUiAT/wM+YIZ6SG9QO6a8kg==}
+    engines: {node: '>=18'}
+    cpu: [x64]
+    os: [android]
+
   '@esbuild/android-x64@0.27.7':
     resolution: {integrity: sha512-x5VpMODneVDb70PYV2VQOmIUUiBtY3D3mPBG8NxVk5CogneYhkR7MmM3yR/uMdITLrC1ml/NV1rj4bMJuy9MCg==}
     engines: {node: '>=18'}
@@ -4494,6 +4552,12 @@ packages:
     cpu: [x64]
     os: [android]
 
+  '@esbuild/darwin-arm64@0.25.12':
+    resolution: {integrity: sha512-N3zl+lxHCifgIlcMUP5016ESkeQjLj/959RxxNYIthIg+CQHInujFuXeWbWMgnTo4cp5XVHqFPmpyu9J65C1Yg==}
+    engines: {node: '>=18'}
+    cpu: [arm64]
+    os: [darwin]
+
   '@esbuild/darwin-arm64@0.27.7':
     resolution: {integrity: sha512-5lckdqeuBPlKUwvoCXIgI2D9/ABmPq3Rdp7IfL70393YgaASt7tbju3Ac+ePVi3KDH6N2RqePfHnXkaDtY9fkw==}
     engines: {node: '>=18'}
@@ -4504,6 +4568,12 @@ packages:
     resolution: {integrity: sha512-n4KqkOQrraxHJcgjM1RvwbigfQKIKJVpM7xp+KsxiyUSrRdIXnt73VhrPAx0fV44hgfmIVKjxMN9J1t5jySVkw==}
     engines: {node: '>=18'}
     cpu: [arm64]
+    os: [darwin]
+
+  '@esbuild/darwin-x64@0.25.12':
+    resolution: {integrity: sha512-HQ9ka4Kx21qHXwtlTUVbKJOAnmG1ipXhdWTmNXiPzPfWKpXqASVcWdnf2bnL73wgjNrFXAa3yYvBSd9pzfEIpA==}
+    engines: {node: '>=18'}
+    cpu: [x64]
     os: [darwin]
 
   '@esbuild/darwin-x64@0.27.7':
@@ -4518,6 +4588,12 @@ packages:
     cpu: [x64]
     os: [darwin]
 
+  '@esbuild/freebsd-arm64@0.25.12':
+    resolution: {integrity: sha512-gA0Bx759+7Jve03K1S0vkOu5Lg/85dou3EseOGUes8flVOGxbhDDh/iZaoek11Y8mtyKPGF3vP8XhnkDEAmzeg==}
+    engines: {node: '>=18'}
+    cpu: [arm64]
+    os: [freebsd]
+
   '@esbuild/freebsd-arm64@0.27.7':
     resolution: {integrity: sha512-B48PqeCsEgOtzME2GbNM2roU29AMTuOIN91dsMO30t+Ydis3z/3Ngoj5hhnsOSSwNzS+6JppqWsuhTp6E82l2w==}
     engines: {node: '>=18'}
@@ -4528,6 +4604,12 @@ packages:
     resolution: {integrity: sha512-n+I0BTSRIoy+d6RPKnEVwql5UwBJolytvY4mAOIEJorKlqgPII8ix6slVVrfZ5Tnj7glIZvloylbB/EJPMWEXw==}
     engines: {node: '>=18'}
     cpu: [arm64]
+    os: [freebsd]
+
+  '@esbuild/freebsd-x64@0.25.12':
+    resolution: {integrity: sha512-TGbO26Yw2xsHzxtbVFGEXBFH0FRAP7gtcPE7P5yP7wGy7cXK2oO7RyOhL5NLiqTlBh47XhmIUXuGciXEqYFfBQ==}
+    engines: {node: '>=18'}
+    cpu: [x64]
     os: [freebsd]
 
   '@esbuild/freebsd-x64@0.27.7':
@@ -4542,6 +4624,12 @@ packages:
     cpu: [x64]
     os: [freebsd]
 
+  '@esbuild/linux-arm64@0.25.12':
+    resolution: {integrity: sha512-8bwX7a8FghIgrupcxb4aUmYDLp8pX06rGh5HqDT7bB+8Rdells6mHvrFHHW2JAOPZUbnjUpKTLg6ECyzvas2AQ==}
+    engines: {node: '>=18'}
+    cpu: [arm64]
+    os: [linux]
+
   '@esbuild/linux-arm64@0.27.7':
     resolution: {integrity: sha512-RZPHBoxXuNnPQO9rvjh5jdkRmVizktkT7TCDkDmQ0W2SwHInKCAV95GRuvdSvA7w4VMwfCjUiPwDi0ZO6Nfe9A==}
     engines: {node: '>=18'}
@@ -4552,6 +4640,12 @@ packages:
     resolution: {integrity: sha512-pW4AC0P3it8c7do9MVM4p51FzHzdM/TZrerurgRcHJ2WTa1VQ1CIq18xncfpBJw4ojkiZZrKW2yIBWBP92j6Ug==}
     engines: {node: '>=18'}
     cpu: [arm64]
+    os: [linux]
+
+  '@esbuild/linux-arm@0.25.12':
+    resolution: {integrity: sha512-lPDGyC1JPDou8kGcywY0YILzWlhhnRjdof3UlcoqYmS9El818LLfJJc3PXXgZHrHCAKs/Z2SeZtDJr5MrkxtOw==}
+    engines: {node: '>=18'}
+    cpu: [arm]
     os: [linux]
 
   '@esbuild/linux-arm@0.27.7':
@@ -4566,6 +4660,12 @@ packages:
     cpu: [arm]
     os: [linux]
 
+  '@esbuild/linux-ia32@0.25.12':
+    resolution: {integrity: sha512-0y9KrdVnbMM2/vG8KfU0byhUN+EFCny9+8g202gYqSSVMonbsCfLjUO+rCci7pM0WBEtz+oK/PIwHkzxkyharA==}
+    engines: {node: '>=18'}
+    cpu: [ia32]
+    os: [linux]
+
   '@esbuild/linux-ia32@0.27.7':
     resolution: {integrity: sha512-GA48aKNkyQDbd3KtkplYWT102C5sn/EZTY4XROkxONgruHPU72l+gW+FfF8tf2cFjeHaRbWpOYa/uRBz/Xq1Pg==}
     engines: {node: '>=18'}
@@ -4576,6 +4676,12 @@ packages:
     resolution: {integrity: sha512-CYbnj78HsIeA+DhgUKgFCfvNsTHFhMMrinUrMZpDXJXKN8T3XViTZ/+wtHeVxEWY8ewSzTFN+nRmSwO2tZaLUQ==}
     engines: {node: '>=18'}
     cpu: [ia32]
+    os: [linux]
+
+  '@esbuild/linux-loong64@0.25.12':
+    resolution: {integrity: sha512-h///Lr5a9rib/v1GGqXVGzjL4TMvVTv+s1DPoxQdz7l/AYv6LDSxdIwzxkrPW438oUXiDtwM10o9PmwS/6Z0Ng==}
+    engines: {node: '>=18'}
+    cpu: [loong64]
     os: [linux]
 
   '@esbuild/linux-loong64@0.27.7':
@@ -4590,6 +4696,12 @@ packages:
     cpu: [loong64]
     os: [linux]
 
+  '@esbuild/linux-mips64el@0.25.12':
+    resolution: {integrity: sha512-iyRrM1Pzy9GFMDLsXn1iHUm18nhKnNMWscjmp4+hpafcZjrr2WbT//d20xaGljXDBYHqRcl8HnxbX6uaA/eGVw==}
+    engines: {node: '>=18'}
+    cpu: [mips64el]
+    os: [linux]
+
   '@esbuild/linux-mips64el@0.27.7':
     resolution: {integrity: sha512-KabT5I6StirGfIz0FMgl1I+R1H73Gp0ofL9A3nG3i/cYFJzKHhouBV5VWK1CSgKvVaG4q1RNpCTR2LuTVB3fIw==}
     engines: {node: '>=18'}
@@ -4600,6 +4712,12 @@ packages:
     resolution: {integrity: sha512-ZVykbDyk7519VwiNb9Lcj9m8XM6v5V9uKPvrEMkkEedVewf+0itkhahp4HDpgERXhwLRpWFypsGbG/J8s0QjJA==}
     engines: {node: '>=18'}
     cpu: [mips64el]
+    os: [linux]
+
+  '@esbuild/linux-ppc64@0.25.12':
+    resolution: {integrity: sha512-9meM/lRXxMi5PSUqEXRCtVjEZBGwB7P/D4yT8UG/mwIdze2aV4Vo6U5gD3+RsoHXKkHCfSxZKzmDssVlRj1QQA==}
+    engines: {node: '>=18'}
+    cpu: [ppc64]
     os: [linux]
 
   '@esbuild/linux-ppc64@0.27.7':
@@ -4614,6 +4732,12 @@ packages:
     cpu: [ppc64]
     os: [linux]
 
+  '@esbuild/linux-riscv64@0.25.12':
+    resolution: {integrity: sha512-Zr7KR4hgKUpWAwb1f3o5ygT04MzqVrGEGXGLnj15YQDJErYu/BGg+wmFlIDOdJp0PmB0lLvxFIOXZgFRrdjR0w==}
+    engines: {node: '>=18'}
+    cpu: [riscv64]
+    os: [linux]
+
   '@esbuild/linux-riscv64@0.27.7':
     resolution: {integrity: sha512-hL25LbxO1QOngGzu2U5xeXtxXcW+/GvMN3ejANqXkxZ/opySAZMrc+9LY/WyjAan41unrR3YrmtTsUpwT66InQ==}
     engines: {node: '>=18'}
@@ -4624,6 +4748,12 @@ packages:
     resolution: {integrity: sha512-GeXCej4IQtU1B+QlDV8W/RRvbzI3O/Stss+/bCXv4lZls5WGRtu2a+3JkA3i4qIUlMXpcHebWpF8AkJhATowuA==}
     engines: {node: '>=18'}
     cpu: [riscv64]
+    os: [linux]
+
+  '@esbuild/linux-s390x@0.25.12':
+    resolution: {integrity: sha512-MsKncOcgTNvdtiISc/jZs/Zf8d0cl/t3gYWX8J9ubBnVOwlk65UIEEvgBORTiljloIWnBzLs4qhzPkJcitIzIg==}
+    engines: {node: '>=18'}
+    cpu: [s390x]
     os: [linux]
 
   '@esbuild/linux-s390x@0.27.7':
@@ -4638,6 +4768,12 @@ packages:
     cpu: [s390x]
     os: [linux]
 
+  '@esbuild/linux-x64@0.25.12':
+    resolution: {integrity: sha512-uqZMTLr/zR/ed4jIGnwSLkaHmPjOjJvnm6TVVitAa08SLS9Z0VM8wIRx7gWbJB5/J54YuIMInDquWyYvQLZkgw==}
+    engines: {node: '>=18'}
+    cpu: [x64]
+    os: [linux]
+
   '@esbuild/linux-x64@0.27.7':
     resolution: {integrity: sha512-hzznmADPt+OmsYzw1EE33ccA+HPdIqiCRq7cQeL1Jlq2gb1+OyWBkMCrYGBJ+sxVzve2ZJEVeePbLM2iEIZSxA==}
     engines: {node: '>=18'}
@@ -4650,6 +4786,12 @@ packages:
     cpu: [x64]
     os: [linux]
 
+  '@esbuild/netbsd-arm64@0.25.12':
+    resolution: {integrity: sha512-xXwcTq4GhRM7J9A8Gv5boanHhRa/Q9KLVmcyXHCTaM4wKfIpWkdXiMog/KsnxzJ0A1+nD+zoecuzqPmCRyBGjg==}
+    engines: {node: '>=18'}
+    cpu: [arm64]
+    os: [netbsd]
+
   '@esbuild/netbsd-arm64@0.27.7':
     resolution: {integrity: sha512-b6pqtrQdigZBwZxAn1UpazEisvwaIDvdbMbmrly7cDTMFnw/+3lVxxCTGOrkPVnsYIosJJXAsILG9XcQS+Yu6w==}
     engines: {node: '>=18'}
@@ -4660,6 +4802,12 @@ packages:
     resolution: {integrity: sha512-sSATRjPeDBg3pdgHoQfoYBob11Kk1FGa9lui5RIHZCoCkJa9QKlvl3/vKz2usCmYYjs7ymJR/2Nnsqe+Hjt5nw==}
     engines: {node: '>=18'}
     cpu: [arm64]
+    os: [netbsd]
+
+  '@esbuild/netbsd-x64@0.25.12':
+    resolution: {integrity: sha512-Ld5pTlzPy3YwGec4OuHh1aCVCRvOXdH8DgRjfDy/oumVovmuSzWfnSJg+VtakB9Cm0gxNO9BzWkj6mtO1FMXkQ==}
+    engines: {node: '>=18'}
+    cpu: [x64]
     os: [netbsd]
 
   '@esbuild/netbsd-x64@0.27.7':
@@ -4674,6 +4822,12 @@ packages:
     cpu: [x64]
     os: [netbsd]
 
+  '@esbuild/openbsd-arm64@0.25.12':
+    resolution: {integrity: sha512-fF96T6KsBo/pkQI950FARU9apGNTSlZGsv1jZBAlcLL1MLjLNIWPBkj5NlSz8aAzYKg+eNqknrUJ24QBybeR5A==}
+    engines: {node: '>=18'}
+    cpu: [arm64]
+    os: [openbsd]
+
   '@esbuild/openbsd-arm64@0.27.7':
     resolution: {integrity: sha512-AFuojMQTxAz75Fo8idVcqoQWEHIXFRbOc1TrVcFSgCZtQfSdc1RXgB3tjOn/krRHENUB4j00bfGjyl2mJrU37A==}
     engines: {node: '>=18'}
@@ -4684,6 +4838,12 @@ packages:
     resolution: {integrity: sha512-AL2qJILH7lNjrDmCQDvdxMfAUIv8KMNZOvrwAQ8i8//ntL9FflhOyMJ8OZSMBb8/AWXe3/5v5S20y3zCoZWKoQ==}
     engines: {node: '>=18'}
     cpu: [arm64]
+    os: [openbsd]
+
+  '@esbuild/openbsd-x64@0.25.12':
+    resolution: {integrity: sha512-MZyXUkZHjQxUvzK7rN8DJ3SRmrVrke8ZyRusHlP+kuwqTcfWLyqMOE3sScPPyeIXN/mDJIfGXvcMqCgYKekoQw==}
+    engines: {node: '>=18'}
+    cpu: [x64]
     os: [openbsd]
 
   '@esbuild/openbsd-x64@0.27.7':
@@ -4698,6 +4858,12 @@ packages:
     cpu: [x64]
     os: [openbsd]
 
+  '@esbuild/openharmony-arm64@0.25.12':
+    resolution: {integrity: sha512-rm0YWsqUSRrjncSXGA7Zv78Nbnw4XL6/dzr20cyrQf7ZmRcsovpcRBdhD43Nuk3y7XIoW2OxMVvwuRvk9XdASg==}
+    engines: {node: '>=18'}
+    cpu: [arm64]
+    os: [openharmony]
+
   '@esbuild/openharmony-arm64@0.27.7':
     resolution: {integrity: sha512-+KrvYb/C8zA9CU/g0sR6w2RBw7IGc5J2BPnc3dYc5VJxHCSF1yNMxTV5LQ7GuKteQXZtspjFbiuW5/dOj7H4Yw==}
     engines: {node: '>=18'}
@@ -4709,6 +4875,12 @@ packages:
     engines: {node: '>=18'}
     cpu: [arm64]
     os: [openharmony]
+
+  '@esbuild/sunos-x64@0.25.12':
+    resolution: {integrity: sha512-3wGSCDyuTHQUzt0nV7bocDy72r2lI33QL3gkDNGkod22EsYl04sMf0qLb8luNKTOmgF/eDEDP5BFNwoBKH441w==}
+    engines: {node: '>=18'}
+    cpu: [x64]
+    os: [sunos]
 
   '@esbuild/sunos-x64@0.27.7':
     resolution: {integrity: sha512-ikktIhFBzQNt/QDyOL580ti9+5mL/YZeUPKU2ivGtGjdTYoqz6jObj6nOMfhASpS4GU4Q/Clh1QtxWAvcYKamA==}
@@ -4722,6 +4894,12 @@ packages:
     cpu: [x64]
     os: [sunos]
 
+  '@esbuild/win32-arm64@0.25.12':
+    resolution: {integrity: sha512-rMmLrur64A7+DKlnSuwqUdRKyd3UE7oPJZmnljqEptesKM8wx9J8gx5u0+9Pq0fQQW8vqeKebwNXdfOyP+8Bsg==}
+    engines: {node: '>=18'}
+    cpu: [arm64]
+    os: [win32]
+
   '@esbuild/win32-arm64@0.27.7':
     resolution: {integrity: sha512-7yRhbHvPqSpRUV7Q20VuDwbjW5kIMwTHpptuUzV+AA46kiPze5Z7qgt6CLCK3pWFrHeNfDd1VKgyP4O+ng17CA==}
     engines: {node: '>=18'}
@@ -4734,6 +4912,12 @@ packages:
     cpu: [arm64]
     os: [win32]
 
+  '@esbuild/win32-ia32@0.25.12':
+    resolution: {integrity: sha512-HkqnmmBoCbCwxUKKNPBixiWDGCpQGVsrQfJoVGYLPT41XWF8lHuE5N6WhVia2n4o5QK5M4tYr21827fNhi4byQ==}
+    engines: {node: '>=18'}
+    cpu: [ia32]
+    os: [win32]
+
   '@esbuild/win32-ia32@0.27.7':
     resolution: {integrity: sha512-SmwKXe6VHIyZYbBLJrhOoCJRB/Z1tckzmgTLfFYOfpMAx63BJEaL9ExI8x7v0oAO3Zh6D/Oi1gVxEYr5oUCFhw==}
     engines: {node: '>=18'}
@@ -4744,6 +4928,12 @@ packages:
     resolution: {integrity: sha512-YmJbfTlvU7Sdn9BB+4PRES4oB6pxgS37MAONj+hBr/cpXS1aBPKXxNnDbu+QCWPj0o9dgyxeq79g6c5P8KeuYA==}
     engines: {node: '>=18'}
     cpu: [ia32]
+    os: [win32]
+
+  '@esbuild/win32-x64@0.25.12':
+    resolution: {integrity: sha512-alJC0uCZpTFrSL0CCDjcgleBXPnCrEAhTBILpeAp7M/OFgoqtAetfBzX0xM00MUsVVPpVjlPuMbREqnZCXaTnA==}
+    engines: {node: '>=18'}
+    cpu: [x64]
     os: [win32]
 
   '@esbuild/win32-x64@0.27.7':
@@ -5541,9 +5731,19 @@ packages:
     resolution: {integrity: sha512-ajBvlKpWucBB17FuQYUShqpqy8GRgYEpJW0vWJbUu1CV9lWyrDCapy0lScU8T8Z6qn49sSwJB3+M+evYIdGg+A==}
     engines: {node: '>= 0.4'}
 
+  '@lmdb/lmdb-darwin-arm64@2.7.11':
+    resolution: {integrity: sha512-r6+vYq2vKzE+vgj/rNVRMwAevq0+ZR9IeMFIqcSga+wMtMdXQ27KqQ7uS99/yXASg29bos7yHP3yk4x6Iio0lw==}
+    cpu: [arm64]
+    os: [darwin]
+
   '@lmdb/lmdb-darwin-arm64@2.8.5':
     resolution: {integrity: sha512-KPDeVScZgA1oq0CiPBcOa3kHIqU+pTOwRFDIhxvmf8CTNvqdZQYp5cCKW0bUk69VygB2PuTiINFWbY78aR2pQw==}
     cpu: [arm64]
+    os: [darwin]
+
+  '@lmdb/lmdb-darwin-x64@2.7.11':
+    resolution: {integrity: sha512-jhj1aB4K8ycRL1HOQT5OtzlqOq70jxUQEWRN9Gqh3TIDN30dxXtiHi6EWF516tzw6v2+3QqhDMJh8O6DtTGG8Q==}
+    cpu: [x64]
     os: [darwin]
 
   '@lmdb/lmdb-darwin-x64@2.8.5':
@@ -5551,9 +5751,19 @@ packages:
     cpu: [x64]
     os: [darwin]
 
+  '@lmdb/lmdb-linux-arm64@2.7.11':
+    resolution: {integrity: sha512-7xGEfPPbmVJWcY2Nzqo11B9Nfxs+BAsiiaY/OcT4aaTDdykKeCjvKMQJA3KXCtZ1AtiC9ljyGLi+BfUwdulY5A==}
+    cpu: [arm64]
+    os: [linux]
+
   '@lmdb/lmdb-linux-arm64@2.8.5':
     resolution: {integrity: sha512-vtbZRHH5UDlL01TT5jB576Zox3+hdyogvpcbvVJlmU5PdL3c5V7cj1EODdh1CHPksRl+cws/58ugEHi8bcj4Ww==}
     cpu: [arm64]
+    os: [linux]
+
+  '@lmdb/lmdb-linux-arm@2.7.11':
+    resolution: {integrity: sha512-dHfLFVSrw/v5X5lkwp0Vl7+NFpEeEYKfMG2DpdFJnnG1RgHQZngZxCaBagFoaJGykRpd2DYF1AeuXBFrAUAXfw==}
+    cpu: [arm]
     os: [linux]
 
   '@lmdb/lmdb-linux-arm@2.8.5':
@@ -5561,10 +5771,20 @@ packages:
     cpu: [arm]
     os: [linux]
 
+  '@lmdb/lmdb-linux-x64@2.7.11':
+    resolution: {integrity: sha512-vUKI3JrREMQsXX8q0Eq5zX2FlYCKWMmLiCyyJNfZK0Uyf14RBg9VtB3ObQ41b4swYh2EWaltasWVe93Y8+KDng==}
+    cpu: [x64]
+    os: [linux]
+
   '@lmdb/lmdb-linux-x64@2.8.5':
     resolution: {integrity: sha512-Xkc8IUx9aEhP0zvgeKy7IQ3ReX2N8N1L0WPcQwnZweWmOuKfwpS3GRIYqLtK5za/w3E60zhFfNdS+3pBZPytqQ==}
     cpu: [x64]
     os: [linux]
+
+  '@lmdb/lmdb-win32-x64@2.7.11':
+    resolution: {integrity: sha512-BJwkHlSUgtB+Ei52Ai32M1AOMerSlzyIGA/KC4dAGL+GGwVMdwG8HGCOA2TxP3KjhbgDPMYkv7bt/NmOmRIFng==}
+    cpu: [x64]
+    os: [win32]
 
   '@lmdb/lmdb-win32-x64@2.8.5':
     resolution: {integrity: sha512-4wvrf5BgnR8RpogHhtpCPJMKBmvyZPhhUtEwMJbXh0ni2BucpfF07jlmyM11zRqQ2XIq6PbC2j7W7UCCcm1rRQ==}
@@ -5790,9 +6010,19 @@ packages:
     peerDependencies:
       '@parcel/core': ^2.16.4
 
+  '@parcel/cache@2.9.3':
+    resolution: {integrity: sha512-Bj/H2uAJJSXtysG7E/x4EgTrE2hXmm7td/bc97K8M9N7+vQjxf7xb0ebgqe84ePVMkj4MVQSMEJkEucXVx4b0Q==}
+    engines: {node: '>= 12.0.0'}
+    peerDependencies:
+      '@parcel/core': ^2.9.3
+
   '@parcel/codeframe@2.16.4':
     resolution: {integrity: sha512-s64aMfOJoPrXhKH+Y98ahX0O8aXWvTR+uNlOaX4yFkpr4FFDnviLcGngDe/Yo4Qq2FJZ0P6dNswbJTUH9EGxkQ==}
     engines: {node: '>= 16.0.0'}
+
+  '@parcel/codeframe@2.9.3':
+    resolution: {integrity: sha512-z7yTyD6h3dvduaFoHpNqur74/2yDWL++33rjQjIjCaXREBN6dKHoMGMizzo/i4vbiI1p9dDox2FIDEHCMQxqdA==}
+    engines: {node: '>= 12.0.0'}
 
   '@parcel/compressor-raw@2.16.4':
     resolution: {integrity: sha512-IK8IpNhw61B2HKgA1JhGhO9y+ZJFRZNTEmvhN1NdLdPqvgEXm2EunT+m6D9z7xeoeT6XnUKqM0eRckEdD0OXbA==}
@@ -5807,9 +6037,17 @@ packages:
     resolution: {integrity: sha512-a0CgrW5A5kwuSu5J1RFRoMQaMs9yagvfH2jJMYVw56+/7NRI4KOtu612SG9Y1ERWfY55ZwzyFxtLWvD6LO+Anw==}
     engines: {node: '>= 16.0.0'}
 
+  '@parcel/core@2.9.3':
+    resolution: {integrity: sha512-4KlM1Zr/jpsqWuMXr2zmGsaOUs1zMMFh9vfCNKRZkptf+uk8I3sugHbNdo+F5B+4e2yMuOEb1zgAmvJLeuH6ww==}
+    engines: {node: '>= 12.0.0'}
+
   '@parcel/diagnostic@2.16.4':
     resolution: {integrity: sha512-YN5CfX7lFd6yRLxyZT4Sj3sR6t7nnve4TdXSIqapXzQwL7Bw+sj79D95wTq2rCm3mzk5SofGxFAXul2/nG6gcQ==}
     engines: {node: '>= 16.0.0'}
+
+  '@parcel/diagnostic@2.9.3':
+    resolution: {integrity: sha512-6jxBdyB3D7gP4iE66ghUGntWt2v64E6EbD4AetZk+hNJpgudOOPsKTovcMi/i7I4V0qD7WXSF4tvkZUoac0jwA==}
+    engines: {node: '>= 12.0.0'}
 
   '@parcel/error-overlay@2.16.4':
     resolution: {integrity: sha512-e8KYKnMsfmQnqIhsUWBUZAXlDK30wkxsAGle1tZ0gOdoplaIdVq/WjGPatHLf6igLM76c3tRn2vw8jZFput0jw==}
@@ -5819,15 +6057,33 @@ packages:
     resolution: {integrity: sha512-slWQkBRAA7o0cN0BLEd+yCckPmlVRVhBZn5Pn6ktm4EzEtrqoMzMeJOxxH8TXaRzrQDYnTcnYIHFgXWd4kkUfg==}
     engines: {node: '>= 16.0.0'}
 
+  '@parcel/events@2.9.3':
+    resolution: {integrity: sha512-K0Scx+Bx9f9p1vuShMzNwIgiaZUkxEnexaKYHYemJrM7pMAqxIuIqhnvwurRCsZOVLUJPDDNJ626cWTc5vIq+A==}
+    engines: {node: '>= 12.0.0'}
+
   '@parcel/feature-flags@2.16.4':
     resolution: {integrity: sha512-nYdx53siKPLYikHHxfzgjzzgxdrjquK6DMnuSgOTyIdRG4VHdEN0+NqKijRLuVgiUFo/dtxc2h+amwqFENMw8w==}
     engines: {node: '>= 16.0.0'}
+
+  '@parcel/fs-search@2.9.3':
+    resolution: {integrity: sha512-nsNz3bsOpwS+jphcd+XjZL3F3PDq9lik0O8HPm5f6LYkqKWT+u/kgQzA8OkAHCR3q96LGiHxUywHPEBc27vI4Q==}
+    engines: {node: '>= 12.0.0'}
 
   '@parcel/fs@2.16.4':
     resolution: {integrity: sha512-maCMOiVn7oJYZlqlfxgLne8n6tSktIT1k0AeyBp4UGWCXyeJUJ+nL7QYShFpKNLtMLeF0cEtgwRAknWzbcDS1g==}
     engines: {node: '>= 16.0.0'}
     peerDependencies:
       '@parcel/core': ^2.16.4
+
+  '@parcel/fs@2.9.3':
+    resolution: {integrity: sha512-/PrRKgCRw22G7rNPSpgN3Q+i2nIkZWuvIOAdMG4KWXC4XLp8C9jarNaWd5QEQ75amjhQSl3oUzABzkdCtkKrgg==}
+    engines: {node: '>= 12.0.0'}
+    peerDependencies:
+      '@parcel/core': ^2.9.3
+
+  '@parcel/graph@2.9.3':
+    resolution: {integrity: sha512-3LmRJmF8+OprAr6zJT3X2s8WAhLKkrhi6RsFlMWHifGU5ED1PFcJWFbOwJvSjcAhMQJP0fErcFIK1Ludv3Vm3g==}
+    engines: {node: '>= 12.0.0'}
 
   '@parcel/graph@3.6.4':
     resolution: {integrity: sha512-Cj9yV+/k88kFhE+D+gz0YuNRpvNOCVDskO9pFqkcQhGbsGq6kg2XpZ9V7HlYraih31xf8Vb589bZOwjKIiHixQ==}
@@ -5841,13 +6097,25 @@ packages:
     resolution: {integrity: sha512-QR8QLlKo7xAy9JBpPDAh0RvluaixqPCeyY7Fvo2K7hrU3r85vBNNi06pHiPbWoDmB4x1+QoFwMaGnJOHR+/fMA==}
     engines: {node: '>= 16.0.0'}
 
+  '@parcel/logger@2.9.3':
+    resolution: {integrity: sha512-5FNBszcV6ilGFcijEOvoNVG6IUJGsnMiaEnGQs7Fvc1dktTjEddnoQbIYhcSZL63wEmzBZOgkT5yDMajJ/41jw==}
+    engines: {node: '>= 12.0.0'}
+
   '@parcel/markdown-ansi@2.16.4':
     resolution: {integrity: sha512-0+oQApAVF3wMcQ6d1ZfZ0JsRzaMUYj9e4U+naj6YEsFsFGOPp+pQYKXBf1bobQeeB7cPKPT3SUHxFqced722Hw==}
     engines: {node: '>= 16.0.0'}
 
+  '@parcel/markdown-ansi@2.9.3':
+    resolution: {integrity: sha512-/Q4X8F2aN8UNjAJrQ5NfK2OmZf6shry9DqetUSEndQ0fHonk78WKt6LT0zSKEBEW/bB/bXk6mNMsCup6L8ibjQ==}
+    engines: {node: '>= 12.0.0'}
+
   '@parcel/namer-default@2.16.4':
     resolution: {integrity: sha512-CE+0lFg881sJq575EXxj2lKUn81tsS5itpNUUErHxit195m3PExyAhoXM6ed/SXxwi+uv+T5FS/jjDLBNuUFDA==}
     engines: {node: '>= 16.0.0', parcel: ^2.16.4}
+
+  '@parcel/node-resolver-core@3.0.3':
+    resolution: {integrity: sha512-AjxNcZVHHJoNT/A99PKIdFtwvoze8PAiC3yz8E/dRggrDIOboUEodeQYV5Aq++aK76uz/iOP0tST2T8A5rhb1A==}
+    engines: {node: '>= 12.0.0'}
 
   '@parcel/node-resolver-core@3.7.4':
     resolution: {integrity: sha512-b3VDG+um6IWW5CTod6M9hQsTX5mdIelKmam7mzxzgqg4j5hnycgTWqPMc9UxhYoUY/Q/PHfWepccNcKtvP5JiA==}
@@ -5885,6 +6153,12 @@ packages:
     peerDependencies:
       '@parcel/core': ^2.16.4
 
+  '@parcel/package-manager@2.9.3':
+    resolution: {integrity: sha512-NH6omcNTEupDmW4Lm1e4NUYBjdqkURxgZ4CNESESInHJe6tblVhNB8Rpr1ar7zDar7cly9ILr8P6N3Ei7bTEjg==}
+    engines: {node: '>= 12.0.0'}
+    peerDependencies:
+      '@parcel/core': ^2.9.3
+
   '@parcel/packager-css@2.16.4':
     resolution: {integrity: sha512-rWRtfiX+VVIOZvq64jpeNUKkvWAbnokfHQsk/js1s5jD4ViNQgPcNLiRaiIANjymqL6+dQqWvGUSW2a5FAZYfg==}
     engines: {node: '>= 16.0.0', parcel: ^2.16.4}
@@ -5913,9 +6187,17 @@ packages:
     resolution: {integrity: sha512-aN2VQoRGC1eB41ZCDbPR/Sp0yKOxe31oemzPx1nJzOuebK2Q6FxSrJ9Bjj9j/YCaLzDtPwelsuLOazzVpXJ6qg==}
     engines: {node: '>= 16.0.0'}
 
+  '@parcel/plugin@2.9.3':
+    resolution: {integrity: sha512-qN85Gqr2GMuxX1dT1mnuO9hOcvlEv1lrYrCxn7CJN2nUhbwcfG+LEvcrCzCOJ6XtIHm+ZBV9h9p7FfoPLvpw+g==}
+    engines: {node: '>= 12.0.0'}
+
   '@parcel/profiler@2.16.4':
     resolution: {integrity: sha512-R3JhfcnoReTv2sVFHPR2xKZvs3d3IRrBl9sWmAftbIJFwT4rU70/W7IdwfaJVkD/6PzHq9mcgOh1WKL4KAxPdA==}
     engines: {node: '>= 16.0.0'}
+
+  '@parcel/profiler@2.9.3':
+    resolution: {integrity: sha512-pyHc9lw8VZDfgZoeZWZU9J0CVEv1Zw9O5+e0DJPDPHuXJYr72ZAOhbljtU3owWKAeW+++Q2AZWkbUGEOjI/e6g==}
+    engines: {node: '>= 12.0.0'}
 
   '@parcel/reporter-bundle-buddy@2.16.4':
     resolution: {integrity: sha512-06GMKR1WBjDjcD6ol+kFYPqaPcHtQGpUH8A3L2nmksI5IWuhasK7z50G3IHKS2j1KMsjqZoE29SEiKhNkU+gjg==}
@@ -6088,9 +6370,16 @@ packages:
   '@parcel/types@2.16.4':
     resolution: {integrity: sha512-ctx4mBskZHXeDVHg4OjMwx18jfYH9BzI/7yqbDQVGvd5lyA+/oVVzYdpele2J2i2sSaJ87cA8nb57GDQ8kHAqA==}
 
+  '@parcel/types@2.9.3':
+    resolution: {integrity: sha512-NSNY8sYtRhvF1SqhnIGgGvJocyWt1K8Tnw5cVepm0g38ywtX6mwkBvMkmeehXkII4mSUn+frD9wGsydTunezvA==}
+
   '@parcel/utils@2.16.4':
     resolution: {integrity: sha512-lkmxQHcHyOWZLbV8t+h2CGZIkPiBurLm/TS5wNT7+tq0qt9KbVwL7FP2K93TbXhLMGTmpI79Bf3qKniPM167Mw==}
     engines: {node: '>= 16.0.0'}
+
+  '@parcel/utils@2.9.3':
+    resolution: {integrity: sha512-cesanjtj/oLehW8Waq9JFPmAImhoiHX03ihc3JTWkrvJYSbD7wYKCDgPAM3JiRAqvh1LZ6P699uITrYWNoRLUg==}
+    engines: {node: '>= 12.0.0'}
 
   '@parcel/watcher-android-arm64@2.6.0':
     resolution: {integrity: sha512-trgpLSCKRC/huFjXX/Smh+0sWe4+YtKfktIToiMl59ghz7z+qkH6kMvNnUbLyRs9N11t8l4svSCs1+5B3rOAhA==}
@@ -6173,6 +6462,12 @@ packages:
     engines: {node: '>= 16.0.0'}
     peerDependencies:
       '@parcel/core': ^2.16.4
+
+  '@parcel/workers@2.9.3':
+    resolution: {integrity: sha512-zRrDuZJzTevrrwElYosFztgldhqW6G9q5zOeQXfVQFkkEJCNfg36ixeiofKRU8uu2x+j+T6216mhMNB6HiuY+w==}
+    engines: {node: '>= 12.0.0'}
+    peerDependencies:
+      '@parcel/core': ^2.9.3
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -6325,6 +6620,50 @@ packages:
         optional: true
       whiskers:
         optional: true
+
+  '@plasmohq/parcel-bundler@0.5.6':
+    resolution: {integrity: sha512-kjwj5tQUhdAK00AxXOzgqJ2jryZg4X6aleYAcjbREPzVMqKEu1NrNSNy5VGAfNRG6NCT6ZYg39ZCyuUOR2lEsQ==}
+    engines: {node: '>= 16.0.0', parcel: '>= 2.7.0'}
+
+  '@plasmohq/parcel-compressor-utf8@0.1.1':
+    resolution: {integrity: sha512-9zcF39XIBzauYLERoGNVSy7qR1MzEqjhQn16RrlCpZ1AyNMlBJ3B28SmnUpBQNgne8JOHTtcx6cUVm1IvM3J+g==}
+    engines: {parcel: '>= 2.8.0'}
+
+  '@plasmohq/parcel-namer-manifest@0.3.12':
+    resolution: {integrity: sha512-mNyIVK4nRbjlnXXUygBcmV7xLzgS1HZ3vedxUrMQah0Wp0Y20GFcomToDBC0w9NXIZVSSKY0bRIeh0B6/verfQ==}
+    engines: {parcel: '>= 2.7.0'}
+
+  '@plasmohq/parcel-optimizer-encapsulate@0.0.8':
+    resolution: {integrity: sha512-iXDXoLtYBvV4rHhFw3O6nrS3dEWYe9k2m0i/Tvzg2lz4lUHFyvK5NN9RWqkOLfI8JviaqQzaaMKteJhLsX6z1A==}
+    engines: {parcel: '>= 2.8.0'}
+
+  '@plasmohq/parcel-optimizer-es@0.4.2':
+    resolution: {integrity: sha512-p5Ce1np93Y9bPUPzPYMWDoc5RMYwzkSh+6j/Qe8+D5XW2W3IhFSANz/7IHwckwvt99rLa9aKn+gRTC96Udpdvw==}
+    engines: {parcel: '>= 2.8.0'}
+
+  '@plasmohq/parcel-packager@0.6.15':
+    resolution: {integrity: sha512-c6Afk5l8EqxyZ/N7p8avWEBt5teTQPQsvZZpPHWhsAY9eonX+h8bFdmXym1oevaq5TySJOpNCSUdTvqqZtlSnQ==}
+    engines: {parcel: '>= 2.7.0'}
+
+  '@plasmohq/parcel-resolver-post@0.4.6':
+    resolution: {integrity: sha512-i1bXCqS1XRqUJKQDEzLSrHg341a4d0598OjGe4t/2Ri3eaV9Q8OqKT+Fk67CvObTRtxE0T2EQhyyZ/MfR79A3w==}
+    engines: {parcel: '>= 2.7.0'}
+
+  '@plasmohq/parcel-resolver@0.14.2':
+    resolution: {integrity: sha512-CpksScCZ8QZKM0THh68CH4dRCWPZanPHwQTFyh2onGtA/LZzwC8IIaPszfA2qdsH9dtApZ/w9i7TvZZcHGXnfA==}
+    engines: {parcel: '>= 2.7.0'}
+
+  '@plasmohq/parcel-runtime@0.25.3':
+    resolution: {integrity: sha512-PPdonR0dwg6p/vmQC73KLQnkNhsfhUoptuuEKvahdxcckXn9uaf+sanneMsL+klBGmCoA/1uc8QBWbHiWm5GQA==}
+    engines: {parcel: '>= 2.7.0'}
+
+  '@plasmohq/parcel-transformer-inject-env@0.2.12':
+    resolution: {integrity: sha512-QhM5Je0LyuAAJMAXeBEu4YvDirIPXuO2SoxHkwTMIwCMXpstPinnKiElrIoolqZjcxLmDCfsXerXZfbN6NhSlA==}
+    engines: {parcel: '>= 2.7.0'}
+
+  '@plasmohq/parcel-transformer-manifest@0.21.1':
+    resolution: {integrity: sha512-GNKqH6fyL/rEZ8/oq8lGdcTspecnPnuNwYs9pFS0lPWjbo+q4W33VfJdrFO3NEBaVEzLtiIGcGzWi8YuZxn1jg==}
+    engines: {parcel: '>= 2.7.0'}
 
   '@plasmohq/redux-persist@6.1.0':
     resolution: {integrity: sha512-12mDmEotgMH/+4g9Hput5DDAIVAnmo8cZGPBsi106i8t/GuySX439XF8gEdEY2sEZaFkminq2smXnMTNysfD+A==}
@@ -6993,6 +7332,10 @@ packages:
   '@sinclair/typebox@0.34.52':
     resolution: {integrity: sha512-XiMQh7qqVlxZzcVD+kkGMNGMzcTrDMLWI7S4x7z1MkCkbDPrekpZXEUK0eZqZFMuHQg2a2DZOcDIh9o5v3Gonw==}
 
+  '@sindresorhus/is@7.2.0':
+    resolution: {integrity: sha512-P1Cz1dWaFfR4IR+U13mqqiGsLFf1KbayybWwdd2vfctdV6hDpUkgCY0nKOLLTMSoRd/jJNjtbqzf13K8DCCXQw==}
+    engines: {node: '>=18'}
+
   '@sindresorhus/is@8.1.0':
     resolution: {integrity: sha512-2SX/1jW6CIMAiebvVv5ZInoCEuWQmMyBoJXXGC6Vjakjp/fpxP5eHs7/V6WKuPEIbuK06+VpjH+vjLQhr98rDQ==}
     engines: {node: '>=22'}
@@ -7114,10 +7457,22 @@ packages:
     peerDependencies:
       '@svgr/core': '*'
 
+  '@swc/core-darwin-arm64@1.11.13':
+    resolution: {integrity: sha512-loSERhLaQ9XDS+5Kdx8cLe2tM1G0HLit8MfehipAcsdctpo79zrRlkW34elOf3tQoVPKUItV0b/rTuhjj8NtHg==}
+    engines: {node: '>=10'}
+    cpu: [arm64]
+    os: [darwin]
+
   '@swc/core-darwin-arm64@1.16.1':
     resolution: {integrity: sha512-zlJblJ8ncErD43lKdxjbUaUskJQf+LxiPXYcWXD8/8ZMV+7uuAT+CwjciLXpyZBd5Pq/S726bMpeeAwSeL1hhg==}
     engines: {node: '>=10'}
     cpu: [arm64]
+    os: [darwin]
+
+  '@swc/core-darwin-x64@1.11.13':
+    resolution: {integrity: sha512-uSA4UwgsDCIysUPfPS8OrQTH2h9spO7IYFd+1NB6dJlVGUuR6jLKuMBOP1IeLeax4cGHayvkcwSJ3OvxHwgcZQ==}
+    engines: {node: '>=10'}
+    cpu: [x64]
     os: [darwin]
 
   '@swc/core-darwin-x64@1.16.1':
@@ -7126,14 +7481,32 @@ packages:
     cpu: [x64]
     os: [darwin]
 
+  '@swc/core-linux-arm-gnueabihf@1.11.13':
+    resolution: {integrity: sha512-boVtyJzS8g30iQfe8Q46W5QE/cmhKRln/7NMz/5sBP/am2Lce9NL0d05NnFwEWJp1e2AMGHFOdRr3Xg1cDiPKw==}
+    engines: {node: '>=10'}
+    cpu: [arm]
+    os: [linux]
+
   '@swc/core-linux-arm-gnueabihf@1.16.1':
     resolution: {integrity: sha512-EYgrx2YOCQ2Twz2S793kqNjPkpvYVUPzzR95bIb7by+VQcyaai4lZZ2iz/tZvcFVKSNcN3/JTKwx+aBn2ZL52A==}
     engines: {node: '>=10'}
     cpu: [arm]
     os: [linux]
 
+  '@swc/core-linux-arm64-gnu@1.11.13':
+    resolution: {integrity: sha512-+IK0jZ84zHUaKtwpV+T+wT0qIUBnK9v2xXD03vARubKF+eUqCsIvcVHXmLpFuap62dClMrhCiwW10X3RbXNlHw==}
+    engines: {node: '>=10'}
+    cpu: [arm64]
+    os: [linux]
+
   '@swc/core-linux-arm64-gnu@1.16.1':
     resolution: {integrity: sha512-moyKm0YZlHdHohzm1YwgAyesqnE853rO0REMfJLFAova51wF9BNi+3ZW2PeS7Vqvn6HeJuepLpAHbBdZctxpHA==}
+    engines: {node: '>=10'}
+    cpu: [arm64]
+    os: [linux]
+
+  '@swc/core-linux-arm64-musl@1.11.13':
+    resolution: {integrity: sha512-+ukuB8RHD5BHPCUjQwuLP98z+VRfu+NkKQVBcLJGgp0/+w7y0IkaxLY/aKmrAS5ofCNEGqKL+AOVyRpX1aw+XA==}
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [linux]
@@ -7156,8 +7529,20 @@ packages:
     cpu: [s390x]
     os: [linux]
 
+  '@swc/core-linux-x64-gnu@1.11.13':
+    resolution: {integrity: sha512-q9H3WI3U3dfJ34tdv60zc8oTuWvSd5fOxytyAO9Pc5M82Hic3jjWaf2xBekUg07ubnMZpyfnv+MlD+EbUI3Llw==}
+    engines: {node: '>=10'}
+    cpu: [x64]
+    os: [linux]
+
   '@swc/core-linux-x64-gnu@1.16.1':
     resolution: {integrity: sha512-VJQxqrisHV+B394IgrOu8YsIIXZgffnf5tO+yc9Z/hoUpuZEvuQTjWwlnpZdpyD+0nx6LTD1/3k646JYm43yJA==}
+    engines: {node: '>=10'}
+    cpu: [x64]
+    os: [linux]
+
+  '@swc/core-linux-x64-musl@1.11.13':
+    resolution: {integrity: sha512-9aaZnnq2pLdTbAzTSzy/q8dr7Woy3aYIcQISmw1+Q2/xHJg5y80ZzbWSWKYca/hKonDMjIbGR6dp299I5J0aeA==}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [linux]
@@ -7168,10 +7553,22 @@ packages:
     cpu: [x64]
     os: [linux]
 
+  '@swc/core-win32-arm64-msvc@1.11.13':
+    resolution: {integrity: sha512-n3QZmDewkHANcoHvtwvA6yJbmS4XJf0MBMmwLZoKDZ2dOnC9D/jHiXw7JOohEuzYcpLoL5tgbqmjxa3XNo9Oow==}
+    engines: {node: '>=10'}
+    cpu: [arm64]
+    os: [win32]
+
   '@swc/core-win32-arm64-msvc@1.16.1':
     resolution: {integrity: sha512-6huNRessoBLxWEqBm5zJXyCQ27TO7anvkdiuQ5MDO4CJni0nOXEqKtV9RllQ2TdyENKKsUMXVnIfW2hIXx/R5Q==}
     engines: {node: '>=10'}
     cpu: [arm64]
+    os: [win32]
+
+  '@swc/core-win32-ia32-msvc@1.11.13':
+    resolution: {integrity: sha512-wM+Nt4lc6YSJFthCx3W2dz0EwFNf++j0/2TQ0Js9QLJuIxUQAgukhNDVCDdq8TNcT0zuA399ALYbvj5lfIqG6g==}
+    engines: {node: '>=10'}
+    cpu: [ia32]
     os: [win32]
 
   '@swc/core-win32-ia32-msvc@1.16.1':
@@ -7180,11 +7577,26 @@ packages:
     cpu: [ia32]
     os: [win32]
 
+  '@swc/core-win32-x64-msvc@1.11.13':
+    resolution: {integrity: sha512-+X5/uW3s1L5gK7wAo0E27YaAoidJDo51dnfKSfU7gF3mlEUuWH8H1bAy5OTt2mU4eXtfsdUMEVXSwhDlLtQkuA==}
+    engines: {node: '>=10'}
+    cpu: [x64]
+    os: [win32]
+
   '@swc/core-win32-x64-msvc@1.16.1':
     resolution: {integrity: sha512-Bt+VIhWYCGk4urklnkkteLUOeLv1VxigwTCeB/xC6rBZxY6IIKdDwCJf6on3E3SUGsIqmQS6QqtuJQc1VxF4Aw==}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [win32]
+
+  '@swc/core@1.11.13':
+    resolution: {integrity: sha512-9BXdYz12Wl0zWmZ80PvtjBWeg2ncwJ9L5WJzjhN6yUTZWEV/AwAdVdJnIEp4pro3WyKmAaMxcVOSbhuuOZco5g==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      '@swc/helpers': '*'
+    peerDependenciesMeta:
+      '@swc/helpers':
+        optional: true
 
   '@swc/core@1.16.1':
     resolution: {integrity: sha512-nUaeu91O5QZKrQdaDCHd402ogUIoNOOjpkZNq0UomWK0G6gDaGmLhvddF1/3BXf5O8aLyo6ZPY/aMDWvaJQ/hg==}
@@ -7203,6 +7615,10 @@ packages:
 
   '@swc/types@0.1.28':
     resolution: {integrity: sha512-V6Mnml8v09QALx6K0elJ7o9K/MkVDtW3t6L+7Ou/JcWtb3xwId2AH4FeOceySd2JaO87IMw4+6vSZxLm34LPbw==}
+
+  '@szmarczak/http-timer@5.0.1':
+    resolution: {integrity: sha512-+PmQX0PiAYPMeVYe237LJAYvOMYW1j2rH5YROyS3b4CTVJum34HfRvKvAzozHAQG0TnHNdUfY9nCeUyRAs//cw==}
+    engines: {node: '>=14.16'}
 
   '@tailwindcss/node@4.3.3':
     resolution: {integrity: sha512-/T8IKEsf9VTU6tLjgC7+sv2mOPtQxzE2jMw7u4Tt40Tx+QSZxpzh95/H6cMKoja9XuW7iMdLJYBB0o9G1CaAgg==}
@@ -8194,6 +8610,10 @@ packages:
     resolution: {integrity: sha512-+qJyx4xiKra8mZrcwhjMRMUhD5NR1R8esPkzIYxX96JiecFoxAXFuz/GpR3+ev4PE1WamHip78wV0vcmPQtp8w==}
     engines: {node: '>=14.16'}
 
+  cacheable-request@12.0.1:
+    resolution: {integrity: sha512-Yo9wGIQUaAfIbk+qY0X4cDQgCosecfBe3V9NSyeY4qPC2SAkbCS4Xj79VP8WOzitpJUZKc/wsRCYF5ariDIwkg==}
+    engines: {node: '>=18'}
+
   cacheable-request@13.0.19:
     resolution: {integrity: sha512-SVXGH037+Mo1aIMO5B2UcleR43FGjFdN+M8JObSyEoQ2Mn4CODRWx28gN5jiTF0n5ItsgtIZfyargMNs8GX4kg==}
     engines: {node: '>=18'}
@@ -8664,6 +9084,10 @@ packages:
   defaults@1.0.4:
     resolution: {integrity: sha512-eFuaLoy/Rxalv2kr+lqMlUnrDWV+3j4pljOIJgLIhI058IQfWJ7vXhyEIHu+HtC738klGALYxOKDO0bQP3tg8A==}
 
+  defer-to-connect@2.0.1:
+    resolution: {integrity: sha512-4tvttepXG1VaYGrRibk5EwJd1t4udunSOVMdLSAL6mId1ix438oPwPZMALY41FCijukO1L0twNcGsdzS7dHgDg==}
+    engines: {node: '>=10'}
+
   define-data-property@1.1.4:
     resolution: {integrity: sha512-rBMvIzlpA8v6E+SJZoo++HAYqsLrkg7MSfIinMPFhmkorw7X+dOXVJQs+QT69zGkzMyfDnIMN2Wid1+NbL3T+A==}
     engines: {node: '>= 0.4'}
@@ -8768,6 +9192,9 @@ packages:
     resolution: {integrity: sha512-zIHwmZPRshsCdpMDyVsqGmgyP0yT8GAgXUnkdAoJisxvf33k7yO6OuoKmcTGuXPWSsm8Oh88nZicRLA9Y0rUeA==}
     engines: {node: '>=12'}
 
+  dotenv-expand@5.1.0:
+    resolution: {integrity: sha512-YXQl1DSa4/PQyRfgrv6aoNjhasp/p4qs9FjJ4q4cQk+8m4r6k4ZSiEyytKG8f8W9gi8WsQtIObNmKd+tMzNTmA==}
+
   dotenv@16.6.1:
     resolution: {integrity: sha512-uBq4egWHTcTt33a72vpSG0z3HnPuIl6NqYcTrKEg2azoEyl2hpW0zqlxysq2pK9HlDIHyHyakeYaYnSAwd8bow==}
     engines: {node: '>=12'}
@@ -8775,6 +9202,10 @@ packages:
   dotenv@17.4.2:
     resolution: {integrity: sha512-nI4U3TottKAcAD9LLud4Cb7b2QztQMUEfHbvhTH09bqXTxnSie8WnjPALV/WMCrJZ6UV/qHJ6L03OqO3LcdYZw==}
     engines: {node: '>=12'}
+
+  dotenv@7.0.0:
+    resolution: {integrity: sha512-M3NhsLbV1i6HuGzBUH8vXrtxOk+tWmzWKDMbAVSUp3Zsjm7ywFeuwrUXhmhQyRK1q5B5GGy7hcXPbj3bnfZg2g==}
+    engines: {node: '>=6'}
 
   dotignore@0.1.2:
     resolution: {integrity: sha512-UGGGWfSauusaVJC+8fgV+NVvBXkCTmVv7sk6nojDZZvuOUNGUy0Zk4UpHQD6EDjS0jpBwcACvH4eofvyzBcRDw==}
@@ -8916,6 +9347,11 @@ packages:
   es-to-primitive@1.3.4:
     resolution: {integrity: sha512-yPDz7wqpg1/mmHLmS3tcfTfbw5f1eryXvyghYBffGdERwe+mV7ZcWzTR8LR17Kvqt3qfPurjlonmnq3MKXIOXw==}
     engines: {node: '>= 0.4'}
+
+  esbuild@0.25.12:
+    resolution: {integrity: sha512-bbPBYYrtZbkt6Os6FiTLCTFxvq4tt3JKall1vRwshA3fdVztsLAatFaZobhkBC8/BrPetoa0oksYoKXoG4ryJg==}
+    engines: {node: '>=18'}
+    hasBin: true
 
   esbuild@0.27.7:
     resolution: {integrity: sha512-IxpibTjyVnmrIQo5aqNpCgoACA/dTKLTlhMHihVHhdkxKyPO1uBBthumT0rdHmcsk9uMonIWS0m4FljWzILh3w==}
@@ -9171,6 +9607,10 @@ packages:
     resolution: {integrity: sha512-gIXjKqtFuWEgzFRJA9WCQeSJLZDjgJUOMCMzxtvFq/37KojM1BFGufqsCy0r4qSQmYLsZYMeyRqzIWOMup03sw==}
     engines: {node: '>=14'}
 
+  form-data-encoder@4.1.0:
+    resolution: {integrity: sha512-G6NsmEW15s0Uw9XnCg+33H3ViYRyiM0hMrMhhqQOR8NFc5GhYrI+6I3u7OTw7b91J2g8rtvMBZJDbcGb2YUniw==}
+    engines: {node: '>= 18'}
+
   formdata-polyfill@4.0.10:
     resolution: {integrity: sha512-buewHzMvYL29jdeQTVILecSaZKnt/RJWjoZCF5OW60Z67/GmSLBkOFM7qh1PI3zFNtJbaZL5eQu1vLfazOwj4g==}
     engines: {node: '>=12.20.0'}
@@ -9184,6 +9624,10 @@ packages:
 
   fs-constants@1.0.0:
     resolution: {integrity: sha512-y6OAwoSIf7FyjMIv94u+b5rdheZEjzR63GTyZJm5qh4Bi+2YgwLCcI/fPFZkL5PSixOt6ZNKm+w+Hfp/Bciwow==}
+
+  fs-extra@11.3.0:
+    resolution: {integrity: sha512-Z4XaCL6dUDHfP/jT25jJKMmtxvuwbkrD1vNSMFlo9lNLY2c5FHYSQgHPRZUjAB26TpDEoW9HCOgplrdbaPV/ew==}
+    engines: {node: '>=14.14'}
 
   fs-extra@11.4.0:
     resolution: {integrity: sha512-EQsFzMUJkCKGr1ePqlYADkIUmHW1s3ZXr5Yqy6wbGrfUCphpl2maM/kyOIRA2HpP3AaFQTZXD4ldjek+nccddA==}
@@ -9310,6 +9754,10 @@ packages:
   gopd@1.2.0:
     resolution: {integrity: sha512-ZUKRh6/kUFoAiTAtTYPZJ3hw9wNxx+BIBOijnlG9PnrJsCcSjs1wyyD6vJpaYtgnzDrKYRSqf3OO6Rfa93xsRg==}
     engines: {node: '>= 0.4'}
+
+  got@14.4.6:
+    resolution: {integrity: sha512-rnhwfM/PhMNJ1i17k3DuDqgj0cKx3IHxBKVv/WX1uDKqrhi2Gv3l7rhPThR/Cc6uU++dD97W9c8Y0qyw9x0jag==}
+    engines: {node: '>=20'}
 
   got@15.1.0:
     resolution: {integrity: sha512-DG+DAAkRtno+oDr/GBsliAkhN9+zczOPM5qXk3efDZY3qvyRnZU+NwQlb/IOY6cSnxxTR9z3aHCcShJyjb0hJA==}
@@ -10253,6 +10701,10 @@ packages:
   live-set@1.0.0:
     resolution: {integrity: sha512-zNGPekAhiHsaS7AFYwNXMzZhlWCaoBOSR/7ChaVWvZX3uj/EoPq2i+qzmvJt43GJT4EUzfsK7Zp3O+sBbQ8NEg==}
 
+  lmdb@2.7.11:
+    resolution: {integrity: sha512-x9bD4hVp7PFLUoELL8RglbNXhAMt5CYhkmss+CEau9KlNoilsTzNi9QDsPZb3KMpOGZXG6jmXhW3bBxE2XVztw==}
+    hasBin: true
+
   lmdb@2.8.5:
     resolution: {integrity: sha512-9bMdFfc80S+vSldBmG3HOuLVHnxRdNTlpzR6QDnzqCQtCzGUEAGTzBKYMeIM+I/sU4oZfgbcbS7X7F65/z/oxQ==}
     hasBin: true
@@ -10283,6 +10735,9 @@ packages:
 
   lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
+
+  lodash.sortby@4.7.0:
+    resolution: {integrity: sha512-HDWXG8isMntAyRF5vZ7xKuEvOhT4AhlRt/3czTSjvGUxjYCBVRQY48ViDHyfYz9VIoBkW4TMGQNapx+l3RUwdA==}
 
   lodash.throttle@4.1.1:
     resolution: {integrity: sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ==}
@@ -10557,6 +11012,9 @@ packages:
   msgpackr@1.12.1:
     resolution: {integrity: sha512-4EUH9tQHnMmEgzW/MdAP0KIfa1T9AF+htl0ffe2n5vb2EKn9y2co8ccpgWko6S52Jy1PQZKwRnx5/KkYjtd9MQ==}
 
+  msgpackr@1.8.5:
+    resolution: {integrity: sha512-mpPs3qqTug6ahbblkThoUY2DQdNXcm4IapwOS3Vm/87vmpzLVelvp9h3It1y9l1VPpiFLV11vfOXnmeEwiIXwg==}
+
   mute-stream@3.0.0:
     resolution: {integrity: sha512-dkEJPVvun4FryqBmZ5KhDo0K9iDXAwn08tMLDinNdRBNPcYEDiWYysLcc6k3mjTMlbP9KyylvRpd4wFtwrT9rw==}
     engines: {node: ^20.17.0 || >=22.9.0}
@@ -10642,6 +11100,9 @@ packages:
     resolution: {integrity: sha512-rebQ/lz7i0EkoLzUVSrKRzA69zMkwLp95kKMWoMDkkM00Suxz0D7zEQPwRml5fQum24mj7bPvmlgLAmu2JCiYg==}
     engines: {node: '>=10'}
 
+  node-addon-api@4.3.0:
+    resolution: {integrity: sha512-73sE9+3UaLYYFmDsFZnqCInzPyh3MqIwZO9cw58yIqAZhONrrabrYyYe3TuIqtIiOuTXVhsGau8hcrhhwSsDIQ==}
+
   node-addon-api@6.1.0:
     resolution: {integrity: sha512-+eawOlIgy680F0kBzPUNFhMZGtJ1YmqM6l4+Crf4IkImjYrO/mqPwRMh352g23uIaQKFItcQ64I7KMaJxHgAVA==}
 
@@ -10669,6 +11130,10 @@ packages:
   node-fetch@3.3.2:
     resolution: {integrity: sha512-dRB78srN/l6gqWulah9SrxeYnxeddIG30+GOqK/9OlLVyLg3HPnr6SqOWTWOXKRwC2eGYCkZ59NNuSgvSrpgOA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+
+  node-gyp-build-optional-packages@5.0.6:
+    resolution: {integrity: sha512-2ZJErHG4du9G3/8IWl/l9Bp5BBFy63rno5GVmjQijvTuUZKsl6g8RB4KH/x3NLcV5ZBb4GsXmAuTYr6dRml3Gw==}
+    hasBin: true
 
   node-gyp-build-optional-packages@5.1.1:
     resolution: {integrity: sha512-+P72GAjVAbTxjjwUmwjVrqrdZROD4nf8KgpBoDxqXXTiYZZt/ud60dE5yvCSr9lRO8e8yv6kgJIC0K0PfZFVQw==}
@@ -10810,6 +11275,10 @@ packages:
   own-keys@1.0.2:
     resolution: {integrity: sha512-19YVAg7T+WTrxggPukVq7DjTv6+PJ867TmhCvBsYwmbFCsZd344rq2Ld1p0wo8f8Qrrhgp82c6FJRqdXWtSEhg==}
     engines: {node: '>= 0.4'}
+
+  p-cancelable@4.0.1:
+    resolution: {integrity: sha512-wBowNApzd45EIKdO1LaU+LrMBwAcjfPaYtVzV3lmfM3gf8Z4CHZsiIqlM8TZZ8okYvh5A1cP6gTfCRQtwUpaUg==}
+    engines: {node: '>=14.16'}
 
   p-limit@2.3.0:
     resolution: {integrity: sha512-//88mFWSJx8lxCzwdAABTJL2MyWB12+eIY7MDL2SqLmAkeKU9qxRvWuSyTjm3FUmpBEMuFfckAIqEaVGUDxb6w==}
@@ -11452,6 +11921,10 @@ packages:
     engines: {node: '>= 0.4'}
     hasBin: true
 
+  responselike@3.0.0:
+    resolution: {integrity: sha512-40yHxbNcl2+rzXvZuVkrYohathsSJlMTXKryG5y8uciHv1+xDLHQpgjG64JUO9nrEq2jGLH6IZ8BcZyw3wrweg==}
+    engines: {node: '>=14.16'}
+
   responselike@4.0.2:
     resolution: {integrity: sha512-cGk8IbWEAnaCpdAt1BHzJ3Ahz5ewDJa0KseTsE3qIRMJ3C698W8psM7byCeWVpd/Ha7FUYzuRVzXoKoM6nRUbA==}
     engines: {node: '>=20'}
@@ -11694,6 +12167,11 @@ packages:
   source-map@0.7.6:
     resolution: {integrity: sha512-i5uvt8C3ikiWeNZSVZNWcfZPItFQOsYTUAOkcUPGd8DqDy1uOUikjt5dG+uRlwyvR108Fb9DOd4GvXfT0N2/uQ==}
     engines: {node: '>= 12'}
+
+  source-map@0.8.0-beta.0:
+    resolution: {integrity: sha512-2ymg6oRBpebeZi9UUNsgQ89bhx01TcTkmNTGnNO88imTmbSgy4nfujrgVEFKWpMTEGA11EDkTt7mqObTPdigIA==}
+    engines: {node: '>= 8'}
+    deprecated: The work that was done in this beta branch won't be included in future versions
 
   spdx-correct@3.2.0:
     resolution: {integrity: sha512-kN9dJbvnySHULIluDHy32WHRUu3Og7B9sbY7tsFLctQkIqnMh3hErYgdMjTYuqmcXX+lK5T1lnUt3G7zNswmZA==}
@@ -12087,6 +12565,9 @@ packages:
   tr46@0.0.3:
     resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
 
+  tr46@1.0.1:
+    resolution: {integrity: sha512-dTpowEjclQ7Kgx5SdBkqRzVhERQXov8/l9Ft9dVM9fmg0W0KQSVaXX9T4i6twCPNtYiZM53lpSSUAwJbFPOHxA==}
+
   tr46@5.1.1:
     resolution: {integrity: sha512-hdF5ZgjTqgAntKkklYw0R03MG2x/bSzTtkxmIRw/sTNV8YXsCJ1tfLAX23lhxhHJlEf3CRCOCGGWw3vI3GaSPw==}
     engines: {node: '>=18'}
@@ -12139,6 +12620,25 @@ packages:
 
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
+
+  tsup@8.4.0:
+    resolution: {integrity: sha512-b+eZbPCjz10fRryaAA7C8xlIHnf8VnsaRqydheLIqwG/Mcpfk8Z5zp3HayX7GaTygkigHl5cBUs+IhcySiIexQ==}
+    engines: {node: '>=18'}
+    hasBin: true
+    peerDependencies:
+      '@microsoft/api-extractor': ^7.36.0
+      '@swc/core': ^1
+      postcss: ^8.4.12
+      typescript: '>=4.5.0'
+    peerDependenciesMeta:
+      '@microsoft/api-extractor':
+        optional: true
+      '@swc/core':
+        optional: true
+      postcss:
+        optional: true
+      typescript:
+        optional: true
 
   tsup@8.5.1:
     resolution: {integrity: sha512-xtgkqwdhpKWr3tKPmCkvYmS9xnQK3m3XgxZHwSUjvfTjp7YfXe5tT3GgWi0F2N+ZSMsOeWeZFh7ZZFg5iPhing==}
@@ -12235,6 +12735,11 @@ packages:
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
       typescript: '>=4.8.4 <6.1.0'
+
+  typescript@5.8.2:
+    resolution: {integrity: sha512-aJn6wq13/afZp/jT9QZmwEjDqqvSGp1VT5GVg+f/t6/oVyrgXM6BY1h9BRh/O5p3PlUPAe+WuiEZOmb/49RqoQ==}
+    engines: {node: '>=14.17'}
+    hasBin: true
 
   typescript@6.0.3:
     resolution: {integrity: sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw==}
@@ -12412,6 +12917,9 @@ packages:
   webidl-conversions@3.0.1:
     resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
 
+  webidl-conversions@4.0.2:
+    resolution: {integrity: sha512-YQ+BmxuTgd6UXZW3+ICGfyqRyHXVlD5GtQr5+qjiNW7bF0cqrzX500HVXPBOvgXb5YnzDd+h0zqyv61KUD7+Sg==}
+
   webidl-conversions@7.0.0:
     resolution: {integrity: sha512-VwddBukDzu71offAQR975unBIGqfKZpM+8ZX6ySk8nYhVoo5CYaZyzt3YBvYtRtO+aoGlqxPg/B87NGVZ/fu6g==}
     engines: {node: '>=12'}
@@ -12442,6 +12950,9 @@ packages:
 
   whatwg-url@5.0.0:
     resolution: {integrity: sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==}
+
+  whatwg-url@7.1.0:
+    resolution: {integrity: sha512-WUu7Rg1DroM7oQvGWfOiAK21n74Gg+T4elXEQYkOhtyLeWiJFoOGLXPKI/9gzIie9CtwVLm8wtw6YJdKyxSjeg==}
 
   which-boxed-primitive@1.1.1:
     resolution: {integrity: sha512-TbX3mj8n0odCBFVlY8AxkqcHASw3L60jIuF8jFP78az3C2YhmGvqbHBpAjTRH2/xqYunrJ9g1jSyjCjpoWzIAA==}
@@ -13540,10 +14051,16 @@ snapshots:
 
   '@epic-web/invariant@1.0.0': {}
 
+  '@esbuild/aix-ppc64@0.25.12':
+    optional: true
+
   '@esbuild/aix-ppc64@0.27.7':
     optional: true
 
   '@esbuild/aix-ppc64@0.28.2':
+    optional: true
+
+  '@esbuild/android-arm64@0.25.12':
     optional: true
 
   '@esbuild/android-arm64@0.27.7':
@@ -13552,10 +14069,16 @@ snapshots:
   '@esbuild/android-arm64@0.28.2':
     optional: true
 
+  '@esbuild/android-arm@0.25.12':
+    optional: true
+
   '@esbuild/android-arm@0.27.7':
     optional: true
 
   '@esbuild/android-arm@0.28.2':
+    optional: true
+
+  '@esbuild/android-x64@0.25.12':
     optional: true
 
   '@esbuild/android-x64@0.27.7':
@@ -13564,10 +14087,16 @@ snapshots:
   '@esbuild/android-x64@0.28.2':
     optional: true
 
+  '@esbuild/darwin-arm64@0.25.12':
+    optional: true
+
   '@esbuild/darwin-arm64@0.27.7':
     optional: true
 
   '@esbuild/darwin-arm64@0.28.2':
+    optional: true
+
+  '@esbuild/darwin-x64@0.25.12':
     optional: true
 
   '@esbuild/darwin-x64@0.27.7':
@@ -13576,10 +14105,16 @@ snapshots:
   '@esbuild/darwin-x64@0.28.2':
     optional: true
 
+  '@esbuild/freebsd-arm64@0.25.12':
+    optional: true
+
   '@esbuild/freebsd-arm64@0.27.7':
     optional: true
 
   '@esbuild/freebsd-arm64@0.28.2':
+    optional: true
+
+  '@esbuild/freebsd-x64@0.25.12':
     optional: true
 
   '@esbuild/freebsd-x64@0.27.7':
@@ -13588,10 +14123,16 @@ snapshots:
   '@esbuild/freebsd-x64@0.28.2':
     optional: true
 
+  '@esbuild/linux-arm64@0.25.12':
+    optional: true
+
   '@esbuild/linux-arm64@0.27.7':
     optional: true
 
   '@esbuild/linux-arm64@0.28.2':
+    optional: true
+
+  '@esbuild/linux-arm@0.25.12':
     optional: true
 
   '@esbuild/linux-arm@0.27.7':
@@ -13600,10 +14141,16 @@ snapshots:
   '@esbuild/linux-arm@0.28.2':
     optional: true
 
+  '@esbuild/linux-ia32@0.25.12':
+    optional: true
+
   '@esbuild/linux-ia32@0.27.7':
     optional: true
 
   '@esbuild/linux-ia32@0.28.2':
+    optional: true
+
+  '@esbuild/linux-loong64@0.25.12':
     optional: true
 
   '@esbuild/linux-loong64@0.27.7':
@@ -13612,10 +14159,16 @@ snapshots:
   '@esbuild/linux-loong64@0.28.2':
     optional: true
 
+  '@esbuild/linux-mips64el@0.25.12':
+    optional: true
+
   '@esbuild/linux-mips64el@0.27.7':
     optional: true
 
   '@esbuild/linux-mips64el@0.28.2':
+    optional: true
+
+  '@esbuild/linux-ppc64@0.25.12':
     optional: true
 
   '@esbuild/linux-ppc64@0.27.7':
@@ -13624,10 +14177,16 @@ snapshots:
   '@esbuild/linux-ppc64@0.28.2':
     optional: true
 
+  '@esbuild/linux-riscv64@0.25.12':
+    optional: true
+
   '@esbuild/linux-riscv64@0.27.7':
     optional: true
 
   '@esbuild/linux-riscv64@0.28.2':
+    optional: true
+
+  '@esbuild/linux-s390x@0.25.12':
     optional: true
 
   '@esbuild/linux-s390x@0.27.7':
@@ -13636,10 +14195,16 @@ snapshots:
   '@esbuild/linux-s390x@0.28.2':
     optional: true
 
+  '@esbuild/linux-x64@0.25.12':
+    optional: true
+
   '@esbuild/linux-x64@0.27.7':
     optional: true
 
   '@esbuild/linux-x64@0.28.2':
+    optional: true
+
+  '@esbuild/netbsd-arm64@0.25.12':
     optional: true
 
   '@esbuild/netbsd-arm64@0.27.7':
@@ -13648,10 +14213,16 @@ snapshots:
   '@esbuild/netbsd-arm64@0.28.2':
     optional: true
 
+  '@esbuild/netbsd-x64@0.25.12':
+    optional: true
+
   '@esbuild/netbsd-x64@0.27.7':
     optional: true
 
   '@esbuild/netbsd-x64@0.28.2':
+    optional: true
+
+  '@esbuild/openbsd-arm64@0.25.12':
     optional: true
 
   '@esbuild/openbsd-arm64@0.27.7':
@@ -13660,10 +14231,16 @@ snapshots:
   '@esbuild/openbsd-arm64@0.28.2':
     optional: true
 
+  '@esbuild/openbsd-x64@0.25.12':
+    optional: true
+
   '@esbuild/openbsd-x64@0.27.7':
     optional: true
 
   '@esbuild/openbsd-x64@0.28.2':
+    optional: true
+
+  '@esbuild/openharmony-arm64@0.25.12':
     optional: true
 
   '@esbuild/openharmony-arm64@0.27.7':
@@ -13672,10 +14249,16 @@ snapshots:
   '@esbuild/openharmony-arm64@0.28.2':
     optional: true
 
+  '@esbuild/sunos-x64@0.25.12':
+    optional: true
+
   '@esbuild/sunos-x64@0.27.7':
     optional: true
 
   '@esbuild/sunos-x64@0.28.2':
+    optional: true
+
+  '@esbuild/win32-arm64@0.25.12':
     optional: true
 
   '@esbuild/win32-arm64@0.27.7':
@@ -13684,10 +14267,16 @@ snapshots:
   '@esbuild/win32-arm64@0.28.2':
     optional: true
 
+  '@esbuild/win32-ia32@0.25.12':
+    optional: true
+
   '@esbuild/win32-ia32@0.27.7':
     optional: true
 
   '@esbuild/win32-ia32@0.28.2':
+    optional: true
+
+  '@esbuild/win32-x64@0.25.12':
     optional: true
 
   '@esbuild/win32-x64@0.27.7':
@@ -14648,19 +15237,37 @@ snapshots:
     dependencies:
       call-bind: 1.0.9
 
+  '@lmdb/lmdb-darwin-arm64@2.7.11':
+    optional: true
+
   '@lmdb/lmdb-darwin-arm64@2.8.5':
+    optional: true
+
+  '@lmdb/lmdb-darwin-x64@2.7.11':
     optional: true
 
   '@lmdb/lmdb-darwin-x64@2.8.5':
     optional: true
 
+  '@lmdb/lmdb-linux-arm64@2.7.11':
+    optional: true
+
   '@lmdb/lmdb-linux-arm64@2.8.5':
+    optional: true
+
+  '@lmdb/lmdb-linux-arm@2.7.11':
     optional: true
 
   '@lmdb/lmdb-linux-arm@2.8.5':
     optional: true
 
+  '@lmdb/lmdb-linux-x64@2.7.11':
+    optional: true
+
   '@lmdb/lmdb-linux-x64@2.8.5':
+    optional: true
+
+  '@lmdb/lmdb-win32-x64@2.7.11':
     optional: true
 
   '@lmdb/lmdb-win32-x64@2.8.5':
@@ -14862,7 +15469,27 @@ snapshots:
     transitivePeerDependencies:
       - napi-wasm
 
+  '@parcel/cache@2.9.3(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
+    dependencies:
+      '@parcel/core': 2.16.4(@swc/helpers@0.5.23)
+      '@parcel/fs': 2.9.3(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/logger': 2.9.3
+      '@parcel/utils': 2.9.3
+      lmdb: 2.7.11
+
+  '@parcel/cache@2.9.3(@parcel/core@2.9.3)':
+    dependencies:
+      '@parcel/core': 2.9.3
+      '@parcel/fs': 2.9.3(@parcel/core@2.9.3)
+      '@parcel/logger': 2.9.3
+      '@parcel/utils': 2.9.3
+      lmdb: 2.7.11
+
   '@parcel/codeframe@2.16.4':
+    dependencies:
+      chalk: 4.1.2
+
+  '@parcel/codeframe@2.9.3':
     dependencies:
       chalk: 4.1.2
 
@@ -14943,7 +15570,40 @@ snapshots:
       - '@swc/helpers'
       - napi-wasm
 
+  '@parcel/core@2.9.3':
+    dependencies:
+      '@mischnic/json-sourcemap': 0.1.1
+      '@parcel/cache': 2.9.3(@parcel/core@2.9.3)
+      '@parcel/diagnostic': 2.9.3
+      '@parcel/events': 2.9.3
+      '@parcel/fs': 2.9.3(@parcel/core@2.9.3)
+      '@parcel/graph': 2.9.3
+      '@parcel/hash': 2.9.3
+      '@parcel/logger': 2.9.3
+      '@parcel/package-manager': 2.9.3(@parcel/core@2.9.3)
+      '@parcel/plugin': 2.9.3(@parcel/core@2.9.3)
+      '@parcel/profiler': 2.9.3
+      '@parcel/source-map': 2.1.1
+      '@parcel/types': 2.9.3(@parcel/core@2.9.3)
+      '@parcel/utils': 2.9.3
+      '@parcel/workers': 2.9.3(@parcel/core@2.9.3)
+      abortcontroller-polyfill: 1.7.8
+      base-x: 3.0.11
+      browserslist: 4.28.8
+      clone: 2.1.2
+      dotenv: 7.0.0
+      dotenv-expand: 5.1.0
+      json5: 2.2.3
+      msgpackr: 1.12.1
+      nullthrows: 1.1.1
+      semver: 7.8.5
+
   '@parcel/diagnostic@2.16.4':
+    dependencies:
+      '@mischnic/json-sourcemap': 0.1.1
+      nullthrows: 1.1.1
+
+  '@parcel/diagnostic@2.9.3':
     dependencies:
       '@mischnic/json-sourcemap': 0.1.1
       nullthrows: 1.1.1
@@ -14952,7 +15612,11 @@ snapshots:
 
   '@parcel/events@2.16.4': {}
 
+  '@parcel/events@2.9.3': {}
+
   '@parcel/feature-flags@2.16.4': {}
+
+  '@parcel/fs-search@2.9.3': {}
 
   '@parcel/fs@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
@@ -14965,6 +15629,28 @@ snapshots:
       '@parcel/workers': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
     transitivePeerDependencies:
       - napi-wasm
+
+  '@parcel/fs@2.9.3(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
+    dependencies:
+      '@parcel/core': 2.16.4(@swc/helpers@0.5.23)
+      '@parcel/fs-search': 2.9.3
+      '@parcel/types': 2.9.3(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/utils': 2.9.3
+      '@parcel/watcher': 2.6.0
+      '@parcel/workers': 2.9.3(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+
+  '@parcel/fs@2.9.3(@parcel/core@2.9.3)':
+    dependencies:
+      '@parcel/core': 2.9.3
+      '@parcel/fs-search': 2.9.3
+      '@parcel/types': 2.9.3(@parcel/core@2.9.3)
+      '@parcel/utils': 2.9.3
+      '@parcel/watcher': 2.6.0
+      '@parcel/workers': 2.9.3(@parcel/core@2.9.3)
+
+  '@parcel/graph@2.9.3':
+    dependencies:
+      nullthrows: 1.1.1
 
   '@parcel/graph@3.6.4':
     dependencies:
@@ -14980,7 +15666,16 @@ snapshots:
       '@parcel/diagnostic': 2.16.4
       '@parcel/events': 2.16.4
 
+  '@parcel/logger@2.9.3':
+    dependencies:
+      '@parcel/diagnostic': 2.9.3
+      '@parcel/events': 2.9.3
+
   '@parcel/markdown-ansi@2.16.4':
+    dependencies:
+      chalk: 4.1.2
+
+  '@parcel/markdown-ansi@2.9.3':
     dependencies:
       chalk: 4.1.2
 
@@ -14992,6 +15687,28 @@ snapshots:
     transitivePeerDependencies:
       - '@parcel/core'
       - napi-wasm
+
+  '@parcel/node-resolver-core@3.0.3(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
+    dependencies:
+      '@mischnic/json-sourcemap': 0.1.1
+      '@parcel/diagnostic': 2.9.3
+      '@parcel/fs': 2.9.3(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/utils': 2.9.3
+      nullthrows: 1.1.1
+      semver: 7.8.5
+    transitivePeerDependencies:
+      - '@parcel/core'
+
+  '@parcel/node-resolver-core@3.0.3(@parcel/core@2.9.3)':
+    dependencies:
+      '@mischnic/json-sourcemap': 0.1.1
+      '@parcel/diagnostic': 2.9.3
+      '@parcel/fs': 2.9.3(@parcel/core@2.9.3)
+      '@parcel/utils': 2.9.3
+      nullthrows: 1.1.1
+      semver: 7.8.5
+    transitivePeerDependencies:
+      - '@parcel/core'
 
   '@parcel/node-resolver-core@3.7.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
@@ -15087,6 +15804,30 @@ snapshots:
       - '@swc/helpers'
       - napi-wasm
 
+  '@parcel/package-manager@2.9.3(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
+    dependencies:
+      '@parcel/core': 2.16.4(@swc/helpers@0.5.23)
+      '@parcel/diagnostic': 2.9.3
+      '@parcel/fs': 2.9.3(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/logger': 2.9.3
+      '@parcel/node-resolver-core': 3.0.3(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/types': 2.9.3(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/utils': 2.9.3
+      '@parcel/workers': 2.9.3(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      semver: 7.8.5
+
+  '@parcel/package-manager@2.9.3(@parcel/core@2.9.3)':
+    dependencies:
+      '@parcel/core': 2.9.3
+      '@parcel/diagnostic': 2.9.3
+      '@parcel/fs': 2.9.3(@parcel/core@2.9.3)
+      '@parcel/logger': 2.9.3
+      '@parcel/node-resolver-core': 3.0.3(@parcel/core@2.9.3)
+      '@parcel/types': 2.9.3(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/utils': 2.9.3
+      '@parcel/workers': 2.9.3(@parcel/core@2.9.3)
+      semver: 7.8.5
+
   '@parcel/packager-css@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
       '@parcel/diagnostic': 2.16.4
@@ -15154,11 +15895,29 @@ snapshots:
       - '@parcel/core'
       - napi-wasm
 
+  '@parcel/plugin@2.9.3(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
+    dependencies:
+      '@parcel/types': 2.9.3(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+    transitivePeerDependencies:
+      - '@parcel/core'
+
+  '@parcel/plugin@2.9.3(@parcel/core@2.9.3)':
+    dependencies:
+      '@parcel/types': 2.9.3(@parcel/core@2.9.3)
+    transitivePeerDependencies:
+      - '@parcel/core'
+
   '@parcel/profiler@2.16.4':
     dependencies:
       '@parcel/diagnostic': 2.16.4
       '@parcel/events': 2.16.4
       '@parcel/types-internal': 2.16.4
+      chrome-trace-event: 1.0.4
+
+  '@parcel/profiler@2.9.3':
+    dependencies:
+      '@parcel/diagnostic': 2.9.3
+      '@parcel/events': 2.9.3
       chrome-trace-event: 1.0.4
 
   '@parcel/reporter-bundle-buddy@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
@@ -15414,13 +16173,13 @@ snapshots:
       - '@parcel/core'
       - napi-wasm
 
-  '@parcel/transformer-svg-react@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))(typescript@7.0.2)':
+  '@parcel/transformer-svg-react@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))(typescript@5.8.2)':
     dependencies:
       '@parcel/diagnostic': 2.16.4
       '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/utils': 2.16.4
-      '@svgr/core': 8.1.0(typescript@7.0.2)
-      '@svgr/plugin-jsx': 8.1.0(@svgr/core@8.1.0(typescript@7.0.2))
+      '@svgr/core': 8.1.0(typescript@5.8.2)
+      '@svgr/plugin-jsx': 8.1.0(@svgr/core@8.1.0(typescript@5.8.2))
     transitivePeerDependencies:
       - '@parcel/core'
       - napi-wasm
@@ -15458,6 +16217,30 @@ snapshots:
       - '@parcel/core'
       - napi-wasm
 
+  '@parcel/types@2.9.3(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
+    dependencies:
+      '@parcel/cache': 2.9.3(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/diagnostic': 2.9.3
+      '@parcel/fs': 2.9.3(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/package-manager': 2.9.3(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/source-map': 2.1.1
+      '@parcel/workers': 2.9.3(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      utility-types: 3.11.0
+    transitivePeerDependencies:
+      - '@parcel/core'
+
+  '@parcel/types@2.9.3(@parcel/core@2.9.3)':
+    dependencies:
+      '@parcel/cache': 2.9.3(@parcel/core@2.9.3)
+      '@parcel/diagnostic': 2.9.3
+      '@parcel/fs': 2.9.3(@parcel/core@2.9.3)
+      '@parcel/package-manager': 2.9.3(@parcel/core@2.9.3)
+      '@parcel/source-map': 2.1.1
+      '@parcel/workers': 2.9.3(@parcel/core@2.9.3)
+      utility-types: 3.11.0
+    transitivePeerDependencies:
+      - '@parcel/core'
+
   '@parcel/utils@2.16.4':
     dependencies:
       '@parcel/codeframe': 2.16.4
@@ -15470,6 +16253,17 @@ snapshots:
       nullthrows: 1.1.1
     transitivePeerDependencies:
       - napi-wasm
+
+  '@parcel/utils@2.9.3':
+    dependencies:
+      '@parcel/codeframe': 2.9.3
+      '@parcel/diagnostic': 2.9.3
+      '@parcel/hash': 2.9.3
+      '@parcel/logger': 2.9.3
+      '@parcel/markdown-ansi': 2.9.3
+      '@parcel/source-map': 2.1.1
+      chalk: 4.1.2
+      nullthrows: 1.1.1
 
   '@parcel/watcher-android-arm64@2.6.0':
     optional: true
@@ -15539,6 +16333,26 @@ snapshots:
     transitivePeerDependencies:
       - napi-wasm
 
+  '@parcel/workers@2.9.3(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
+    dependencies:
+      '@parcel/core': 2.16.4(@swc/helpers@0.5.23)
+      '@parcel/diagnostic': 2.9.3
+      '@parcel/logger': 2.9.3
+      '@parcel/profiler': 2.9.3
+      '@parcel/types': 2.9.3(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/utils': 2.9.3
+      nullthrows: 1.1.1
+
+  '@parcel/workers@2.9.3(@parcel/core@2.9.3)':
+    dependencies:
+      '@parcel/core': 2.9.3
+      '@parcel/diagnostic': 2.9.3
+      '@parcel/logger': 2.9.3
+      '@parcel/profiler': 2.9.3
+      '@parcel/types': 2.9.3(@parcel/core@2.9.3)
+      '@parcel/utils': 2.9.3
+      nullthrows: 1.1.1
+
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
@@ -15553,6 +16367,109 @@ snapshots:
       lodash: 4.18.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
+
+  '@plasmohq/parcel-bundler@0.5.6':
+    dependencies:
+      '@parcel/core': 2.9.3
+      '@parcel/diagnostic': 2.9.3
+      '@parcel/graph': 2.9.3
+      '@parcel/hash': 2.9.3
+      '@parcel/plugin': 2.9.3(@parcel/core@2.9.3)
+      '@parcel/utils': 2.9.3
+      nullthrows: 1.1.1
+
+  '@plasmohq/parcel-compressor-utf8@0.1.1(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
+    dependencies:
+      '@parcel/plugin': 2.9.3(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+    transitivePeerDependencies:
+      - '@parcel/core'
+
+  '@plasmohq/parcel-namer-manifest@0.3.12':
+    dependencies:
+      '@parcel/core': 2.9.3
+      '@parcel/plugin': 2.9.3(@parcel/core@2.9.3)
+      '@parcel/types': 2.9.3(@parcel/core@2.9.3)
+      '@parcel/utils': 2.9.3
+
+  '@plasmohq/parcel-optimizer-encapsulate@0.0.8':
+    dependencies:
+      '@parcel/core': 2.9.3
+      '@parcel/plugin': 2.9.3(@parcel/core@2.9.3)
+      '@parcel/source-map': 2.1.1
+      '@parcel/types': 2.9.3(@parcel/core@2.9.3)
+
+  '@plasmohq/parcel-optimizer-es@0.4.2(@swc/helpers@0.5.23)':
+    dependencies:
+      '@parcel/core': 2.9.3
+      '@parcel/plugin': 2.9.3(@parcel/core@2.9.3)
+      '@parcel/source-map': 2.1.1
+      '@parcel/utils': 2.9.3
+      '@swc/core': 1.11.13(@swc/helpers@0.5.23)
+      nullthrows: 1.1.1
+    transitivePeerDependencies:
+      - '@swc/helpers'
+
+  '@plasmohq/parcel-packager@0.6.15':
+    dependencies:
+      '@parcel/core': 2.9.3
+      '@parcel/plugin': 2.9.3(@parcel/core@2.9.3)
+      '@parcel/types': 2.9.3(@parcel/core@2.9.3)
+      '@parcel/utils': 2.9.3
+      nullthrows: 1.1.1
+
+  '@plasmohq/parcel-resolver-post@0.4.6(@swc/core@1.16.1(@swc/helpers@0.5.23))(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.12)(yaml@2.9.0)':
+    dependencies:
+      '@parcel/core': 2.9.3
+      '@parcel/hash': 2.9.3
+      '@parcel/plugin': 2.9.3(@parcel/core@2.9.3)
+      '@parcel/types': 2.9.3(@parcel/core@2.9.3)
+      '@parcel/utils': 2.9.3
+      tsup: 8.4.0(@swc/core@1.16.1(@swc/helpers@0.5.23))(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.12)(typescript@5.8.2)(yaml@2.9.0)
+      typescript: 5.8.2
+    transitivePeerDependencies:
+      - '@microsoft/api-extractor'
+      - '@swc/core'
+      - jiti
+      - postcss
+      - supports-color
+      - tsx
+      - yaml
+
+  '@plasmohq/parcel-resolver@0.14.2':
+    dependencies:
+      '@parcel/core': 2.9.3
+      '@parcel/hash': 2.9.3
+      '@parcel/plugin': 2.9.3(@parcel/core@2.9.3)
+      '@parcel/types': 2.9.3(@parcel/core@2.9.3)
+      fast-glob: 3.3.3
+      fs-extra: 11.3.0
+      got: 14.4.6
+
+  '@plasmohq/parcel-runtime@0.25.3':
+    dependencies:
+      '@parcel/core': 2.9.3
+      '@parcel/plugin': 2.9.3(@parcel/core@2.9.3)
+      '@types/trusted-types': 2.0.7
+      react-refresh: 0.16.0
+
+  '@plasmohq/parcel-transformer-inject-env@0.2.12':
+    dependencies:
+      '@parcel/core': 2.9.3
+      '@parcel/plugin': 2.9.3(@parcel/core@2.9.3)
+      '@parcel/types': 2.9.3(@parcel/core@2.9.3)
+
+  '@plasmohq/parcel-transformer-manifest@0.21.1':
+    dependencies:
+      '@mischnic/json-sourcemap': 0.1.1
+      '@parcel/core': 2.9.3
+      '@parcel/diagnostic': 2.9.3
+      '@parcel/fs': 2.9.3(@parcel/core@2.9.3)
+      '@parcel/plugin': 2.9.3(@parcel/core@2.9.3)
+      '@parcel/types': 2.9.3(@parcel/core@2.9.3)
+      '@parcel/utils': 2.9.3
+      content-security-policy-parser: 0.6.0
+      json-schema-to-ts: 3.1.1
+      nullthrows: 1.1.1
 
   '@plasmohq/redux-persist@6.1.0(redux@5.0.1)':
     dependencies:
@@ -16354,6 +17271,8 @@ snapshots:
 
   '@sinclair/typebox@0.34.52': {}
 
+  '@sindresorhus/is@7.2.0': {}
+
   '@sindresorhus/is@8.1.0': {}
 
   '@sinonjs/commons@3.0.1':
@@ -16448,12 +17367,12 @@ snapshots:
       '@svgr/babel-plugin-transform-react-native-svg': 8.1.0(@babel/core@7.29.7)
       '@svgr/babel-plugin-transform-svg-component': 8.0.0(@babel/core@7.29.7)
 
-  '@svgr/core@8.1.0(typescript@7.0.2)':
+  '@svgr/core@8.1.0(typescript@5.8.2)':
     dependencies:
       '@babel/core': 7.29.7
       '@svgr/babel-preset': 8.1.0(@babel/core@7.29.7)
       camelcase: 6.3.0
-      cosmiconfig: 8.3.6(typescript@7.0.2)
+      cosmiconfig: 8.3.6(typescript@5.8.2)
       snake-case: 3.0.4
     transitivePeerDependencies:
       - supports-color
@@ -16464,26 +17383,41 @@ snapshots:
       '@babel/types': 7.29.8
       entities: 4.5.0
 
-  '@svgr/plugin-jsx@8.1.0(@svgr/core@8.1.0(typescript@7.0.2))':
+  '@svgr/plugin-jsx@8.1.0(@svgr/core@8.1.0(typescript@5.8.2))':
     dependencies:
       '@babel/core': 7.29.7
       '@svgr/babel-preset': 8.1.0(@babel/core@7.29.7)
-      '@svgr/core': 8.1.0(typescript@7.0.2)
+      '@svgr/core': 8.1.0(typescript@5.8.2)
       '@svgr/hast-util-to-babel-ast': 8.0.0
       svg-parser: 2.1.0
     transitivePeerDependencies:
       - supports-color
 
+  '@swc/core-darwin-arm64@1.11.13':
+    optional: true
+
   '@swc/core-darwin-arm64@1.16.1':
+    optional: true
+
+  '@swc/core-darwin-x64@1.11.13':
     optional: true
 
   '@swc/core-darwin-x64@1.16.1':
     optional: true
 
+  '@swc/core-linux-arm-gnueabihf@1.11.13':
+    optional: true
+
   '@swc/core-linux-arm-gnueabihf@1.16.1':
     optional: true
 
+  '@swc/core-linux-arm64-gnu@1.11.13':
+    optional: true
+
   '@swc/core-linux-arm64-gnu@1.16.1':
+    optional: true
+
+  '@swc/core-linux-arm64-musl@1.11.13':
     optional: true
 
   '@swc/core-linux-arm64-musl@1.16.1':
@@ -16495,20 +17429,52 @@ snapshots:
   '@swc/core-linux-s390x-gnu@1.16.1':
     optional: true
 
+  '@swc/core-linux-x64-gnu@1.11.13':
+    optional: true
+
   '@swc/core-linux-x64-gnu@1.16.1':
+    optional: true
+
+  '@swc/core-linux-x64-musl@1.11.13':
     optional: true
 
   '@swc/core-linux-x64-musl@1.16.1':
     optional: true
 
+  '@swc/core-win32-arm64-msvc@1.11.13':
+    optional: true
+
   '@swc/core-win32-arm64-msvc@1.16.1':
+    optional: true
+
+  '@swc/core-win32-ia32-msvc@1.11.13':
     optional: true
 
   '@swc/core-win32-ia32-msvc@1.16.1':
     optional: true
 
+  '@swc/core-win32-x64-msvc@1.11.13':
+    optional: true
+
   '@swc/core-win32-x64-msvc@1.16.1':
     optional: true
+
+  '@swc/core@1.11.13(@swc/helpers@0.5.23)':
+    dependencies:
+      '@swc/counter': 0.1.3
+      '@swc/types': 0.1.28
+    optionalDependencies:
+      '@swc/core-darwin-arm64': 1.11.13
+      '@swc/core-darwin-x64': 1.11.13
+      '@swc/core-linux-arm-gnueabihf': 1.11.13
+      '@swc/core-linux-arm64-gnu': 1.11.13
+      '@swc/core-linux-arm64-musl': 1.11.13
+      '@swc/core-linux-x64-gnu': 1.11.13
+      '@swc/core-linux-x64-musl': 1.11.13
+      '@swc/core-win32-arm64-msvc': 1.11.13
+      '@swc/core-win32-ia32-msvc': 1.11.13
+      '@swc/core-win32-x64-msvc': 1.11.13
+      '@swc/helpers': 0.5.23
 
   '@swc/core@1.16.1(@swc/helpers@0.5.23)':
     dependencies:
@@ -16538,6 +17504,10 @@ snapshots:
   '@swc/types@0.1.28':
     dependencies:
       '@swc/counter': 0.1.3
+
+  '@szmarczak/http-timer@5.0.1':
+    dependencies:
+      defer-to-connect: 2.0.1
 
   '@tailwindcss/node@4.3.3':
     dependencies:
@@ -17581,6 +18551,11 @@ snapshots:
     dependencies:
       run-applescript: 7.1.0
 
+  bundle-require@5.1.0(esbuild@0.25.12):
+    dependencies:
+      esbuild: 0.25.12
+      load-tsconfig: 0.2.5
+
   bundle-require@5.1.0(esbuild@0.27.7):
     dependencies:
       esbuild: 0.27.7
@@ -17594,6 +18569,16 @@ snapshots:
   cac@6.7.14: {}
 
   cacheable-lookup@7.0.0: {}
+
+  cacheable-request@12.0.1:
+    dependencies:
+      '@types/http-cache-semantics': 4.2.0
+      get-stream: 9.0.1
+      http-cache-semantics: 4.2.0
+      keyv: 4.5.4
+      mimic-response: 4.0.0
+      normalize-url: 8.1.1
+      responselike: 3.0.0
 
   cacheable-request@13.0.19:
     dependencies:
@@ -17892,14 +18877,14 @@ snapshots:
       path-type: 4.0.0
       yaml: 1.10.3
 
-  cosmiconfig@8.3.6(typescript@7.0.2):
+  cosmiconfig@8.3.6(typescript@5.8.2):
     dependencies:
       import-fresh: 3.3.1
       js-yaml: 4.3.2
       parse-json: 5.2.0
       path-type: 4.0.0
     optionalDependencies:
-      typescript: 7.0.2
+      typescript: 5.8.2
 
   crc-32@1.2.2: {}
 
@@ -18108,6 +19093,8 @@ snapshots:
       clone: 1.0.4
     optional: true
 
+  defer-to-connect@2.0.1: {}
+
   define-data-property@1.1.4:
     dependencies:
       es-define-property: 1.0.1
@@ -18201,9 +19188,13 @@ snapshots:
     dependencies:
       dotenv: 16.6.1
 
+  dotenv-expand@5.1.0: {}
+
   dotenv@16.6.1: {}
 
   dotenv@17.4.2: {}
+
+  dotenv@7.0.0: {}
 
   dotignore@0.1.2:
     dependencies:
@@ -18422,6 +19413,35 @@ snapshots:
       is-callable: 1.2.7
       is-date-object: 1.1.0
       is-symbol: 1.1.1
+
+  esbuild@0.25.12:
+    optionalDependencies:
+      '@esbuild/aix-ppc64': 0.25.12
+      '@esbuild/android-arm': 0.25.12
+      '@esbuild/android-arm64': 0.25.12
+      '@esbuild/android-x64': 0.25.12
+      '@esbuild/darwin-arm64': 0.25.12
+      '@esbuild/darwin-x64': 0.25.12
+      '@esbuild/freebsd-arm64': 0.25.12
+      '@esbuild/freebsd-x64': 0.25.12
+      '@esbuild/linux-arm': 0.25.12
+      '@esbuild/linux-arm64': 0.25.12
+      '@esbuild/linux-ia32': 0.25.12
+      '@esbuild/linux-loong64': 0.25.12
+      '@esbuild/linux-mips64el': 0.25.12
+      '@esbuild/linux-ppc64': 0.25.12
+      '@esbuild/linux-riscv64': 0.25.12
+      '@esbuild/linux-s390x': 0.25.12
+      '@esbuild/linux-x64': 0.25.12
+      '@esbuild/netbsd-arm64': 0.25.12
+      '@esbuild/netbsd-x64': 0.25.12
+      '@esbuild/openbsd-arm64': 0.25.12
+      '@esbuild/openbsd-x64': 0.25.12
+      '@esbuild/openharmony-arm64': 0.25.12
+      '@esbuild/sunos-x64': 0.25.12
+      '@esbuild/win32-arm64': 0.25.12
+      '@esbuild/win32-ia32': 0.25.12
+      '@esbuild/win32-x64': 0.25.12
 
   esbuild@0.27.7:
     optionalDependencies:
@@ -18801,6 +19821,8 @@ snapshots:
       cross-spawn: 7.0.6
       signal-exit: 4.1.0
 
+  form-data-encoder@4.1.0: {}
+
   formdata-polyfill@4.0.10:
     dependencies:
       fetch-blob: 3.2.0
@@ -18810,6 +19832,12 @@ snapshots:
   fresh@0.5.2: {}
 
   fs-constants@1.0.0: {}
+
+  fs-extra@11.3.0:
+    dependencies:
+      graceful-fs: 4.2.11
+      jsonfile: 6.2.1
+      universalify: 2.0.1
 
   fs-extra@11.4.0:
     dependencies:
@@ -18963,6 +19991,20 @@ snapshots:
   google-logging-utils@2.0.1: {}
 
   gopd@1.2.0: {}
+
+  got@14.4.6:
+    dependencies:
+      '@sindresorhus/is': 7.2.0
+      '@szmarczak/http-timer': 5.0.1
+      cacheable-lookup: 7.0.0
+      cacheable-request: 12.0.1
+      decompress-response: 6.0.0
+      form-data-encoder: 4.1.0
+      http2-wrapper: 2.2.1
+      lowercase-keys: 3.0.0
+      p-cancelable: 4.0.1
+      responselike: 3.0.0
+      type-fest: 4.41.0
 
   got@15.1.0:
     dependencies:
@@ -20092,6 +21134,21 @@ snapshots:
       symbol-observable: 1.2.0
       zen-observable: 0.8.15
 
+  lmdb@2.7.11:
+    dependencies:
+      msgpackr: 1.8.5
+      node-addon-api: 4.3.0
+      node-gyp-build-optional-packages: 5.0.6
+      ordered-binary: 1.6.1
+      weak-lru-cache: 1.2.2
+    optionalDependencies:
+      '@lmdb/lmdb-darwin-arm64': 2.7.11
+      '@lmdb/lmdb-darwin-x64': 2.7.11
+      '@lmdb/lmdb-linux-arm': 2.7.11
+      '@lmdb/lmdb-linux-arm64': 2.7.11
+      '@lmdb/lmdb-linux-x64': 2.7.11
+      '@lmdb/lmdb-win32-x64': 2.7.11
+
   lmdb@2.8.5:
     dependencies:
       msgpackr: 1.12.1
@@ -20127,6 +21184,8 @@ snapshots:
 
   lodash.merge@4.6.2:
     optional: true
+
+  lodash.sortby@4.7.0: {}
 
   lodash.throttle@4.1.1: {}
 
@@ -20516,6 +21575,10 @@ snapshots:
     optionalDependencies:
       msgpackr-extract: 3.0.4
 
+  msgpackr@1.8.5:
+    optionalDependencies:
+      msgpackr-extract: 3.0.4
+
   mute-stream@3.0.0: {}
 
   mz@2.7.0:
@@ -20599,6 +21662,8 @@ snapshots:
     dependencies:
       semver: 7.8.5
 
+  node-addon-api@4.3.0: {}
+
   node-addon-api@6.1.0: {}
 
   node-addon-api@7.1.1: {}
@@ -20621,6 +21686,8 @@ snapshots:
       data-uri-to-buffer: 4.0.1
       fetch-blob: 3.2.0
       formdata-polyfill: 4.0.10
+
+  node-gyp-build-optional-packages@5.0.6: {}
 
   node-gyp-build-optional-packages@5.1.1:
     dependencies:
@@ -20781,6 +21848,8 @@ snapshots:
       get-intrinsic: 1.3.0
       object-keys: 1.1.1
       safe-push-apply: 1.0.0
+
+  p-cancelable@4.0.1: {}
 
   p-limit@2.3.0:
     dependencies:
@@ -21458,6 +22527,10 @@ snapshots:
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
 
+  responselike@3.0.0:
+    dependencies:
+      lowercase-keys: 3.0.0
+
   responselike@4.0.2:
     dependencies:
       lowercase-keys: 3.0.0
@@ -21791,6 +22864,10 @@ snapshots:
   source-map@0.6.1: {}
 
   source-map@0.7.6: {}
+
+  source-map@0.8.0-beta.0:
+    dependencies:
+      whatwg-url: 7.1.0
 
   spdx-correct@3.2.0:
     dependencies:
@@ -22244,6 +23321,10 @@ snapshots:
 
   tr46@0.0.3: {}
 
+  tr46@1.0.1:
+    dependencies:
+      punycode: 2.3.1
+
   tr46@5.1.1:
     dependencies:
       punycode: 2.3.1
@@ -22303,6 +23384,34 @@ snapshots:
       jest-util: 30.5.0
 
   tslib@2.8.1: {}
+
+  tsup@8.4.0(@swc/core@1.16.1(@swc/helpers@0.5.23))(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.12)(typescript@5.8.2)(yaml@2.9.0):
+    dependencies:
+      bundle-require: 5.1.0(esbuild@0.25.12)
+      cac: 6.7.14
+      chokidar: 4.0.3
+      consola: 3.4.2
+      debug: 4.4.3(supports-color@8.1.1)
+      esbuild: 0.25.12
+      joycon: 3.1.1
+      picocolors: 1.1.1
+      postcss-load-config: 6.0.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.12)(yaml@2.9.0)
+      resolve-from: 5.0.0
+      rollup: 4.63.1
+      source-map: 0.8.0-beta.0
+      sucrase: 3.35.1
+      tinyexec: 0.3.2
+      tinyglobby: 0.2.17
+      tree-kill: 1.2.2
+    optionalDependencies:
+      '@swc/core': 1.16.1(@swc/helpers@0.5.23)
+      postcss: 8.5.26
+      typescript: 5.8.2
+    transitivePeerDependencies:
+      - jiti
+      - supports-color
+      - tsx
+      - yaml
 
   tsup@8.5.1(@swc/core@1.16.1(@swc/helpers@0.5.23))(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.12)(typescript@6.0.3)(yaml@2.9.0):
     dependencies:
@@ -22452,6 +23561,8 @@ snapshots:
       typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
+
+  typescript@5.8.2: {}
 
   typescript@6.0.3: {}
 
@@ -22656,6 +23767,8 @@ snapshots:
 
   webidl-conversions@3.0.1: {}
 
+  webidl-conversions@4.0.2: {}
+
   webidl-conversions@7.0.0: {}
 
   websocket-driver@0.7.5:
@@ -22683,6 +23796,12 @@ snapshots:
     dependencies:
       tr46: 0.0.3
       webidl-conversions: 3.0.1
+
+  whatwg-url@7.1.0:
+    dependencies:
+      lodash.sortby: 4.7.0
+      tr46: 1.0.1
+      webidl-conversions: 4.0.2
 
   which-boxed-primitive@1.1.1:
     dependencies:

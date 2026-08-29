@@ -2,8 +2,8 @@ import { readJson, writeJson } from "fs-extra"
 import getPackageJson, { type AbbreviatedVersion } from "package-json"
 import semver from "semver"
 
-import { isAccessible } from "@plasmo/utils/fs"
-import { aLog, eLog, vLog, wLog } from "@plasmo/utils/logging"
+import { isAccessible } from "@extenso/utils/fs"
+import { aLog, eLog, vLog, wLog } from "@extenso/utils/logging"
 
 import type { CommonPath } from "~features/extension-devtools/common-path"
 import { cleanUpDotPlasmo } from "~features/extra/cache-busting"
@@ -13,7 +13,7 @@ export const updateVersionFile = async (commonPath: CommonPath) => {
   const { plasmoVersionFilePath } = commonPath
 
   if (!(await isAccessible(plasmoVersionFilePath))) {
-    vLog("Plasmo version file not found, busting cache...")
+    vLog("Extenso version file not found, busting cache...")
     await cleanUpDotPlasmo(commonPath)
   } else {
     const cachedVersion = await readJson(plasmoVersionFilePath)
@@ -26,7 +26,7 @@ export const updateVersionFile = async (commonPath: CommonPath) => {
       (semverCachedVersion.major === semverCurrentVersion.major &&
         semverCachedVersion.minor < semverCurrentVersion.minor)
     ) {
-      vLog("Plasmo updated, busting cache...")
+      vLog("Extenso updated, busting cache...")
       await cleanUpDotPlasmo(commonPath)
     }
   }
@@ -40,8 +40,8 @@ export const checkNewVersion = async () => {
 
   // If the version is different, log a warning about new version is available
   try {
-    // Get the latest version of plasmo
-    const latestPackageJson = (await getPackageJson("plasmo", {
+    // Get the latest version of @extenso/cli
+    const latestPackageJson = (await getPackageJson("@extenso/cli", {
       version: "latest"
     })) as unknown as AbbreviatedVersion
     const latestVersion = latestPackageJson.version
@@ -51,14 +51,14 @@ export const checkNewVersion = async () => {
       const { default: chalk } = await import("chalk")
       wLog(
         chalk.yellowBright(
-          `A new version of plasmo is available: v${latestVersion}`
+          `A new version of Extenso is available: v${latestVersion}`
         )
       )
       const updateCmd = await getUpdateCmd(latestVersion)
       aLog(chalk.yellow(`Run ${updateCmd} to update`))
     }
   } catch (error) {
-    eLog('Error fetching package information for "plasmo"', error)
+    eLog('Error fetching package information for "@extenso/cli"', error)
   }
 }
 
@@ -66,10 +66,10 @@ async function getUpdateCmd(version = "") {
   const packageManager = await getPackageManager()
   switch (packageManager.name) {
     case "npm":
-      return `"npm i -S plasmo@${version}"`
+      return `"npm i -S @extenso/cli@${version}"`
     case "pnpm":
-      return `"pnpm i plasmo@${version}"`
+      return `"pnpm i @extenso/cli@${version}"`
     case "yarn":
-      return `"yarn add plasmo@${version}"`
+      return `"yarn add @extenso/cli@${version}"`
   }
 }

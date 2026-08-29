@@ -1,5 +1,5 @@
 {
-  "name": "@plasmo/framework-shared",
+  "name": "@extenso/framework-shared",
   "version": "0.0.2",
   "private": true,
   "license": "MIT",
@@ -10,7 +10,7 @@
     "ws": "8.21.3"
   },
   "devDependencies": {
-    "@plasmo/config": "workspace:^0.2.5",
-    "@plasmo/utils": "workspace:^0.2.3"
+    "@extenso/config": "workspace:^0.2.5",
+    "@extenso/utils": "workspace:^0.2.3"
   }
 }

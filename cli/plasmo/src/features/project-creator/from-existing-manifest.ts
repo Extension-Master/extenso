@@ -8,8 +8,8 @@ import type {
   ExtensionManifestV2,
   ExtensionManifestV3,
   ManifestPermission
-} from "@plasmo/constants"
-import { vLog } from "@plasmo/utils/logging"
+} from "@extenso/constants"
+import { vLog } from "@extenso/utils/logging"
 
 import type { CommonPath } from "~features/extension-devtools/common-path"
 import {
