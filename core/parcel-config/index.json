@@ -1,13 +1,13 @@
 {
   "extends": "@parcel/config-default",
-  "bundler": "@plasmohq/parcel-bundler",
+  "bundler": "@extenso/parcel-bundler",
   "resolvers": [
-    "@plasmohq/parcel-resolver",
+    "@extenso/parcel-resolver",
     "@parcel/resolver-default",
-    "@plasmohq/parcel-resolver-post"
+    "@extenso/parcel-resolver-post"
   ],
   "transformers": {
-    "*.plasmo.manifest.json": ["@plasmohq/parcel-transformer-manifest"],
+    "*.plasmo.manifest.json": ["@extenso/parcel-transformer-manifest"],
 
     "react:*.svg": ["@parcel/transformer-svg-react"],
     "react:*.{js,mjs,jsm,jsx,es6,cjs,ts,tsx}": [
@@ -18,57 +18,57 @@
 
     "data-text:*.module.{css,pcss}": [
       "@parcel/transformer-postcss",
-      "@plasmohq/parcel-transformer-inline-css",
+      "@extenso/parcel-transformer-inline-css",
       "@parcel/transformer-inline-string"
     ],
 
     "data-text:*": ["...", "@parcel/transformer-inline-string"],
     "data-base64:*": ["...", "@parcel/transformer-inline-string"],
 
-    "data-env:*": ["@plasmohq/parcel-transformer-inject-env", "..."],
+    "data-env:*": ["@extenso/parcel-transformer-inject-env", "..."],
     "data-text-env:*": [
-      "@plasmohq/parcel-transformer-inject-env",
+      "@extenso/parcel-transformer-inject-env",
       "...",
       "@parcel/transformer-inline-string"
     ],
 
     "raw:*": ["@parcel/transformer-raw"],
     "raw-env:*": [
-      "@plasmohq/parcel-transformer-inject-env",
+      "@extenso/parcel-transformer-inject-env",
       "@parcel/transformer-raw"
     ],
 
-    "*.vue": ["@plasmohq/parcel-transformer-vue"],
-    "template:*.vue": ["@plasmohq/parcel-transformer-vue"],
-    "script:*.vue": ["@plasmohq/parcel-transformer-vue"],
-    "style:*.vue": ["@plasmohq/parcel-transformer-vue"],
-    "style-raw:*.vue": ["@plasmohq/parcel-transformer-vue"],
-    "custom:*.vue": ["@plasmohq/parcel-transformer-vue"],
+    "*.vue": ["@extenso/parcel-transformer-vue"],
+    "template:*.vue": ["@extenso/parcel-transformer-vue"],
+    "script:*.vue": ["@extenso/parcel-transformer-vue"],
+    "style:*.vue": ["@extenso/parcel-transformer-vue"],
+    "style-raw:*.vue": ["@extenso/parcel-transformer-vue"],
+    "custom:*.vue": ["@extenso/parcel-transformer-vue"],
 
-    "*.svelte": ["@plasmohq/parcel-transformer-svelte"],
+    "*.svelte": ["@extenso/parcel-transformer-svelte"],
 
     "*.{gql,graphql}": ["@parcel/transformer-graphql"],
     "*.{sass,scss}": ["@parcel/transformer-sass"],
     "*.less": ["@parcel/transformer-less"]
   },
-  "namers": ["@plasmohq/parcel-namer-manifest", "..."],
+  "namers": ["@extenso/parcel-namer-manifest", "..."],
   "packagers": {
-    "manifest.json": "@plasmohq/parcel-packager"
+    "manifest.json": "@extenso/parcel-packager"
   },
   "optimizers": {
     "data-base64:*": ["...", "@parcel/optimizer-data-url"],
     "*.{js,mjs,cjs}": [
-      "@plasmohq/parcel-optimizer-encapsulate",
-      "@plasmohq/parcel-optimizer-es"
+      "@extenso/parcel-optimizer-encapsulate",
+      "@extenso/parcel-optimizer-es"
     ]
   },
   "compressors": {
-    "*.js": ["@plasmohq/parcel-compressor-utf8"],
+    "*.js": ["@extenso/parcel-compressor-utf8"],
     "*": ["@parcel/compressor-raw"]
   },
   "runtimes": [
     "@parcel/runtime-js",
-    "@plasmohq/parcel-runtime",
+    "@extenso/parcel-runtime",
     "@parcel/runtime-service-worker"
   ]
 }
