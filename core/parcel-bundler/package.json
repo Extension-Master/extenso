@@ -1,10 +1,10 @@
 {
-  "name": "@plasmohq/parcel-bundler",
+  "name": "@extenso/parcel-bundler",
   "version": "0.5.6",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/PlasmoHQ/plasmo.git"
+    "url": "https://github.com/Extension-Master/extenso.git"
   },
   "main": "dist/index.js",
   "source": "src/index.ts",
@@ -18,18 +18,18 @@
     "parcel": ">= 2.7.0"
   },
   "dependencies": {
-    "@parcel/core": "2.9.3",
-    "@parcel/diagnostic": "2.9.3",
-    "@parcel/graph": "2.9.3",
+    "@parcel/core": "2.16.4",
+    "@parcel/diagnostic": "2.16.4",
+    "@parcel/graph": "3.6.4",
     "@parcel/hash": "2.9.3",
-    "@parcel/plugin": "2.9.3",
-    "@parcel/utils": "2.9.3",
+    "@parcel/plugin": "2.16.4",
+    "@parcel/utils": "2.16.4",
     "nullthrows": "1.1.1"
   },
   "devDependencies": {
-    "@parcel/types": "2.9.3",
-    "@plasmo/config": "workspace:*",
-    "@plasmo/utils": "workspace:*",
-    "tsup": "8.4.0"
+    "@parcel/types": "2.16.4",
+    "@extenso/config": "workspace:^0.2.5",
+    "@extenso/utils": "workspace:^0.2.3",
+    "tsup": "8.5.1"
   }
 }

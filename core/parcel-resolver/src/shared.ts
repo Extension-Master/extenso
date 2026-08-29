@@ -6,8 +6,8 @@ import glob from "fast-glob"
 import { readJson } from "fs-extra"
 import type { Got } from "got"
 
-import { vLog } from "@plasmo/utils/logging"
-import { toPosix } from "@plasmo/utils/path"
+import { vLog } from "@extenso/utils/logging"
+import { toPosix } from "@extenso/utils/path"
 
 export const relevantExtensionList = [
   ".ts",

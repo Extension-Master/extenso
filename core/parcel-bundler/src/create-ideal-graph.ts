@@ -318,12 +318,12 @@ export function createIdealGraph(
   )
 
   // Step Merge Type Change Bundles: Clean up type change bundles within the exact same bundlegroups
-  for (let [nodeIdA, a] of bundleGraph.nodes) {
+  for (let [nodeIdA, a] of bundleGraph.nodes.entries()) {
     //if bundle b bundlegroups ==== bundle a bundlegroups then combine type changes
     if (!typeChangeIds.has(nodeIdA) || a === "root") continue
     let bundleABundleGroups = getBundleGroupsForBundle(nodeIdA)
 
-    for (let [nodeIdB, b] of bundleGraph.nodes) {
+    for (let [nodeIdB, b] of bundleGraph.nodes.entries()) {
       if (
         a !== "root" &&
         b !== "root" &&
@@ -561,7 +561,7 @@ export function createIdealGraph(
   // the bundle is synchronously available elsewhere.
   // We can query sync assets available via reachableRoots. If the parent has
   // the bundleRoot by reachableRoots AND ancestorAssets, internalize it.
-  for (let [id, bundleRoot] of bundleRootGraph.nodes) {
+  for (let [id, bundleRoot] of bundleRootGraph.nodes.entries()) {
     if (bundleRoot === "root") continue
     let parentRoots = bundleRootGraph
       .getNodeIdsConnectedTo(id, ALL_EDGE_TYPES)
@@ -780,7 +780,7 @@ export function createIdealGraph(
   // Step Merge Share Bundles: Merge any shared bundles under the minimum bundle size back into
   // their source bundles, and remove the bundle.
   // We should include "bundle reuse" as shared bundles that may be removed but the bundle itself would have to be retained
-  for (let [bundleNodeId, bundle] of bundleGraph.nodes) {
+  for (let [bundleNodeId, bundle] of bundleGraph.nodes.entries()) {
     if (bundle === "root") continue
 
     if (

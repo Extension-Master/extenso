@@ -10,7 +10,7 @@ import type {
   ExtensionManifest,
   ExtensionManifestV2,
   ExtensionManifestV3
-} from "@plasmo/constants"
+} from "@extenso/constants"
 
 import { getRelativePath } from "./utils"
 

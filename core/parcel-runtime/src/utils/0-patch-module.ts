@@ -1,4 +1,4 @@
-import { vLog } from "@plasmo/utils/logging"
+import { vLog } from "@extenso/utils/logging"
 
 import type { BackgroundMessage, ExtensionApi, RuntimeData } from "../types"
 

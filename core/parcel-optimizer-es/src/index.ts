@@ -11,7 +11,7 @@ import SourceMap from "@parcel/source-map"
 import { transform as swcTransform } from "@swc/core"
 import nullthrows from "nullthrows"
 
-import { vLog } from "@plasmo/utils/logging"
+import { vLog } from "@extenso/utils/logging"
 
 import { blobToString } from "./blob-to-string"
 
@@ -24,7 +24,7 @@ export default new Optimizer({
     getSourceMapReference
   }) {
     vLog(
-      "@plasmohq/optimizer-es: ",
+      "@extenso/optimizer-es: ",
       bundle.name,
       bundle.displayName,
       options.projectRoot

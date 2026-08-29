@@ -1,6 +1,6 @@
-import { getNonFlagArgvs } from "@plasmo/utils/argv"
-import { hasFlag } from "@plasmo/utils/flags"
-import { iLog, sLog } from "@plasmo/utils/logging"
+import { getNonFlagArgvs } from "@extenso/utils/argv"
+import { hasFlag } from "@extenso/utils/flags"
+import { iLog, sLog } from "@extenso/utils/logging"
 
 import { getBundleConfig } from "~features/extension-devtools/get-bundle-config"
 import { nextNewTab } from "~features/extra/next-new-tab"

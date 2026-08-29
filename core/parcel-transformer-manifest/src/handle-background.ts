@@ -1,6 +1,6 @@
 import { getJSONSourceLocation } from "@parcel/diagnostic"
 
-import { vLog } from "@plasmo/utils/logging"
+import { vLog } from "@extenso/utils/logging"
 
 import { cspPatchHMR } from "./csp-patch-hmr"
 import type { MV2Data, MV3Data } from "./schema"

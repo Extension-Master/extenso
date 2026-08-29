@@ -1,5 +1,5 @@
 {
-  "name": "@plasmohq/parcel-optimizer-encapsulate",
+  "name": "@extenso/parcel-optimizer-encapsulate",
   "version": "0.0.8",
   "description": "Plasmo ECMAScript Encapsulation for Extension",
   "files": [
@@ -19,17 +19,17 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/PlasmoHQ/plasmo.git"
+    "url": "https://github.com/Extension-Master/extenso.git"
   },
   "devDependencies": {
-    "@plasmo/config": "workspace:*",
-    "@plasmo/utils": "workspace:*",
-    "tsup": "8.4.0"
+    "@extenso/config": "workspace:^0.2.5",
+    "@extenso/utils": "workspace:^0.2.3",
+    "tsup": "8.5.1"
   },
   "dependencies": {
-    "@parcel/core": "2.9.3",
-    "@parcel/plugin": "2.9.3",
+    "@parcel/core": "2.16.4",
+    "@parcel/plugin": "2.16.4",
     "@parcel/source-map": "2.1.1",
-    "@parcel/types": "2.9.3"
+    "@parcel/types": "2.16.4"
   }
 }

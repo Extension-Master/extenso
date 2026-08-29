@@ -8,7 +8,7 @@ export const getTemplatePath = () => {
   const staticTemplatePath = resolve(templatePath, "static")
 
   const initTemplatePackagePath = resolve(
-    require.resolve("@plasmohq/init"),
+    require.resolve("@extenso/init"),
     ".."
   )
 

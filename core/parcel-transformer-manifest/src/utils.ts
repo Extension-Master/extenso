@@ -1,7 +1,7 @@
 import type { DependencyOptions } from "@parcel/types"
 
-import { injectEnv } from "@plasmo/utils/env"
-import { wLog } from "@plasmo/utils/logging"
+import { injectEnv } from "@extenso/utils/env"
+import { wLog } from "@extenso/utils/logging"
 
 import { getState } from "./state"
 

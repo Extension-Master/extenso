@@ -3,8 +3,8 @@ import { cwd } from "process"
 import { readJson } from "fs-extra"
 import semver from "semver"
 
-import { assertUnreachable } from "@plasmo/utils/assert"
-import { isAccessible } from "@plasmo/utils/fs"
+import { assertUnreachable } from "@extenso/utils/assert"
+import { isAccessible } from "@extenso/utils/fs"
 
 import { type PlasmoManifest } from "./base"
 
@@ -36,7 +36,7 @@ export type UiExtMap = {
   mountExt: ScaffolderMountExt
 }
 
-const uiLibraryError = `No supported UI library found.  You can file an RFC for a new UI Library here: https://github.com/PlasmoHQ/plasmo/issues`
+const uiLibraryError = `No supported UI library found.  You can file an RFC for a new UI Library here: https://github.com/Extension-Master/extenso/issues`
 
 const getMajorVersion = async (version: string) => {
   if (version.includes(":")) {

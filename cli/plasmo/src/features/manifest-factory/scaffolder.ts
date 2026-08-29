@@ -2,10 +2,10 @@ import { readFile, writeFile } from "fs/promises"
 import { join, relative, resolve, type ParsedPath } from "path"
 import { copy, ensureDir } from "fs-extra"
 
-import { find } from "@plasmo/utils/array"
-import { isAccessible, isFile } from "@plasmo/utils/fs"
-import { vLog } from "@plasmo/utils/logging"
-import { toPosix } from "@plasmo/utils/path"
+import { find } from "@extenso/utils/array"
+import { isAccessible, isFile } from "@extenso/utils/fs"
+import { vLog } from "@extenso/utils/logging"
+import { toPosix } from "@extenso/utils/path"
 
 import { getRevHash } from "~features/helpers/crypto"
 

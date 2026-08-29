@@ -1,4 +1,4 @@
-import type { PlasmoCSConfig, PlasmoGetOverlayAnchor } from "plasmo"
+import type { PlasmoCSConfig, PlasmoGetOverlayAnchor } from "@extenso/cli"
 
 export const config: PlasmoCSConfig = {
   matches: ["https://www.plasmo.com/*"]

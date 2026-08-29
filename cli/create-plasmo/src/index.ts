@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 import { argv, exit } from "process"
-import { version } from "plasmo/package.json"
-import init from "plasmo/src/commands/init"
+import { version } from "@extenso/cli/package.json"
+import init from "@extenso/cli/src/commands/init"
 
-import { ErrorMessage } from "@plasmo/constants/error"
-import { aLog, eLog } from "@plasmo/utils/logging"
-import { exitCountDown } from "@plasmo/utils/wait"
+import { ErrorMessage } from "@extenso/constants/error"
+import { aLog, eLog } from "@extenso/utils/logging"
+import { exitCountDown } from "@extenso/utils/wait"
 
 process.env.APP_VERSION = version
 

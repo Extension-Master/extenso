@@ -1,5 +1,5 @@
 {
-  "name": "@plasmohq/parcel-transformer-lab",
+  "name": "@extenso/parcel-transformer-lab",
   "version": "0.1.12",
   "description": "Plasmo Parcel Transformer Laboratory - a way to experiment with how the transformer works",
   "files": [
@@ -19,19 +19,19 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/PlasmoHQ/plasmo.git"
+    "url": "https://github.com/Extension-Master/extenso.git"
   },
   "devDependencies": {
-    "@plasmo/config": "workspace:*",
-    "@plasmo/utils": "workspace:*",
-    "tsup": "8.4.0"
+    "@extenso/config": "workspace:^0.2.5",
+    "@extenso/utils": "workspace:^0.2.3",
+    "tsup": "8.5.1"
   },
   "dependencies": {
-    "@parcel/core": "2.9.3",
-    "@parcel/diagnostic": "2.9.3",
-    "@parcel/fs": "2.9.3",
-    "@parcel/plugin": "2.9.3",
-    "@parcel/types": "2.9.3",
-    "@parcel/utils": "2.9.3"
+    "@parcel/core": "2.16.4",
+    "@parcel/diagnostic": "2.16.4",
+    "@parcel/fs": "2.16.4",
+    "@parcel/plugin": "2.16.4",
+    "@parcel/types": "2.16.4",
+    "@parcel/utils": "2.16.4"
   }
 }

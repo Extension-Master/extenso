@@ -1,5 +1,5 @@
 {
-  "name": "@plasmohq/parcel-packager",
+  "name": "@extenso/parcel-packager",
   "version": "0.6.15",
   "description": "Plasmo Parcel Packager for Web Extension Manifest",
   "files": [
@@ -19,19 +19,19 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/PlasmoHQ/plasmo.git"
+    "url": "https://github.com/Extension-Master/extenso.git"
   },
   "devDependencies": {
-    "@plasmo/config": "workspace:*",
-    "@plasmo/constants": "workspace:*",
-    "@plasmo/utils": "workspace:*",
-    "tsup": "8.4.0"
+    "@extenso/config": "workspace:^0.2.5",
+    "@extenso/constants": "workspace:^0.3.0",
+    "@extenso/utils": "workspace:^0.2.3",
+    "tsup": "8.5.1"
   },
   "dependencies": {
-    "@parcel/core": "2.9.3",
-    "@parcel/plugin": "2.9.3",
-    "@parcel/types": "2.9.3",
-    "@parcel/utils": "2.9.3",
+    "@parcel/core": "2.16.4",
+    "@parcel/plugin": "2.16.4",
+    "@parcel/types": "2.16.4",
+    "@parcel/utils": "2.16.4",
     "nullthrows": "1.1.1"
   }
 }

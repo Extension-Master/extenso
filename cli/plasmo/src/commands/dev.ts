@@ -1,15 +1,15 @@
 import {
   BuildSocketEvent,
   getBuildSocket
-} from "@plasmo/framework-shared/build-socket"
-import { getFlag, isVerbose } from "@plasmo/utils/flags"
-import { eLog, iLog, sLog, vLog } from "@plasmo/utils/logging"
+} from "@extenso/framework-shared/build-socket"
+import { getFlag, isVerbose } from "@extenso/utils/flags"
+import { eLog, iLog, sLog, vLog } from "@extenso/utils/logging"
 
 import { getBundleConfig } from "~features/extension-devtools/get-bundle-config"
 import { createProjectWatcher } from "~features/extension-devtools/project-watcher"
 import { checkNewVersion } from "~features/framework-update/version-tracker"
 import { createParcelBuilder } from "~features/helpers/create-parcel-bundler"
-import { startLoading, stopLoading } from "~features/helpers/loading-animation"
+import { stopLoading } from "~features/helpers/loading-animation"
 import { printHeader } from "~features/helpers/print"
 import { createManifest } from "~features/manifest-factory/create-manifest"
 
@@ -71,11 +71,6 @@ async function dev() {
       return
     }
 
-    if (event.type === "buildStart") {
-      startLoading()
-      return
-    }
-
     if (event.type === "buildSuccess") {
       stopLoading()
       sLog(`Extension re-packaged in ${chalk.bold(event.buildTime)}ms! 🚀`)
@@ -89,7 +84,7 @@ async function dev() {
       if (!isVerbose()) {
         eLog(
           chalk.redBright(
-            `Build failed. To debug, run ${chalk.bold("plasmo dev --verbose")}.`
+            `Build failed. To debug, run ${chalk.bold("extenso dev --verbose")}.`
           )
         )
       }

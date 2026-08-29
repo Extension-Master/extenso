@@ -1,5 +1,5 @@
 {
-  "name": "@plasmo/framework-shared",
+  "name": "@extenso/framework-shared",
   "version": "0.0.2",
   "private": true,
   "license": "MIT",
@@ -7,10 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "ws": "8.18.1"
+    "ws": "8.21.3"
   },
   "devDependencies": {
-    "@plasmo/config": "workspace:*",
-    "@plasmo/utils": "workspace:*"
+    "@extenso/config": "workspace:^0.2.5",
+    "@extenso/utils": "workspace:^0.2.3"
   }
 }

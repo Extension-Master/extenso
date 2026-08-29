@@ -3,10 +3,10 @@ import ParcelFS from "@parcel/fs"
 import ParcelPM from "@parcel/package-manager"
 import { emptyDir, ensureDir, exists, readJson, writeJson } from "fs-extra"
 
-import { getFlag, hasFlag } from "@plasmo/utils/flags"
-import { wLog } from "@plasmo/utils/logging"
+import { getFlag, hasFlag } from "@extenso/utils/flags"
+import { wLog } from "@extenso/utils/logging"
 
-import { Parcel, type ParcelOptions } from "@plasmohq/parcel-core"
+import { Parcel, type ParcelOptions } from "@extenso/parcel-core"
 
 import type { PlasmoManifest } from "~features/manifest-factory/base"
 
@@ -65,7 +65,7 @@ export const createParcelBuilder = async (
     new PackageInstaller()
   )
 
-  const baseConfig = require.resolve("@plasmohq/parcel-config")
+  const baseConfig = require.resolve("@extenso/parcel-config")
 
   let runConfig = join(dirname(baseConfig), "run.json")
 
@@ -83,9 +83,9 @@ export const createParcelBuilder = async (
     if (isProd) {
       const customConfig = await readJson(runConfig)
 
-      if (customConfig.extends !== "@plasmohq/parcel-config") {
+      if (customConfig.extends !== "@extenso/parcel-config") {
         wLog(
-          'The .parcelrc does not extend "@plasmohq/parcel-config", the result may be unexpected'
+          'The .parcelrc does not extend "@extenso/parcel-config", the result may be unexpected'
         )
       }
     }

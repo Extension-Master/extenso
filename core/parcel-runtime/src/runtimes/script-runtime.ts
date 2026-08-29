@@ -7,7 +7,7 @@
  * Copyright (c) 2019 jacksteamdev
  */
 
-import { vLog } from "@plasmo/utils/logging"
+import { vLog } from "@extenso/utils/logging"
 
 import type { BackgroundMessage } from "../types"
 import {

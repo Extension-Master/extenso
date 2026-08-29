@@ -8,7 +8,7 @@ import { Optimizer } from "@parcel/plugin"
 import SourceMap from "@parcel/source-map"
 import type { PluginOptions } from "@parcel/types"
 
-import { vLog } from "@plasmo/utils/logging"
+import { vLog } from "@extenso/utils/logging"
 
 const encapsulateGlobal = (name: string) =>
   `var __${name}; typeof ${name} === "function" && (__${name}=${name},${name}=null);`
@@ -40,7 +40,7 @@ function getSourceMap(options: PluginOptions, map: SourceMap) {
 export default new Optimizer({
   async optimize({ bundle, contents, map, options }) {
     vLog(
-      "@plasmohq/parcel-optimizer-encapsulate",
+      "@extenso/parcel-optimizer-encapsulate",
       bundle.name,
       bundle.displayName
     )

@@ -1,4 +1,4 @@
-import type { PlasmoCSConfig } from "plasmo"
+import type { PlasmoCSConfig } from "@extenso/cli"
 
 export const config: PlasmoCSConfig = {
   matches: ["https://www.plasmo.com/*"]

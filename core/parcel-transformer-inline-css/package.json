@@ -1,5 +1,5 @@
 {
-  "name": "@plasmohq/parcel-transformer-inline-css",
+  "name": "@extenso/parcel-transformer-inline-css",
   "version": "0.3.12",
   "description": "Plasmo Parcel Transformer for inline CSS",
   "files": [
@@ -19,17 +19,17 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/PlasmoHQ/plasmo.git"
+    "url": "https://github.com/Extension-Master/extenso.git"
   },
   "devDependencies": {
-    "@plasmo/config": "workspace:*",
-    "tsup": "8.4.0"
+    "@extenso/config": "workspace:^0.2.5",
+    "tsup": "8.5.1"
   },
   "dependencies": {
-    "@parcel/core": "2.9.3",
-    "@parcel/plugin": "2.9.3",
-    "@parcel/utils": "2.9.3",
-    "browserslist": "4.24.4",
-    "lightningcss": "1.21.8"
+    "@parcel/core": "2.16.4",
+    "@parcel/plugin": "2.16.4",
+    "@parcel/utils": "2.16.4",
+    "browserslist": "4.28.8",
+    "lightningcss": "1.33.0"
   }
 }

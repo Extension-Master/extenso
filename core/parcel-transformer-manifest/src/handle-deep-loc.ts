@@ -1,7 +1,7 @@
 import { extname } from "path"
 import { getJSONSourceLocation } from "@parcel/diagnostic"
 
-import { vLog } from "@plasmo/utils/logging"
+import { vLog } from "@extenso/utils/logging"
 
 import { getState } from "./state"
 

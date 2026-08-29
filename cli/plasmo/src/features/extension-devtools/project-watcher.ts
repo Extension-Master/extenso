@@ -1,9 +1,9 @@
 import { subscribe, type Event } from "@parcel/watcher"
 
-import { PARCEL_WATCHER_BACKEND } from "@plasmo/constants/misc"
-import { assertUnreachable } from "@plasmo/utils/assert"
-import { hasFlag } from "@plasmo/utils/flags"
-import { iLog, vLog, wLog } from "@plasmo/utils/logging"
+import { PARCEL_WATCHER_BACKEND } from "@extenso/constants/misc"
+import { assertUnreachable } from "@extenso/utils/assert"
+import { hasFlag } from "@extenso/utils/flags"
+import { iLog, vLog, wLog } from "@extenso/utils/logging"
 
 import { updateBgswEntry } from "~features/background-service-worker/update-bgsw-entry"
 import { type PlasmoManifest } from "~features/manifest-factory/base"

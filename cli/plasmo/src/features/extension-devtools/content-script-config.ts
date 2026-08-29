@@ -1,8 +1,8 @@
 import { readFile } from "fs/promises"
 import typescript, { type Node, type VariableDeclaration } from "typescript"
 
-import type { ManifestContentScript } from "@plasmo/constants"
-import { eLog, vLog } from "@plasmo/utils/logging"
+import type { ManifestContentScript } from "@extenso/constants"
+import { eLog, vLog } from "@extenso/utils/logging"
 
 import { parseAst } from "./parse-ast"
 

@@ -7,9 +7,9 @@ import { copy, outputJson, readJson } from "fs-extra"
 import ignore from "ignore"
 import { temporaryDirectory } from "tempy"
 
-import { getFlag, hasFlag } from "@plasmo/utils/flags"
-import { isAccessible } from "@plasmo/utils/fs"
-import { iLog, vLog } from "@plasmo/utils/logging"
+import { getFlag, hasFlag } from "@extenso/utils/flags"
+import { isAccessible } from "@extenso/utils/fs"
+import { iLog, vLog } from "@extenso/utils/logging"
 
 import type { CommonPath } from "~features/extension-devtools/common-path"
 import { generateGitIgnore } from "~features/extension-devtools/git-ignore"
@@ -129,7 +129,7 @@ export class ProjectCreator {
           "clone",
           "--depth",
           "1",
-          "https://github.com/PlasmoHQ/examples.git",
+          "https://github.com/Extension-Master/examples.git",
           "."
         ],
         { cwd: tempDirectory, ignoreStdio: true }
@@ -185,7 +185,7 @@ export class ProjectCreator {
       packageData.contributors = [
         await quickPrompt("Contributor name:", packageData.author)
       ]
-      packageData.author = "Plasmo Corp. <foss@plasmo.com>"
+      packageData.author = "Extension Master <extenso@extensionmaster.com>"
     } else {
       delete packageData.contributors
       packageData.author = await quickPrompt("Author name:", packageData.author)

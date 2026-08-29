@@ -1,4 +1,4 @@
-import { iLog } from "@plasmo/utils/logging"
+import { iLog } from "@extenso/utils/logging"
 
 async function start() {
   iLog("Start the extension development...")

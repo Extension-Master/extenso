@@ -1,4 +1,4 @@
-import type { ExtensionManifestV3 } from "@plasmo/constants"
+import type { ExtensionManifestV3 } from "@extenso/constants"
 
 import type { PlasmoBundleConfig } from "~features/extension-devtools/get-bundle-config"
 
