@@ -22,7 +22,7 @@ export function decorateLegacyGraph(
   let entryBundleToBundleGroup: Map<NodeId, BundleGroup> = new Map()
 
   // Step Create Bundles: Create bundle groups, bundles, and shared bundles and add assets to them
-  for (let [bundleNodeId, idealBundle] of idealBundleGraph.nodes) {
+  for (let [bundleNodeId, idealBundle] of idealBundleGraph.nodes.entries()) {
     if (idealBundle === "root") continue
     let entryAsset = idealBundle.mainEntryAsset
     let bundleGroup
@@ -105,7 +105,7 @@ export function decorateLegacyGraph(
   }
 
   // Step Internalization: Internalize dependencies for bundles
-  for (let [, idealBundle] of idealBundleGraph.nodes) {
+  for (let [, idealBundle] of idealBundleGraph.nodes.entries()) {
     if (idealBundle === "root") continue
     let bundle = nullthrows(idealBundleToLegacyBundle.get(idealBundle))
     if (idealBundle.internalizedAssets) {

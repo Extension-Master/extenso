@@ -19,10 +19,8 @@ import RequestTracker, {
   getWatcherOptions,
   requestGraphEdgeTypes
 } from "@parcel/core/lib/RequestTracker"
-import {
-  BuildAbortError,
-  registerCoreWithSerializer
-} from "@parcel/core/lib/utils"
+import { registerCoreWithSerializer } from "@parcel/core/lib/registerCoreWithSerializer"
+import { BuildAbortError } from "@parcel/core/lib/utils"
 import ThrowableDiagnostic, {
   anyToDiagnostic,
   type Diagnostic
@@ -139,8 +137,8 @@ export class Parcel {
     })
 
     this.#reporterRunner = new ReporterRunner({
-      config: this.#config,
       options: resolvedOptions,
+      reporters: await this.#config.getReporters(),
       workerFarm: this.#farm
     })
     this.#disposable.add(this.#reporterRunner)
@@ -319,7 +317,8 @@ export class Parcel {
               changedAssets: new Map(),
               bundleGraph: event.bundleGraph,
               buildTime: 0,
-              requestBundle: event.requestBundle
+              requestBundle: event.requestBundle,
+              unstable_requestStats: {}
             }
           }
 
@@ -342,7 +341,8 @@ export class Parcel {
           }
 
           return result
-        }
+        },
+        unstable_requestStats: this.#requestTracker.flushStats()
       }
 
       await this.#reporterRunner.report(event)
@@ -362,7 +362,8 @@ export class Parcel {
       let diagnostic = anyToDiagnostic(e)
       let event = {
         type: "buildFailure" as const,
-        diagnostics: Array.isArray(diagnostic) ? diagnostic : [diagnostic]
+        diagnostics: Array.isArray(diagnostic) ? diagnostic : [diagnostic],
+        unstable_requestStats: this.#requestTracker.flushStats()
       }
 
       await this.#reporterRunner.report(event)

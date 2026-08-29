@@ -7,10 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "ws": "8.18.1"
+    "ws": "8.21.3"
   },
   "devDependencies": {
-    "@plasmo/config": "workspace:*",
-    "@plasmo/utils": "workspace:*"
+    "@plasmo/config": "workspace:^0.2.5",
+    "@plasmo/utils": "workspace:^0.2.3"
   }
 }

@@ -22,11 +22,11 @@
     "url": "https://github.com/PlasmoHQ/plasmo.git"
   },
   "devDependencies": {
-    "@plasmo/config": "workspace:*",
-    "@plasmo/utils": "workspace:*",
-    "tsup": "8.4.0"
+    "@plasmo/config": "workspace:^0.2.5",
+    "@plasmo/utils": "workspace:^0.2.3",
+    "tsup": "8.5.1"
   },
   "dependencies": {
-    "@parcel/plugin": "2.9.3"
+    "@parcel/plugin": "2.16.4"
   }
 }
