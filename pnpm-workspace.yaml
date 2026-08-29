@@ -4,3 +4,8 @@ packages:
   - "examples/*"
   - "api/*"
   - "core/*"
+
+saveWorkspaceProtocol: true
+preferWorkspacePackages: true
+linkWorkspacePackages: true
+strictPeerDependencies: false
