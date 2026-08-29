@@ -381,8 +381,6 @@ export class Parcel {
   async _getWatcherSubscription(): Promise<AsyncSubscription> {
     invariant(this.#watcherSubscription == null)
 
-    // TODO: This is where the resolvedOptions - the watch project root, need to be fixed
-
     let resolvedOptions = nullthrows(this.#resolvedOptions)
     let opts: ParcelWatcherOptions = getWatcherOptions(resolvedOptions)
 

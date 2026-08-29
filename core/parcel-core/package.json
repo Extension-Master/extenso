@@ -1,6 +1,6 @@
 {
   "name": "@extenso/parcel-core",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "Plasmo Parcel Core Fork",
   "files": [
     "dist"

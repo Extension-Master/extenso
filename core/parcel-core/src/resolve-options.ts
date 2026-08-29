@@ -78,6 +78,14 @@ export async function resolveOptions(initialOptions: InitialParcelOptions) {
 
   let cacheDir = path.resolve(outputCwd, initialOptions.cacheDir)
 
+  // Make the root watch directory configurable. This is useful in some cases
+  // where symlinked dependencies outside the project root need to trigger HMR
+  // updates. Default to the project root if not provided.
+  let watchDir =
+    initialOptions.watchDir != null
+      ? path.resolve(initialOptions.watchDir)
+      : projectRoot
+
   let cache =
     initialOptions.cache ??
     (outputFS instanceof NodeFS
@@ -134,6 +142,9 @@ export async function resolveOptions(initialOptions: InitialParcelOptions) {
     shouldDisableCache: initialOptions.shouldDisableCache ?? false,
     shouldProfile: initialOptions.shouldProfile ?? false,
     cacheDir,
+    watchDir,
+    watchBackend: initialOptions.watchBackend,
+    watchIgnore: initialOptions.watchIgnore,
     entries: entries.map((e) => toProjectPath(projectRoot, e)),
     targets: initialOptions.targets,
     logLevel: initialOptions.logLevel ?? "info",
