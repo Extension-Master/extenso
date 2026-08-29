@@ -12,6 +12,7 @@
     "baseUrl": ".",
     "lib": ["es2022", "dom"],
     "jsx": "preserve",
+    "types": ["node"],
     "paths": {
       "~*": ["./src/*"],
       "@plasmo-static-common/*": ["./templates/static/common/*"]
