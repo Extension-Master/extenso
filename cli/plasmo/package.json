@@ -1,6 +1,6 @@
 {
   "name": "@extenso/cli",
-  "version": "0.90.5",
+  "version": "0.90.6",
   "description": "The Extenso Framework CLI",
   "publishConfig": {
     "types": "dist/type.d.ts"
