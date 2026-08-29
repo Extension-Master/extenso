@@ -3,8 +3,8 @@ import { resolve } from "path"
 import { sentenceCase } from "change-case"
 import { copy, emptyDir, readJson, writeJson } from "fs-extra"
 
-import { isAccessible } from "@plasmo/utils/fs"
-import { sLog, vLog } from "@plasmo/utils/logging"
+import { isAccessible } from "@extenso/utils/fs"
+import { sLog, vLog } from "@extenso/utils/logging"
 
 import { getCommonPath } from "~features/extension-devtools/common-path"
 import type { PackageJSON } from "~features/extension-devtools/package-file"
@@ -23,7 +23,7 @@ export const generateNewTabManifest = (packageData: PackageJSON) => ({
 export const nextNewTab = async () => {
   const { projectDirectory, packageFilePath } = getCommonPath()
 
-  vLog("Creating a Plasmo + Nextjs based new tab extension")
+  vLog("Creating an Extenso + Nextjs based new tab extension")
   const out = resolve(projectDirectory, "out")
 
   const { default: chalk } = await import("chalk")

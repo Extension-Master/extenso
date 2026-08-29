@@ -1,5 +1,5 @@
 {
-  "name": "@plasmohq/parcel-transformer-svelte",
+  "name": "@extenso/parcel-transformer-svelte",
   "version": "0.6.1",
   "description": "Plasmo Parcel Transformer for Svelte",
   "files": [
@@ -22,7 +22,7 @@
     "url": "https://github.com/Extension-Master/extenso.git"
   },
   "devDependencies": {
-    "@plasmo/config": "workspace:^0.2.5",
+    "@extenso/config": "workspace:^0.2.5",
     "tsup": "8.5.1"
   },
   "dependencies": {

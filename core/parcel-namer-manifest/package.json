@@ -1,5 +1,5 @@
 {
-  "name": "@plasmohq/parcel-namer-manifest",
+  "name": "@extenso/parcel-namer-manifest",
   "version": "0.3.12",
   "description": "Plasmo Parcel Namer for Extension Manifest",
   "files": [
@@ -22,7 +22,7 @@
     "url": "https://github.com/Extension-Master/extenso.git"
   },
   "devDependencies": {
-    "@plasmo/config": "workspace:^0.2.5",
+    "@extenso/config": "workspace:^0.2.5",
     "tsup": "8.5.1"
   },
   "dependencies": {

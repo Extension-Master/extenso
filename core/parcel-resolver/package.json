@@ -1,5 +1,5 @@
 {
-  "name": "@plasmohq/parcel-resolver",
+  "name": "@extenso/parcel-resolver",
   "version": "0.14.2",
   "description": "Plasmo Parcel Resolver",
   "files": [
@@ -25,9 +25,9 @@
     "url": "https://github.com/Extension-Master/extenso.git"
   },
   "devDependencies": {
-    "@plasmo/config": "workspace:^0.2.5",
-    "@plasmo/utils": "workspace:^0.2.3",
-    "@plasmohq/rps": "workspace:^1.8.7",
+    "@extenso/config": "workspace:^0.2.5",
+    "@extenso/utils": "workspace:^0.2.3",
+    "@extenso/rps": "workspace:^1.8.7",
     "assert": "2.1.0",
     "browserify-zlib": "0.2.0",
     "buffer": "6.0.3",

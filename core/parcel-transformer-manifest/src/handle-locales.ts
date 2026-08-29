@@ -1,6 +1,6 @@
 import { resolve } from "path"
 
-import { vLog, wLog } from "@plasmo/utils/logging"
+import { vLog, wLog } from "@extenso/utils/logging"
 
 import { getState } from "./state"
 import { addExtraAssets, wLogOnce } from "./utils"

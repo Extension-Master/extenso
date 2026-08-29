@@ -1,5 +1,5 @@
 {
-  "name": "@plasmohq/parcel-transformer-manifest",
+  "name": "@extenso/parcel-transformer-manifest",
   "version": "0.21.1",
   "description": "Plasmo Parcel Transformer for Web Extension Manifest",
   "files": [
@@ -23,8 +23,8 @@
     "url": "https://github.com/Extension-Master/extenso.git"
   },
   "devDependencies": {
-    "@plasmo/config": "workspace:^0.2.5",
-    "@plasmo/utils": "workspace:^0.2.3",
+    "@extenso/config": "workspace:^0.2.5",
+    "@extenso/utils": "workspace:^0.2.3",
     "tsup": "8.5.1"
   },
   "dependencies": {

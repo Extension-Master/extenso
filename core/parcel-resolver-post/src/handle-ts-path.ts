@@ -11,7 +11,7 @@ import { dirname, extname, join, resolve } from "path"
 import { loadConfig } from "@parcel/utils"
 import type { CompilerOptions } from "typescript"
 
-import { isReadable } from "@plasmo/utils/fs"
+import { isReadable } from "@extenso/utils/fs"
 
 import type { ResolverProps, ResolverResult } from "./shared"
 import { checkWebpackSpecificImportSyntax, findModule, trimStar } from "./utils"

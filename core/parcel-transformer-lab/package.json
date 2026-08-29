@@ -1,5 +1,5 @@
 {
-  "name": "@plasmohq/parcel-transformer-lab",
+  "name": "@extenso/parcel-transformer-lab",
   "version": "0.1.12",
   "description": "Plasmo Parcel Transformer Laboratory - a way to experiment with how the transformer works",
   "files": [
@@ -22,8 +22,8 @@
     "url": "https://github.com/Extension-Master/extenso.git"
   },
   "devDependencies": {
-    "@plasmo/config": "workspace:^0.2.5",
-    "@plasmo/utils": "workspace:^0.2.3",
+    "@extenso/config": "workspace:^0.2.5",
+    "@extenso/utils": "workspace:^0.2.3",
     "tsup": "8.5.1"
   },
   "dependencies": {

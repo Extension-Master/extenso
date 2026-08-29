@@ -1,6 +1,6 @@
 import { kebabCase } from "change-case"
 
-import { getFlag } from "@plasmo/utils/flags"
+import { getFlag } from "@extenso/utils/flags"
 
 export const getFlagMap = () => {
   const srcPath = getFlag("--src-path") || process.env.PLASMO_SRC_PATH || "src"

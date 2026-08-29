@@ -1,5 +1,5 @@
 {
-  "name": "@plasmohq/messaging",
+  "name": "@extenso/messaging",
   "version": "0.7.2",
   "description": "Type-safe, zero-config messaging library for modern browser extensions",
   "type": "module",

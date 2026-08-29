@@ -1,4 +1,4 @@
-import { iLog } from "@plasmo/utils/logging"
+import { iLog } from "@extenso/utils/logging"
 
 const defaultTransformer = (target: any) =>
   iLog({

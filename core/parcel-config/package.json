@@ -1,5 +1,5 @@
 {
-  "name": "@plasmohq/parcel-config",
+  "name": "@extenso/parcel-config",
   "version": "0.42.0",
   "license": "MIT",
   "repository": {
@@ -8,6 +8,20 @@
   },
   "main": "index.json",
   "dependencies": {
+    "@extenso/parcel-bundler": "workspace:^0.5.6",
+    "@extenso/parcel-compressor-utf8": "workspace:^0.1.1",
+    "@extenso/parcel-namer-manifest": "workspace:^0.3.12",
+    "@extenso/parcel-optimizer-encapsulate": "workspace:^0.0.8",
+    "@extenso/parcel-optimizer-es": "workspace:^0.4.2",
+    "@extenso/parcel-packager": "workspace:^0.6.15",
+    "@extenso/parcel-resolver": "workspace:^0.14.2",
+    "@extenso/parcel-resolver-post": "workspace:^0.4.6",
+    "@extenso/parcel-runtime": "workspace:^0.25.3",
+    "@extenso/parcel-transformer-inject-env": "workspace:^0.2.12",
+    "@extenso/parcel-transformer-inline-css": "workspace:^0.3.12",
+    "@extenso/parcel-transformer-manifest": "workspace:^0.21.1",
+    "@extenso/parcel-transformer-svelte": "workspace:^0.6.1",
+    "@extenso/parcel-transformer-vue": "workspace:^0.5.1",
     "@parcel/compressor-raw": "2.16.4",
     "@parcel/config-default": "2.16.4",
     "@parcel/core": "2.16.4",
@@ -28,20 +42,19 @@
     "@parcel/transformer-react-refresh-wrap": "2.16.4",
     "@parcel/transformer-sass": "2.16.4",
     "@parcel/transformer-svg-react": "2.16.4",
-    "@parcel/transformer-worklet": "2.16.4",
-    "@plasmohq/parcel-bundler": "workspace:^0.5.6",
-    "@plasmohq/parcel-compressor-utf8": "workspace:^0.1.1",
-    "@plasmohq/parcel-namer-manifest": "workspace:^0.3.12",
-    "@plasmohq/parcel-optimizer-encapsulate": "workspace:^0.0.8",
-    "@plasmohq/parcel-optimizer-es": "workspace:^0.4.2",
-    "@plasmohq/parcel-packager": "workspace:^0.6.15",
-    "@plasmohq/parcel-resolver": "workspace:^0.14.2",
-    "@plasmohq/parcel-resolver-post": "workspace:^0.4.6",
-    "@plasmohq/parcel-runtime": "workspace:^0.25.3",
-    "@plasmohq/parcel-transformer-inject-env": "workspace:^0.2.12",
-    "@plasmohq/parcel-transformer-inline-css": "workspace:^0.3.12",
-    "@plasmohq/parcel-transformer-manifest": "workspace:^0.21.1",
-    "@plasmohq/parcel-transformer-svelte": "workspace:^0.6.1",
-    "@plasmohq/parcel-transformer-vue": "workspace:^0.5.1"
+    "@parcel/transformer-worklet": "2.16.4"
+  },
+  "devDependencies": {
+    "@plasmohq/parcel-bundler": "0.5.6",
+    "@plasmohq/parcel-compressor-utf8": "0.1.1",
+    "@plasmohq/parcel-namer-manifest": "0.3.12",
+    "@plasmohq/parcel-optimizer-encapsulate": "0.0.8",
+    "@plasmohq/parcel-optimizer-es": "0.4.2",
+    "@plasmohq/parcel-packager": "0.6.15",
+    "@plasmohq/parcel-resolver": "0.14.2",
+    "@plasmohq/parcel-resolver-post": "0.4.6",
+    "@plasmohq/parcel-runtime": "0.25.3",
+    "@plasmohq/parcel-transformer-inject-env": "0.2.12",
+    "@plasmohq/parcel-transformer-manifest": "0.21.1"
   }
 }

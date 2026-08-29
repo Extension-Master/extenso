@@ -1,5 +1,5 @@
 {
-  "name": "@plasmohq/parcel-optimizer-es",
+  "name": "@extenso/parcel-optimizer-es",
   "version": "0.4.2",
   "description": "Plasmo ECMAScript Optimizer for Extension",
   "files": [
@@ -22,8 +22,8 @@
     "url": "https://github.com/Extension-Master/extenso.git"
   },
   "devDependencies": {
-    "@plasmo/config": "workspace:^0.2.5",
-    "@plasmo/utils": "workspace:^0.2.3",
+    "@extenso/config": "workspace:^0.2.5",
+    "@extenso/utils": "workspace:^0.2.3",
     "tsup": "8.5.1"
   },
   "dependencies": {

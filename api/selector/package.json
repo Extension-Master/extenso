@@ -1,5 +1,5 @@
 {
-  "name": "@plasmohq/selector",
+  "name": "@extenso/selector",
   "version": "0.0.7",
   "description": "Powerful Selector API with Dedicated Monitoring Supports",
   "type": "module",

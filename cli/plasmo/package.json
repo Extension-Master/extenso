@@ -1,13 +1,15 @@
 {
-  "name": "plasmo",
+  "name": "@extenso/cli",
   "version": "0.90.5",
-  "description": "The Plasmo Framework CLI",
+  "description": "The Extenso Framework CLI",
   "publishConfig": {
     "types": "dist/type.d.ts"
   },
   "types": "src/type.ts",
   "main": "dist/index.js",
-  "bin": "bin/index.mjs",
+  "bin": {
+    "extenso": "bin/index.mjs"
+  },
   "type": "module",
   "files": [
     "bin/index.mjs",
@@ -43,9 +45,9 @@
     "@parcel/fs": "2.16.4",
     "@parcel/package-manager": "2.16.4",
     "@parcel/watcher": "2.6.0",
-    "@plasmohq/init": "workspace:^0.7.0",
-    "@plasmohq/parcel-config": "workspace:^0.42.0",
-    "@plasmohq/parcel-core": "workspace:^0.1.11",
+    "@extenso/init": "workspace:^0.7.0",
+    "@extenso/parcel-config": "workspace:^0.42.0",
+    "@extenso/parcel-core": "workspace:^0.1.11",
     "buffer": "6.0.3",
     "chalk": "6.0.0",
     "change-case": "5.4.4",
@@ -70,10 +72,10 @@
     "typescript": "6.0.3"
   },
   "devDependencies": {
-    "@plasmo/config": "workspace:^0.2.5",
-    "@plasmo/constants": "workspace:^0.3.0",
-    "@plasmo/framework-shared": "workspace:^0.0.2",
-    "@plasmo/utils": "workspace:^0.2.3",
+    "@extenso/config": "workspace:^0.2.5",
+    "@extenso/constants": "workspace:^0.3.0",
+    "@extenso/framework-shared": "workspace:^0.0.2",
+    "@extenso/utils": "workspace:^0.2.3",
     "svelte": "5.57.0",
     "vue": "3.5.42"
   }

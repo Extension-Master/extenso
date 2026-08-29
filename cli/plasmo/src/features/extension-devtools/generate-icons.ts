@@ -2,9 +2,9 @@ import { basename, resolve } from "path"
 import { copy, ensureDir } from "fs-extra"
 import sharp from "sharp"
 
-import { find } from "@plasmo/utils/array"
-import { isAccessible } from "@plasmo/utils/fs"
-import { vLog, wLog } from "@plasmo/utils/logging"
+import { find } from "@extenso/utils/array"
+import { isAccessible } from "@extenso/utils/fs"
+import { vLog, wLog } from "@extenso/utils/logging"
 
 import { getFlagMap } from "~features/helpers/flag"
 

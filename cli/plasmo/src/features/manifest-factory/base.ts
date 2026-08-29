@@ -28,16 +28,16 @@ import type {
   ExtensionManifestV3,
   ManifestContentScript,
   ManifestPermission
-} from "@plasmo/constants"
+} from "@extenso/constants"
 import {
   buildBroadcast,
   BuildSocketEvent
-} from "@plasmo/framework-shared/build-socket"
-import { assertTruthy } from "@plasmo/utils/assert"
-import { injectEnv } from "@plasmo/utils/env"
-import { isDirectory, isReadable } from "@plasmo/utils/fs"
-import { vLog, wLog } from "@plasmo/utils/logging"
-import { getSubExt, toPosix } from "@plasmo/utils/path"
+} from "@extenso/framework-shared/build-socket"
+import { assertTruthy } from "@extenso/utils/assert"
+import { injectEnv } from "@extenso/utils/env"
+import { isDirectory, isReadable } from "@extenso/utils/fs"
+import { vLog, wLog } from "@extenso/utils/logging"
+import { getSubExt, toPosix } from "@extenso/utils/path"
 
 import { loadEnvConfig, type EnvConfig } from "~features/env/env-config"
 import { outputEnvDeclaration } from "~features/env/env-declaration"

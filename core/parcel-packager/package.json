@@ -1,5 +1,5 @@
 {
-  "name": "@plasmohq/parcel-packager",
+  "name": "@extenso/parcel-packager",
   "version": "0.6.15",
   "description": "Plasmo Parcel Packager for Web Extension Manifest",
   "files": [
@@ -22,9 +22,9 @@
     "url": "https://github.com/Extension-Master/extenso.git"
   },
   "devDependencies": {
-    "@plasmo/config": "workspace:^0.2.5",
-    "@plasmo/constants": "workspace:^0.3.0",
-    "@plasmo/utils": "workspace:^0.2.3",
+    "@extenso/config": "workspace:^0.2.5",
+    "@extenso/constants": "workspace:^0.3.0",
+    "@extenso/utils": "workspace:^0.2.3",
     "tsup": "8.5.1"
   },
   "dependencies": {

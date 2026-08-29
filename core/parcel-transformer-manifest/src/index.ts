@@ -10,7 +10,7 @@ import { Transformer } from "@parcel/plugin"
 import type { TargetSourceMapOptions } from "@parcel/types"
 import { validateSchema } from "@parcel/utils"
 
-import { vLog } from "@plasmo/utils/logging"
+import { vLog } from "@extenso/utils/logging"
 
 import { handleAction } from "./handle-action"
 import { handleBackground } from "./handle-background"
@@ -64,7 +64,7 @@ const getSourceMapConfig = (): TargetSourceMapOptions => {
 
 export default new Transformer({
   async transform({ asset, options }) {
-    vLog("@plasmohq/parcel-transformer-manifest")
+    vLog("@extenso/parcel-transformer-manifest")
     // Set environment to browser, since web extensions are always used in
     // browsers, and because it avoids delegating extra config to the user
 
@@ -98,7 +98,7 @@ export default new Transformer({
         source: code,
         filePath: asset.filePath
       },
-      "@plasmohq/parcel-transformer-manifest",
+      "@extenso/parcel-transformer-manifest",
       "Invalid Web Extension manifest"
     )
 

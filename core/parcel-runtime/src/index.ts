@@ -2,7 +2,7 @@ import fs from "fs"
 import path, { basename, dirname, join } from "path"
 import { Runtime } from "@parcel/plugin"
 
-import { vLog } from "@plasmo/utils/logging"
+import { vLog } from "@extenso/utils/logging"
 
 import {
   plasmoRuntimeList,
@@ -122,7 +122,7 @@ export default new Runtime({
       : "page-runtime"
 
     vLog(
-      "@plasmohq/parcel-runtime",
+      "@extenso/parcel-runtime",
       "Injecting <<",
       devRuntime,
       ">> for",

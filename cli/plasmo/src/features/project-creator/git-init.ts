@@ -1,7 +1,7 @@
 import spawnAsync, { type SpawnOptions } from "@expo/spawn-async"
 
-import { isAccessible } from "@plasmo/utils/fs"
-import { iLog, vLog, wLog } from "@plasmo/utils/logging"
+import { isAccessible } from "@extenso/utils/fs"
+import { iLog, vLog, wLog } from "@extenso/utils/logging"
 
 import type { CommonPath } from "~features/extension-devtools/common-path"
 
@@ -28,7 +28,7 @@ const gitInitAddCommit = async (root: string) => {
 
   await spawnAsync(
     "git",
-    ["commit", "-m", "Created a new Plasmo extension"],
+    ["commit", "-m", "Created a new Extenso extension"],
     commonOpt
   )
   vLog("Added all files to git and created the initial commit.")

@@ -2,8 +2,8 @@ import { lstat } from "fs/promises"
 import { resolve } from "path"
 import { emptyDir, ensureDir } from "fs-extra"
 
-import { isAccessible } from "@plasmo/utils/fs"
-import { vLog } from "@plasmo/utils/logging"
+import { isAccessible } from "@extenso/utils/fs"
+import { vLog } from "@extenso/utils/logging"
 
 import type { CommonPath } from "~features/extension-devtools/common-path"
 
