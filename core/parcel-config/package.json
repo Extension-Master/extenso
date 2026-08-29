@@ -43,18 +43,5 @@
     "@parcel/transformer-sass": "2.16.4",
     "@parcel/transformer-svg-react": "2.16.4",
     "@parcel/transformer-worklet": "2.16.4"
-  },
-  "devDependencies": {
-    "@plasmohq/parcel-bundler": "0.5.6",
-    "@plasmohq/parcel-compressor-utf8": "0.1.1",
-    "@plasmohq/parcel-namer-manifest": "0.3.12",
-    "@plasmohq/parcel-optimizer-encapsulate": "0.0.8",
-    "@plasmohq/parcel-optimizer-es": "0.4.2",
-    "@plasmohq/parcel-packager": "0.6.15",
-    "@plasmohq/parcel-resolver": "0.14.2",
-    "@plasmohq/parcel-resolver-post": "0.4.6",
-    "@plasmohq/parcel-runtime": "0.25.3",
-    "@plasmohq/parcel-transformer-inject-env": "0.2.12",
-    "@plasmohq/parcel-transformer-manifest": "0.21.1"
   }
 }
