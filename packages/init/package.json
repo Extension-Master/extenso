@@ -1,6 +1,6 @@
 {
   "name": "@extenso/init",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Plasmo init template files",
   "files": [
     "entries",
